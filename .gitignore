@@ -45,6 +45,7 @@ jspm_packages
 *.tgz
 
 # Yarn
+.yarn
 .yarn/*
 !.yarn/patches
 !.yarn/releases
