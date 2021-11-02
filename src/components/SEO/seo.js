@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
-function SEO({ title, siteMetadata }) {
+const SEO = ({ title, siteMetadata }) => {
 
   const siteName = siteMetadata.title;
   const siteDescription = siteMetadata.description;

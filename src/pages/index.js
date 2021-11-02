@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
-import { Row, Col } from 'react-bootstrap';
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";

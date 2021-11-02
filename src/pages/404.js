@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Container, Row, Col } from 'react-bootstrap';
 import { FormattedMessage } from 'react-intl';
 
 import Layout from "../components/Layout";
@@ -13,18 +12,18 @@ const NotFoundPage = ({ data, pageContext }) => (
       siteMetadata={data.site.siteMetadata}
     />
 
-    <Container className="p-3">
-      <Row>
-        <Col md={12} className="p-3">
+    <div>
+      <div>
+        <div>
           <h1>
             <FormattedMessage id="title.not_found" defaultMessage="Not found" />
           </h1>
           <p>
             <FormattedMessage id="not_found.message" defaultMessage="You just hit a route that doesn't exist." />
           </p>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+    </div>
   </Layout>
 );
 

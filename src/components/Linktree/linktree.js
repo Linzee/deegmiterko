@@ -1,26 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import Img from "gatsby-image";
 
 import Item from "./Item";
+import { Container } from "../Bordered";
 
 import "./linktree.scss"
 
-export default class Linktree extends Component {
-  render() {
-    const { links, siteMetadata, profileImg } = this.props;
-
-    return (
-      <div className="linktree">
-        <div className="profile">
-          <Img fluid={profileImg} alt={siteMetadata.author} />
-          <span>{siteMetadata.title}</span>
-        </div>
+const Linktree = ({ links, siteMetadata, profileImg }) => {
+  return (
+    <div className="linktree">
+      <div className="profile">
+        <Img fluid={profileImg} alt={siteMetadata.author} />
+        <span>{siteMetadata.title}</span>
+      </div>
+      <Container>
         <div className="container">
           {links.map((item, index) => (
             <Item key={index} link={item.link} title={item.title} icon={item.icon} />
           ))}
         </div>
-      </div>
-    );
-  }
+      </Container>
+    </div>
+  );
 }
+
+export default Linktree;

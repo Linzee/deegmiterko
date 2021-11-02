@@ -42,9 +42,9 @@
       padding: 1rem;
       flex-grow: 1;
 
-      border: 2px solid;
-      border-image-slice: 1;
-      border-image-source: linear-gradient(170deg, rgba(224,198,93,1) 0%, rgba(118,67,142,1) 47%, rgba(56,23,74,1) 100%);
+      // border: 2px solid;
+      // border-image-slice: 1;
+      // border-image-source: linear-gradient(170deg, rgba(224,198,93,1) 0%, rgba(118,67,142,1) 47%, rgba(56,23,74,1) 100%);
       color: rgb(56,23,74);
       font-size: 1.3rem;
 
@@ -66,8 +66,8 @@
     }
     .container {
       .item {
-        border: 2px solid white;
-        color: white;
+        // border: 2px solid white;
+        // color: white;
       }
     }
   }
