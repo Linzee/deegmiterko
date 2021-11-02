@@ -1,4 +1,5 @@
 const dotenv = require("dotenv");
+const path = require("path");
 
 if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
@@ -8,14 +9,22 @@ module.exports = {
   siteMetadata: {
     title: `Dee Gmiterko`,
     description: `Personal website`,
-    author: `Dominik Gmiterko <d.gmiterko@gmail.com>`,
+    author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
     image: 'src/images/banner.jpeg',
     keywords: ['Dominik', 'Gmiterko']
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

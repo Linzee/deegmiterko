@@ -1,33 +1,25 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { FormattedMessage } from 'react-intl';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import Img from "gatsby-image";
 
-export default class service extends Component {
+import Item from "./Item";
+
+import "./linktree.scss"
+
+export default class Linktree extends Component {
   render() {
-    const { links } = this.props;
+    const { links, siteMetadata, profileImg } = this.props;
+
     return (
       <div className="linktree">
-        <Container>
-          {links.map(item => (
-            <Row>
-              <Col md={12} className="p-3">
-                {
-                  item.link.startsWith("http") ? (
-                    <OutboundLink href={item.link}>
-                      {item.title}
-                    </OutboundLink>
-                  ) : (
-                    <AnchorLink to={item.link}>
-                      {item.title}
-                    </AnchorLink>
-                  )
-                }
-              </Col>
-            </Row>
+        <div className="profile">
+          <Img fluid={profileImg} alt={siteMetadata.author} />
+          <span>{siteMetadata.title}</span>
+        </div>
+        <div className="container">
+          {links.map((item, index) => (
+            <Item key={index} link={item.link} title={item.title} icon={item.icon} />
           ))}
-        </Container>
+        </div>
       </div>
     );
   }
