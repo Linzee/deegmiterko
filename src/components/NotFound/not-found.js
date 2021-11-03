@@ -5,6 +5,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 
+import "./not-found.scss";
+
 const NotFound = ({ siteMetadata, notFoundImg }) => {
   return (
     <main className="not-found">
@@ -15,12 +17,14 @@ const NotFound = ({ siteMetadata, notFoundImg }) => {
 
         <h1>404</h1>
 
-        <span className="tagline">Not found</span>
+        <span className="tagline">Not found. You know what this means...</span>
 
         <div className="nav">
-          <AnchorLink to={`/`}>
-            Back to home
-          </AnchorLink>
+          <div className="primary">
+            <AnchorLink to={`/`}>
+              <div className="link-content">Back to home</div>
+            </AnchorLink>
+          </div>
         </div>
       </div>
     </main>
