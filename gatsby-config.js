@@ -22,17 +22,37 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: path.join(__dirname, `src`, `content`),
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-transformer-chat-parse`,
       options: {
-        smartypants: true
-      }
+        users: [
+          {
+            name: 'Me',
+            color: '#863648',
+          },
+          {
+            name: 'You',
+            color: '#a6a6a8',
+          },
+          {
+            name: 'Lenka',
+            color: '#eaa550',
+          },
+        ]
+      },
     },
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

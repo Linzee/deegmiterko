@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Conversation from "../components/Conversation";
 
 const IndexPage = ({ data, pageContext }) => {
   return (
@@ -12,6 +13,12 @@ const IndexPage = ({ data, pageContext }) => {
     />
 
       <h1>Dominik Gmiterko</h1>
+
+      {data.content.edges.map(section => (
+        section.node.childChatParsed.conversations.map(conversation => (
+          <Conversation messages={conversation.messages} />
+        ))
+      ))}
 
     </Layout>
   )
@@ -28,6 +35,24 @@ export const pageQuery = graphql`
         siteUrl
         title
         keywords
+      }
+    }
+    content: allFile(filter: {sourceInstanceName: {eq: "content"}}) {
+      edges {
+        node {
+          name
+          childChatParsed {
+            conversations {
+              name
+              color
+              messages {
+                order
+                message
+                author
+              }
+            }
+          }
+        }
       }
     }
   }

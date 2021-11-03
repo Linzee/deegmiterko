@@ -1,0 +1,15 @@
+{
+  "name": "gatsby-transformer-chat-parse",
+  "private": true,
+  "description": "Gatsby transformer to convert simple chat format to objects",
+  "version": "0.1.0",
+  "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT"
+}

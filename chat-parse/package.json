@@ -1,0 +1,13 @@
+{
+  "name": "chat-parse",
+  "private": true,
+  "description": "A library to parse simple chat format into JSON objects",
+  "version": "0.1.0",
+  "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "ohm-js": "^15.5.0"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}
