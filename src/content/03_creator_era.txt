@@ -1,25 +1,26 @@
-Lenka: Lo
+You: Lo
 em Ipsum is simply dummy text of the p
 inting and typesetting indust
-Lenka: y. Lo
-Lenka: em Ipsum has been the indust
+You: y. Lo
+You: em Ipsum has been the indust
 y's standa
 d dummy text eve
-Lenka: since the 1500s, when an unknown p
-Lenka: inte
- took a galley of type and sc
+You: since the 1500s, when an unknown p
+You: inte
+took a galley of type and sc
 ambled it to make a type specimen book. It has su
 vived not only five centu
-Lenka: ies, but also the leap into elect
+You: ies, but also the leap into elect
 onic typesetting,
 emaining essentially unchanged. It was popula
 ised in the 1960s with the
-Lenka: elease of Let
+You: elease of Let
 aset sheets containing Lo
+http://localhost:8000/static/9aa0b3acf1c045990e4f1e77b308f045/2244e/banner.jpg
 em Ipsum passages, and mo
-Lenka: e
+You e
 ecently with desktop publishing softwa
 e like Aldus PageMake
-Lenka: including ve
+You: including ve
 sions of Lo
-Lenka: em Ipsum.
+You: em Ipsum.

@@ -1,0 +1,28 @@
+.conversation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1500px;
+
+  .sequence {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+
+    &.mine {
+      justify-content: flex-end;
+
+      .sequence-messages {
+        align-items: flex-end;
+      }
+    }
+
+    .sequence-messages {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.5rem;
+    }
+  }
+}

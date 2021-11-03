@@ -6,6 +6,10 @@
     flex-grow: 0;
     display: flex;
     flex-direction: row;
+
+    &:nth-child(2), div:nth-child(2) {
+      flex-grow: 1;
+    }
   }
 
   .border-horizontal, .border-vertical {
@@ -14,11 +18,11 @@
   }
 
   .border-horizontal {
-    height: 2px;
+    height: 3px;
     width: 100%;
   }
 
   .border-vertical {
-    width: 2px;
+    width: 3px;
   }
 }

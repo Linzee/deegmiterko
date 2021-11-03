@@ -12,7 +12,8 @@ module.exports = {
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
     image: 'src/images/banner.jpeg',
-    keywords: ['Dominik', 'Gmiterko']
+    keywords: ['Dominik', 'Gmiterko'],
+    tagline: "Coder | Artist | Me",
   },
   plugins: [
     {
@@ -45,10 +46,6 @@ module.exports = {
           {
             name: 'You',
             color: '#a6a6a8',
-          },
-          {
-            name: 'Lenka',
-            color: '#eaa550',
           },
         ]
       },

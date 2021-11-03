@@ -58,7 +58,7 @@ export const pageQuery = graphql`
         keywords
       }
     }
-    profileImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "profile.jpeg"}) {
+    profileImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "profile.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

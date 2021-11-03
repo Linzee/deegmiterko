@@ -1,26 +1,33 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Banner from "../components/Banner";
 import Conversation from "../components/Conversation";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const IndexPage = ({ data, pageContext }) => {
   return (
-    <Layout siteMetadata={data.site.siteMetadata}>
-    <SEO
-      siteMetadata={data.site.siteMetadata}
-    />
+    <>
+      <SEO
+        siteMetadata={data.site.siteMetadata}
+      />
 
-      <h1>Dominik Gmiterko</h1>
+      <Banner siteMetadata={data.site.siteMetadata} bannerImg={data.bannerImg.childImageSharp.fluid} />
 
-      {data.content.edges.map(section => (
-        section.node.childChatParsed.conversations.map(conversation => (
-          <Conversation messages={conversation.messages} />
-        ))
-      ))}
+      <main id="about">
+        {data.content.edges.map((section, i_1) => (
+          section.node.childChatParsed.conversations.map((conversation, i_2) => (
+            <Conversation key={i_1+":"+i_2} messages={conversation.messages} />
+          ))
+        ))}
+      </main>
 
-    </Layout>
+      <Contact siteMetadata={data.site.siteMetadata} />
+
+      <Footer siteMetadata={data.site.siteMetadata} />
+    </>
   )
 };
 
@@ -35,9 +42,13 @@ export const pageQuery = graphql`
         siteUrl
         title
         keywords
+        tagline
       }
     }
-    content: allFile(filter: {sourceInstanceName: {eq: "content"}}) {
+    content: allFile(
+      filter: {sourceInstanceName: {eq: "content"}}
+      sort: {fields: name}
+    ) {
       edges {
         node {
           name
@@ -46,12 +57,22 @@ export const pageQuery = graphql`
               name
               color
               messages {
-                order
-                message
                 author
+                message
+                media {
+                  type
+                  url
+                }
               }
             }
           }
+        }
+      }
+    }
+    bannerImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "banner.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

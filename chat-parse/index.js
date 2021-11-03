@@ -174,7 +174,7 @@ const parse = (users, script) => {
     return Object.assign({}, user, {
       messages: []
     });
-  });
+  }).filter(conversation => conversation.name != "Me");
   const messagesMap = {};
   const pfpMap = {};
   conversations.forEach(conversation => {
