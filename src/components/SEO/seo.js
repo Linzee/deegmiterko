@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
-const SEO = ({ title, siteMetadata }) => {
+const SEO = ({ title, siteMetadata, canGoDark }) => {
 
   const siteName = siteMetadata.title;
   const siteDescription = siteMetadata.description;
@@ -55,6 +55,7 @@ const SEO = ({ title, siteMetadata }) => {
         }
       ]}
     >
+      <body className={canGoDark ? "can-go-dark" : undefined} />
     </Helmet>
   );
 }

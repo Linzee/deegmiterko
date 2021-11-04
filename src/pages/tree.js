@@ -33,15 +33,18 @@ const TreePage = ({ data, pageContext }) => {
   ]
 
   return (
-    <main>
+    <div class="page-tree">
       <SEO
         title={"Link tree"}
         siteMetadata={data.site.siteMetadata}
+        canGoDark={true}
       />
 
-      <Linktree links={links} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.fluid} />
+      <main>
+        <Linktree links={links} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.fluid} />
+      </main>
 
-    </main>
+    </div>
   )
 };
 

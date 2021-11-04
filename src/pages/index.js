@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const IndexPage = ({ data, pageContext }) => {
   return (
-    <>
+    <div className="page-about">
       <SEO
         siteMetadata={data.site.siteMetadata}
       />
@@ -27,7 +27,7 @@ const IndexPage = ({ data, pageContext }) => {
       <Contact siteMetadata={data.site.siteMetadata} />
 
       <Footer siteMetadata={data.site.siteMetadata} />
-    </>
+    </div>
   )
 };
 
