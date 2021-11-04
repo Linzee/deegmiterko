@@ -9,9 +9,13 @@
     flex-direction: row;
     justify-content: flex-start;
     padding-bottom: 1rem;
+    margin-right: 5rem;
+    margin-left: 0;
 
     &.mine {
       justify-content: flex-end;
+      margin-right: 0;
+      margin-left: 5rem;
 
       .sequence-messages {
         align-items: flex-end;
