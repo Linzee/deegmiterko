@@ -41,7 +41,7 @@ const TreePage = ({ data, pageContext }) => {
       />
 
       <main>
-        <Linktree links={links} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.fluid} />
+        <Linktree links={links} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
       </main>
 
     </div>
@@ -63,9 +63,7 @@ export const pageQuery = graphql`
     }
     profileImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "profile.jpg"}) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

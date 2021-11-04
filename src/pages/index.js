@@ -14,7 +14,7 @@ const IndexPage = ({ data, pageContext }) => {
         siteMetadata={data.site.siteMetadata}
       />
 
-      <Banner siteMetadata={data.site.siteMetadata} bannerImg={data.bannerImg.childImageSharp.fluid} />
+      <Banner siteMetadata={data.site.siteMetadata} bannerImg={data.bannerImg.childImageSharp.gatsbyImageData} />
 
       <main id="about">
         {data.content.edges.map((section, i_1) => (
@@ -71,9 +71,7 @@ export const pageQuery = graphql`
     }
     bannerImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "banner.jpg"}) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

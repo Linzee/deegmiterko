@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import "./not-found.scss";
 
@@ -11,7 +11,7 @@ const NotFound = ({ siteMetadata, notFoundImg }) => {
   return (
     <main className="not-found">
       <div className="profile">
-        <Img fluid={notFoundImg} alt={"Not found by "+siteMetadata.author} />
+        <GatsbyImage image={notFoundImg} alt={"Not found by "+siteMetadata.author} />
       </div>
       <div className="basic-info">
 

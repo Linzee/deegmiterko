@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Item from "./Item";
 import { Container } from "../Bordered";
@@ -10,7 +10,7 @@ const Linktree = ({ links, siteMetadata, profileImg }) => {
   return (
     <div className="linktree">
       <div className="profile">
-        <Img fluid={profileImg} alt={siteMetadata.author} />
+        <GatsbyImage image={profileImg} alt={siteMetadata.author} />
         <span>{siteMetadata.title}</span>
       </div>
       <Container>

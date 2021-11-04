@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { FormattedMessage } from 'react-intl';
 
 import SEO from "../components/SEO";
 import NotFound from "../components/NotFound";
@@ -12,7 +11,7 @@ const NotFoundPage = ({ data, pageContext }) => (
       siteMetadata={data.site.siteMetadata}
     />
 
-    <NotFound siteMetadata={data.site.siteMetadata} notFoundImg={data.notFoundImg.childImageSharp.fluid} />
+    <NotFound siteMetadata={data.site.siteMetadata} notFoundImg={data.notFoundImg.childImageSharp.gatsbyImageData} />
   </>
 );
 
@@ -31,9 +30,7 @@ export const pageQuery = graphql`
     }
     notFoundImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "not-found.jpg"}) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }

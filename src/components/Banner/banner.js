@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 import Bordered from "../Bordered";
@@ -14,7 +14,7 @@ const Banner = ({ siteMetadata, bannerImg }) => {
   return (
     <header className="banner">
       <div className="profile">
-        <Img fluid={bannerImg} alt={siteMetadata.author} />
+        <GatsbyImage image={bannerImg} alt={siteMetadata.author} />
       </div>
       <div className="basic-info">
 
