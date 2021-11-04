@@ -5,6 +5,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 import Img from "gatsby-image";
 
+
 import Bordered from "../Bordered";
 
 import "./banner.scss";
@@ -17,7 +18,13 @@ const Banner = ({ siteMetadata, bannerImg }) => {
       </div>
       <div className="basic-info">
 
-        <h1>{siteMetadata.title}</h1>
+        <h1 alt={siteMetadata.title}>
+          <span className="name-variations">
+            <span class="main">Dee</span>
+            <span class="alternate">Dominik</span>
+          </span>
+          <span> Gmiterko</span>
+        </h1>
 
         <span className="tagline">{siteMetadata.tagline}</span>
 

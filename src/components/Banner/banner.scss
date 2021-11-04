@@ -23,6 +23,46 @@
     h1 {
       font-size: 3rem;
       margin-bottom: 2rem;
+
+      > span {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-left: 0.5rem;
+      }
+
+      .name-variations {
+        text-align: right;
+        overflow: hidden;
+        position: relative;
+        width: 5em;
+        height: 1em;
+        margin-left: -3.25em;
+
+        .main, .alternate {
+          position: absolute;
+          right: 0;
+          transition: bottom 0.6s ease-in-out;
+        }
+
+        .main {
+          bottom: 0;
+        }
+
+        .alternate {
+          bottom: 1em;
+          color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:hover {
+          .main {
+            bottom: -1em;
+          }
+
+          .alternate {
+            bottom: 0;
+          }
+        }
+      }
     }
 
     .tagline {
