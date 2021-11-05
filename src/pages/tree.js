@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { graphql } from "gatsby";
 import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -33,7 +33,7 @@ const TreePage = ({ data, pageContext }) => {
   ]
 
   return (
-    <div class="page-tree">
+    <div className="page-tree">
       <SEO
         title={"Link tree"}
         siteMetadata={data.site.siteMetadata}

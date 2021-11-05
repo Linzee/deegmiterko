@@ -37,7 +37,7 @@ const Conversation = ({ messages }) => {
 
     if (previous) {
       if (previous.author !== current.author) {
-        endSequence(previous.author == "Me");
+        endSequence(previous.author === "Me");
       }
     }
 
@@ -48,7 +48,7 @@ const Conversation = ({ messages }) => {
     i += 1;
   }
 
-  endSequence(messages[messageCount-1].author == "Me");
+  endSequence(messages[messageCount-1].author === "Me");
 
   return (
     <div className="conversation">

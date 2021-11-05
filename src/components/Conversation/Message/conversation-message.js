@@ -6,18 +6,18 @@ const Message = ({ data }) => {
 
   let media = null;
   if ('media' in data && data.media) {
-    if (data.media.type == 'image') {
+    if (data.media.type === 'image') {
       media = (
         <img src={data.media.url} />
       );
-    } else if (data.media.type == 'audio') {
+    } else if (data.media.type === 'audio') {
       media = (
         <audio controls={true} autoplay={true}>
           <source src={data.media.url} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
       );
-    } if (data.media.type == 'video') {
+    } if (data.media.type === 'video') {
       media = (
         <video controls={true}>
           <source src={data.media.url} type="video/mp4" />
