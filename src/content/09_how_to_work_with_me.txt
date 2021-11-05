@@ -1,0 +1,28 @@
+You: What I value
+I value people who can actually do stuff. Because having ideas and talking about them is easy, but really doing something is much harder. I do not care of you succeed or not as long as you are trying. You can learn a lot even when your attempt does not yield the expected results.
+
+You: How I look at problems
+break down complex problems into smaller components and their dependencies
+I tend to visualize them in my notebook. Because this allows me to grasp larger problems and find possible issues others do not see. Multiple people told me I can think and see two steps ahead. but that it only thanks to my skills in visualizing complex problems.
+[indistinguishable images from my notes]
+
+You: How I learn
+My approach to learning
+read minimal viable amount of information and jump into some small project as soon as possible
+to gather experience hands on
+this means I will quickly face the most combing problems and challenges and only once I know why this has to be solved I look for solutions
+this approach to learning produced many small personal projects that can be viewed on ___and on my GitHub account.
+
+You: My blind spots
+I may assume you know and understand more than you do. And then I will answer you with way too short message not explaining myself fully. Just please tell me that you still do not understand and I will be happy to spend more time explaining it.
+
+You: Things I do that may annoy you
+I may get lost sometimes. Literally. When I am overworked I sometimes want just to pick a backpack and get lost in the world to recharge my batteries. And I may loose communication to everyone. Just a friendly warning. It's best just to make sure I am okay and wait a bit.
+
+You: How to work with me successfully
+inform me about new facts and issues as soon as they emerge and have a regular meetings with me trying to solve those problems. Informing me immediately allows me to add this facts into my mental model and think about them for a while before acting on it
+
+You: Personality traits
+I love the process of creating new things. And if those things can help someone, even better. I like cooperating with people on projects leveraging my knowledge in many areas. [skill boxes link]
+
+$image: You: https://picsum.photos/500
