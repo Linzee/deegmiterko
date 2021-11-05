@@ -7,8 +7,6 @@ import "./conversation.scss";
 
 const Conversation = ({ messages }) => {
 
-  console.log(messages);
-
   if(!messages) {
     return;
   }

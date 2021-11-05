@@ -51,6 +51,13 @@ table {
 ** Globals
 */
 
+@import 'https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap';
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 1.2rem;
+}
+
 main {
   display: flex;
   flex-direction: column;

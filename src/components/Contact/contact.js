@@ -1,6 +1,8 @@
 import React from "react";
 import { OutboundLink } from "gatsby-plugin-google-analytics";
 
+import Bordered from "../Bordered";
+
 import "./contact.scss"
 
 const Contact = ({ siteMetadata }) => {
@@ -9,9 +11,14 @@ const Contact = ({ siteMetadata }) => {
       <div className="contact">
         <h2 id="contact">Contact</h2>
         <div className="contact-row">
-          <p>
-            Feel free to reach out to me at your preferred platform <i>🙂</i>. <small>You can start your very own conversation with me.</small>
-          </p>
+          <div className="last-words">
+            <Bordered>
+              <div className="message-container">
+                <div className="message"><i>You can start your very own conversation with me...</i></div>
+                <div className="message">Feel free to reach out to me at your preferred platform 🙂</div>
+              </div>
+            </Bordered>
+          </div>
           <dl>
 
             <dt>Email</dt>
@@ -28,8 +35,6 @@ const Contact = ({ siteMetadata }) => {
 
             <dt>Twitter</dt>
             <dd><OutboundLink href="https://twitter.com/dee.gmiterko">@dee.gmiterko</OutboundLink></dd>
-
-            <dd>© {new Date().getFullYear()} {siteMetadata.author}</dd>
 
           </dl>
         </div>

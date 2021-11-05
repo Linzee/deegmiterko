@@ -111,3 +111,22 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    .profile {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      bottom: 3rem;
+      left: 3rem;
+      padding-top: 0;
+      width: auto;
+      opacity: 0.4;
+      overflow: hidden;
+    }
+    .basic-info {
+      margin-left: 0;
+    }
+  }
+}
