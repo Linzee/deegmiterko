@@ -6,7 +6,7 @@ import { Container } from "../Bordered";
 
 import "./linktree.scss"
 
-const Linktree = ({ links, siteMetadata, profileImg }) => {
+const Linktree = ({ categoriesLinks, siteMetadata, profileImg }) => {
   return (
     <div className="linktree">
       <div className="profile">
@@ -15,8 +15,13 @@ const Linktree = ({ links, siteMetadata, profileImg }) => {
       </div>
       <Container>
         <div className="container">
-          {links.map((item, index) => (
-            <Item key={index} link={item.link} title={item.title} icon={item.icon} />
+          {categoriesLinks.map((category, i_1) => (
+            <div key={i_1}>
+              <h3>{category.name}</h3>
+              {category.links.map((item, index) => (
+                <Item key={index} link={item.link} title={item.title} icon={item.icon} />
+              ))}
+            </div>
           ))}
         </div>
       </Container>

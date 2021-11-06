@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faUser, faAddressCard, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 import SEO from "../components/SEO";
 import Linktree from "../components/Linktree"
@@ -9,26 +9,81 @@ import Linktree from "../components/Linktree"
 import "./main.scss"
 
 const TreePage = ({ data, pageContext }) => {
-  const links = [
+  const categoriesLinks = [
     {
-      title: 'About',
-      icon: faUser,
-      link: '/',
+      name: "Website",
+      links: [
+        {
+          title: 'About',
+          icon: faUser,
+          link: '/',
+        },
+        {
+          title: 'Contact',
+          icon: faAddressCard,
+          link: '/#contact',
+        },
+      ]
     },
     {
-      title: 'Contact',
-      icon: faAddressCard,
-      link: '/#contact',
+      name: "Get updates",
+      links: [
+        {
+          title: 'Instagram',
+          icon: faInstagram,
+          link: 'https://instagram.com/dee.gmiterko',
+        },
+        {
+          title: 'Twitter',
+          icon: faTwitter,
+          link: 'https://twitter.com/dee.gmiterko',
+        },
+        {
+          title: 'TikTok',
+          icon: faTiktok,
+          link: 'https://tiktok.com/@dee.gmiterko',
+        },
+      ]
     },
     {
-      title: 'Instagram',
-      icon: faInstagram,
-      link: 'https://instagram.com/dee.gmiterko',
+      name: "Content",
+      links: [
+        {
+          title: "Youtube",
+          icon: faYoutube,
+          link: 'https://www.youtube.com/channel/UCdwV05iipo9wIP_P2qpTWRw',
+        },
+        {
+          title: 'LinkedIn',
+          icon: faLinkedin,
+          link: 'https://www.linkedin.com/in/dominik-gmiterko',
+        },
+        {
+          title: 'Facebook',
+          icon: faFacebook,
+          link: 'https://www.facebook.com/dee.gmiterko'
+        },
+        {
+          title: 'Github',
+          icon: faGithub,
+          link: 'https://github.com/Linzee',
+        },
+      ]
     },
     {
-      title: 'Twitter',
-      icon: faTwitter,
-      link: 'https://twitter.com/dee.gmiterko',
+      name: "Support",
+      links: [
+        {
+          title: 'Patreon',
+          icon: faPatreon,
+          link: 'https://patreon.com/dee_gmiterko',
+        },
+        {
+          title: 'Onlyfans',
+          icon: faLock,
+          link: 'https://onlyfans.com/dee.gmiterko',
+        }
+      ]
     }
   ]
 
@@ -41,7 +96,7 @@ const TreePage = ({ data, pageContext }) => {
       />
 
       <main>
-        <Linktree links={links} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
+        <Linktree categoriesLinks={categoriesLinks} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
       </main>
 
     </div>

@@ -24,5 +24,6 @@
 
   .border-vertical {
     width: 3px;
+    flex-shrink: 0;
   }
 }
