@@ -71,8 +71,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
-        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        trackingId: "G-M9GYEZ2DVM",
         enableWebVitalsTracking: true,
       },
     },
