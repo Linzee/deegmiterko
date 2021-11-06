@@ -82,14 +82,30 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        serialize: ({ site, allSitePage }) => {
-          return allSitePage.edges.map(edge => {
-            return {
-              url: `${site.siteMetadata.siteUrl}${edge.node.path}`,
-              changefreq: `monthly`,
-              priority: 0.5,
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
             }
-          })
+          }
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+        }
+        `,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          return allPages
+        },
+        resolveSiteUrl: ({site}) => site.siteMetadata.siteUrl,
+        serialize: ({ path }) => {
+          return {
+            url: path,
+          }
         },
       }
     }

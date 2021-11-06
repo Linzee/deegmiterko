@@ -34,7 +34,7 @@ const Contact = ({ siteMetadata }) => {
             <dd><OutboundLink href="#">Ienze#1672 at this discord server</OutboundLink></dd>
 
             <dt>Twitter</dt>
-            <dd><OutboundLink href="https://twitter.com/dee.gmiterko">@dee.gmiterko</OutboundLink></dd>
+            <dd><OutboundLink href="https://twitter.com/dee_gmiterko">@dee_gmiterko</OutboundLink></dd>
 
           </dl>
         </div>
