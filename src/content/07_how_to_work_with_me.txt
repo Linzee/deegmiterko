@@ -29,5 +29,3 @@ inform me about new facts and issues as soon as they emerge and have a regular m
 
 You: Personality traits
 I love the process of creating new things. And if those things can help someone, even better. I like cooperating with people on projects leveraging my knowledge in many areas. [skill boxes link]
-
-$image: You: https://picsum.photos/500

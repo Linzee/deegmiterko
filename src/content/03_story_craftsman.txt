@@ -1,12 +1,27 @@
 $title: Era of the "craftsman"
 The first one encompasses my childhood.
 
+# Why
+
+As I already mentioned there wasn't much to do in my home town. So I had to entertain myself. And I did it be crafting and creating stuff.
+You: What did you create?
+At first
+ we sister board games, theatre performances
+I remember building stupidly complex buildings and entire towns out of toys and Lego. For example this bridge out of cards.
+$imageAlt: Me: https://gatsby-image/content/bridge_of_cards.jpg: Me with a bridge of cards
 
 
+# What
 
-This was time when I learned how to make stuff.
-You: really?
+It was a time when I learned how to make stuff.
 
+Then was when I realized I can make Anything 🙌 using computer if I spend enough time on it
+extremely powerful tool
 
-I made a ton of personal projects back then. Some of them are listed on my website from that time:
+I would just think up something awesome (at that time) and attempt to create it.
+This would include art, games, websites, tools, mods and levels for existing games, just about anything.
+
+You can browse some of my "personal projects" on a website from back then:
 $website: https://ienze.me/: Ienze - Coder, Artist, Me: http://ienze.me/static/media/me.bd4d9d7e.png
+
+# How
