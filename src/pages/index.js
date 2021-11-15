@@ -8,6 +8,12 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 const IndexPage = ({ data, pageContext }) => {
+
+  const contentImages = {};
+  data.contentImages.edges.forEach(({node: {childImageSharp: {gatsbyImageData: imageData}, relativePath}}) => {
+    contentImages[relativePath] = imageData;
+  });
+
   return (
     <div className="page-about">
       <SEO
@@ -19,7 +25,7 @@ const IndexPage = ({ data, pageContext }) => {
       <main id="about">
         {data.content.edges.map((section, i_1) => (
           section.node.childChatParsed.conversations.map((conversation, i_2) => (
-            <Conversation key={i_1+":"+i_2} messages={conversation.messages} />
+            <Conversation key={i_1+":"+i_2} messages={conversation.messages} contentImages={contentImages} />
           ))
         ))}
       </main>
@@ -63,10 +69,23 @@ export const pageQuery = graphql`
                 media {
                   type
                   url
+                  alt
                 }
               }
             }
           }
+        }
+      }
+    }
+    contentImages: allFile(
+      filter: {sourceInstanceName: {eq: "images"}, relativePath: {glob: "content/*"}}
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            gatsbyImageData
+          }
+          relativePath
         }
       }
     }

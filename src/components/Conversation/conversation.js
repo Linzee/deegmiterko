@@ -5,7 +5,7 @@ import Message from "./Message";
 
 import "./conversation.scss";
 
-const Conversation = ({ messages }) => {
+const Conversation = ({ messages, contentImages }) => {
 
   if(!messages) {
     return;
@@ -17,16 +17,29 @@ const Conversation = ({ messages }) => {
   let sequences = [];
   let currentSequence = [];
 
-  const endSequence = (mine) => {
-    sequences.push(
-      <div key={si} className={mine ? "sequence mine" : "sequence"}>
-        <Bordered>
+  const endSequence = (titleSequence, mine) => {
+    if(!currentSequence.length) {
+      return;
+    }
+    if (titleSequence) {
+      sequences.push(
+        <div key={si} className="sequence title">
           <div className="sequence-messages">
             {currentSequence}
           </div>
-        </Bordered>
-      </div>
-    );
+        </div>
+      );
+    } else {
+      sequences.push(
+        <div key={si} className={mine ? "sequence mine" : "sequence"}>
+          <Bordered>
+            <div className="sequence-messages">
+              {currentSequence}
+            </div>
+          </Bordered>
+        </div>
+      );
+    }
     si += 1;
     currentSequence = [];
   };
@@ -37,18 +50,26 @@ const Conversation = ({ messages }) => {
 
     if (previous) {
       if (previous.author !== current.author) {
-        endSequence(previous.author === "Me");
+        endSequence(false, previous.author === "Me");
       }
     }
 
+    if (current.title) {
+      endSequence(false, previous && previous.author === "Me");
+    }
+
     currentSequence.push(
-      <Message key={i} data={current} />
+      <Message key={i} data={current} contentImages={contentImages} />
     );
+
+    if (current.title) {
+      endSequence(true, undefined);
+    }
 
     i += 1;
   }
 
-  endSequence(messages[messageCount-1].author === "Me");
+  endSequence(false, messages[messageCount-1].author === "Me");
 
   return (
     <div className="conversation">

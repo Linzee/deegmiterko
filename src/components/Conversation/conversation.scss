@@ -22,6 +22,16 @@
       }
     }
 
+    &.title {
+      margin-right: 0;
+      .sequence-messages {
+        flex-grow: 1;
+        .message-container {
+          width: 100%;
+        }
+      }
+    }
+
     .sequence-messages {
       display: flex;
       flex-direction: column;

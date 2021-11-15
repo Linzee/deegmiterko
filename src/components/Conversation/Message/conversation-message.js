@@ -1,15 +1,23 @@
 import React from "react";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import "./conversation-message.scss";
 
-const Message = ({ data }) => {
+const Message = ({ data, contentImages }) => {
 
   let media = null;
   if ('media' in data && data.media) {
     if (data.media.type === 'image') {
-      media = (
-        <img src={data.media.url} />
-      );
+      if (data.media.url.startsWith('https://gatsby-image/')) {
+        const imagePath = data.media.url.substr('https://gatsby-image/'.length);
+        media = (
+          <GatsbyImage image={contentImages[imagePath]} alt={data.media.alt} />
+        );
+      } else {
+        media = (
+          <img src={data.media.url} />
+        );
+      }
     } else if (data.media.type === 'audio') {
       media = (
         <audio controls={true} autoplay={true}>

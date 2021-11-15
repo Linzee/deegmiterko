@@ -17,18 +17,22 @@ const parse = (users, script) => {
         "date" sep commandDate |
         "reply" sep commandReply |
         "image" sep commandImage |
+        "imageAlt" sep commandImageAlt |
         "audio" sep commandAudio |
         "video" sep commandVideo |
-        "panorama" sep commandPanorama
+        "panorama" sep commandPanorama |
+        "website" sep commandWebsite
       )
       commandTitle = text
       commandChat = name
       commandDate = text
       commandReply = param sep &name param sep param comment?
       commandImage = &name param sep &url param
+      commandImageAlt = &name param sep &url param sep param
       commandAudio = &name param sep &url param
       commandVideo = &name param sep &url param
       commandPanorama = &name param sep &url param
+      commandWebsite = &url param sep param sep &url param
       name = "Me" | "You" | "Lenka" | "Jakub"
       text = char+
       param = charParam+
@@ -81,7 +85,7 @@ const parse = (users, script) => {
     },
     pause(_) {
       return {
-        title: '...'
+        title: '· · ·'
       }
     },
     commandTitle(text) {
@@ -109,16 +113,26 @@ const parse = (users, script) => {
     },
     commandImage(_author, author, _s1, _url, url) {
       return {
-        author: author,
+        author: author.value(),
         media: {
           type: 'image',
           url: url.value(),
         }
       };
     },
+    commandImageAlt(_author, author, _s1, _url, url, _s2, alt) {
+      return {
+        author: author.value(),
+        media: {
+          type: 'image',
+          url: url.value(),
+          alt: alt.value(),
+        }
+      };
+    },
     commandAudio(_author, author, _s1, _url, url) {
       return {
-        author: author,
+        author: author.value(),
         media: {
           type: 'audio',
           url: url.value(),
@@ -127,7 +141,7 @@ const parse = (users, script) => {
     },
     commandVideo(_author, author, _s1, _url, url) {
       return {
-        author: author,
+        author: author.value(),
         media: {
           type: 'video',
           url: url.value(),
@@ -136,12 +150,21 @@ const parse = (users, script) => {
     },
     commandPanorama(_author, author, _s1, _url, url) {
       return {
-        author: author,
+        author: author.value(),
         media: {
           type: 'panorama',
           url: url.value(),
         }
       };
+    },
+    commandWebsite(_url, url, _s1, title, _s2, _imageUrl, imageUrl) {
+      return {
+        website: {
+          url: url.value(),
+          title: title.value(),
+          imageUrl: imageUrl.value(),
+        }
+      }
     },
     name(_) {
       return this.sourceString;
@@ -165,9 +188,7 @@ const parse = (users, script) => {
   if(match.succeeded()) {
     parsed = scriptSemantics(match).value();
   } else {
-    parsed = {
-      error: match.message
-    }
+    throw new Error(match.message);
   }
 
   const conversations = users.map(user => {

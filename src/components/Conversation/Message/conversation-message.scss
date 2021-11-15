@@ -3,4 +3,15 @@
     padding: 0.5rem;
     font-size: 1.2rem;
   }
+  .title {
+    text-align: center;
+    padding: 1rem;
+    color: #aaa;
+    font-size: 1.5rem;
+  }
+  .media {
+    .gatsby-image-wrapper {
+      max-width: 30vw;
+    }
+  }
 }
