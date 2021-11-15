@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { faUser, faAddressCard, faLock } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faUser, faAddressCard, faLock, faShip } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube, faSteam } from '@fortawesome/free-brands-svg-icons';
 
 import SEO from "../components/SEO";
 import Linktree from "../components/Linktree"
@@ -82,6 +82,21 @@ const TreePage = ({ data, pageContext }) => {
           title: 'Onlyfans',
           icon: faLock,
           link: 'https://onlyfans.com/dee.gmiterko',
+        }
+      ]
+    },
+    {
+      name: "Meet",
+      links: [
+        {
+          title: 'sourceInstanceName',
+          icon: faSteam,
+          link: 'https://steamcommunity.com/profiles/76561198065797528',
+        },
+        {
+          title: 'OpenSea',
+          icon: faShip,
+          link: 'https://opensea.io/dee_gmiterko',
         }
       ]
     }
