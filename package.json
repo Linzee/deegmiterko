@@ -16,7 +16,7 @@
     "dotenv": "^10.0.0",
     "gatsby": "^4.1.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-facebook-pixel": "^1.0.8",
+    "gatsby-plugin-facebook-multi-pixels": "^1.1.2",
     "gatsby-plugin-gatsby-cloud": "^4.1.0",
     "gatsby-plugin-google-gtag": "^4.1.0",
     "gatsby-plugin-image": "^2.1.0",

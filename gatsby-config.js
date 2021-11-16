@@ -62,10 +62,16 @@ module.exports = {
     },
     `gatsby-plugin-gatsby-cloud`,
     {
-      resolve: `gatsby-plugin-facebook-pixel`,
-      options: {
-        pixelId: "928689911405331",
-      },
+      resolve: `gatsby-plugin-facebook-multi-pixels`,
+      options: [
+        {
+          dev: false,
+          alias: 'main-pixel',
+          pixelId: '928689911405331',
+          viewContent: false,
+          pageView: true,
+        },
+      ],
     },
     {
       resolve: `gatsby-plugin-google-gtag`,

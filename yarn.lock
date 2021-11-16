@@ -5342,10 +5342,10 @@ gatsby-plugin-anchor-links@^1.2.1:
   dependencies:
     scroll-to-element "^2.0.3"
 
-gatsby-plugin-facebook-pixel@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-pixel/-/gatsby-plugin-facebook-pixel-1.0.8.tgz#8f5aa6816ddf1cf451c372464fa3f873d7dae288"
-  integrity sha512-oJfTMJxAv5AF2sganhtaq3+6GZ2W2s6/RjQxVsRUxUWMxhrtW6YeMsayAh1bVPgVQ8boJ0QyftipXe7fyq4BCA==
+gatsby-plugin-facebook-multi-pixels@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-multi-pixels/-/gatsby-plugin-facebook-multi-pixels-1.1.2.tgz#72fe945e0529773a38c54a367572cc616e1aab53"
+  integrity sha512-ELaao9AKNP8b2PimXaeLHC/vP7n/ug0hMTAlFw1isg0bNDb3SHG0XoN6cV9bXvaRIjVTYq45CeLUbX5v7aJ28A==
 
 gatsby-plugin-gatsby-cloud@^4.1.0:
   version "4.1.0"
