@@ -3,15 +3,45 @@
     padding: 0.5rem;
     font-size: 1.2rem;
   }
+
   .title {
     text-align: center;
     padding: 1rem;
     color: #aaa;
     font-size: 1.5rem;
   }
+
   .media {
     .gatsby-image-wrapper {
       max-width: 30vw;
+    }
+  }
+
+  .website {
+    max-width: 50vw;
+
+    a {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 450px;
+        height: 220px;
+        max-width: 100%;
+        margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+      }
+
+      p.website-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p.website-url {
+        font-size: 1rem;
+        color: #aaa;
+      }
     }
   }
 }

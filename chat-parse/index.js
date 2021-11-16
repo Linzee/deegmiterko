@@ -32,7 +32,7 @@ const parse = (users, script) => {
       commandAudio = &name param sep &url param
       commandVideo = &name param sep &url param
       commandPanorama = &name param sep &url param
-      commandWebsite = &url param sep param sep &url param
+      commandWebsite = &name param sep &url param sep param sep &url param
       name = "Me" | "You" | "Lenka" | "Jakub"
       text = char+
       param = charParam+
@@ -157,8 +157,9 @@ const parse = (users, script) => {
         }
       };
     },
-    commandWebsite(_url, url, _s1, title, _s2, _imageUrl, imageUrl) {
+    commandWebsite(_author, author, _s1, _url, url, _s2, title, _s3, _imageUrl, imageUrl) {
       return {
+        author: author.value(),
         website: {
           url: url.value(),
           title: title.value(),

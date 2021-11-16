@@ -71,6 +71,11 @@ export const pageQuery = graphql`
                   url
                   alt
                 }
+                website {
+                  url
+                  title
+                  imageUrl
+                }
               }
             }
           }

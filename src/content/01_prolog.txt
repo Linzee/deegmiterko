@@ -5,10 +5,10 @@ You: Likewise. I have several questions for you I would love to ask.
 
 $title: Questions
 
-1. quick life story
-2. dreams and desires
-3. good and bad qualities
-  (how to work with me)
-4. hobbies you never want to give up
+You: 1. quick life story
+You: 2. dreams and desires
+You: 3. good and bad qualities
+You:   (how to work with you)
+You: 4. hobbies you never want to give up
 
 You: Don't panic. We will go over them one by one 😃

@@ -1,5 +1,6 @@
+$title: Life story so far
 You: So. Can you tell me a little bit about yours life story?
-Dominik Gmiterko, born and raised in a small town, Slovakia, Central Europe.
+My name is Dominik Gmiterko, born and raised in a small town, Slovakia, Central Europe.
 Only when I left it, moved abroad, and started attending university I realized just how tiny the town is and how many options there are elsewhere.
 You:
 You could say, that common theme of my life so far was searching for options. I enjoy the feeling when I am facing many possibilities.

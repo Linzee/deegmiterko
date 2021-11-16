@@ -22,6 +22,6 @@ I would just think up something awesome (at that time) and attempt to create it.
 This would include art, games, websites, tools, mods and levels for existing games, just about anything.
 
 You can browse some of my "personal projects" on a website from back then:
-$website: https://ienze.me/: Ienze - Coder, Artist, Me: http://ienze.me/static/media/me.bd4d9d7e.png
+$website: Me: https://ienze.me/: Ienze - Coder, Artist, Me: http://ienze.me/static/media/me.bd4d9d7e.png
 
 # How

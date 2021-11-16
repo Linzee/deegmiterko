@@ -55,6 +55,18 @@ const Message = ({ data, contentImages }) => {
           {data.message}
         </div>
       }
+      {
+        data.website &&
+        <div className="website">
+          <a href={data.website.url}>
+            <p>
+              <img src={data.website.imageUrl} alt={data.website.title} />
+            </p>
+            <p className="website-title">{data.website.title}</p>
+            <p className="website-url">{data.website.url}</p>
+          </a>
+        </div>
+      }
     </div>
   );
 }

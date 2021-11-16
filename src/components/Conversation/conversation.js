@@ -49,7 +49,7 @@ const Conversation = ({ messages, contentImages }) => {
     let current = messages[i];
 
     if (previous) {
-      if (previous.author !== current.author) {
+      if (previous.author !== current.author || current.website) {
         endSequence(false, previous.author === "Me");
       }
     }
@@ -64,6 +64,9 @@ const Conversation = ({ messages, contentImages }) => {
 
     if (current.title) {
       endSequence(true, undefined);
+    }
+    if (current.website) {
+      endSequence(false, previous && previous.author === "Me");
     }
 
     i += 1;

@@ -68,7 +68,7 @@ module.exports = {
           dev: false,
           alias: 'main-pixel',
           pixelId: '928689911405331',
-          viewContent: false,
+          viewContent: true,
           pageView: true,
         },
       ],
