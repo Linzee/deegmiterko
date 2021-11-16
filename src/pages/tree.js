@@ -89,7 +89,7 @@ const TreePage = ({ data, pageContext }) => {
       name: "Meet",
       links: [
         {
-          title: 'sourceInstanceName',
+          title: 'Steam',
           icon: faSteam,
           link: 'https://steamcommunity.com/profiles/76561198065797528',
         },
