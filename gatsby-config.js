@@ -7,12 +7,11 @@ if (process.env.ENVIRONMENT !== "production") {
 
 module.exports = {
   siteMetadata: {
-    title: `Dee Gmiterko`,
-    description: `Personal website`,
+    title: `Dee Gmiterko - Artist, Coder, Me`,
+    description: `Digital nomad exploring the world and creating stuff. Get to know me a and meet me along my way.`,
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
-    image: 'src/images/banner.jpeg',
-    keywords: ['Dominik', 'Gmiterko'],
+    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'Artist', 'Coder', 'Me', 'Digital', 'Nomad'],
     tagline: "Coder | Artist | Me",
   },
   plugins: [
@@ -55,8 +54,8 @@ module.exports = {
         name: `Dee Gmiterko`,
         short_name: `Dee Gmiterko`,
         start_url: `/`,
-        background_color: `#9e8161`,
-        theme_color: `#bb5175`,
+        background_color: `#38174A`,
+        theme_color: `#E0C65D`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },

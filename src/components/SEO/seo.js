@@ -2,11 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
+import siteImage from '../../images/og-banner.jpg';
+
 const SEO = ({ title, siteMetadata, canGoDark }) => {
 
   const siteName = siteMetadata.title;
   const siteDescription = siteMetadata.description;
-  const siteImage = siteMetadata.image;
   const keywords = siteMetadata.keywords;
 
   return (
@@ -14,7 +15,7 @@ const SEO = ({ title, siteMetadata, canGoDark }) => {
       title={title ? `${title} | ${siteName}` : siteName}
       meta={[
         {
-          nsame: `description`,
+          name: `description`,
           content: siteDescription
         },
         {
@@ -55,7 +56,7 @@ const SEO = ({ title, siteMetadata, canGoDark }) => {
         }
       ]}
     >
-      <body className={canGoDark ? "can-go-dark" : undefined} />
+      <body lang="en" className={canGoDark ? "can-go-dark" : undefined} />
     </Helmet>
   );
 }

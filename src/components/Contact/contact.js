@@ -21,6 +21,8 @@ const Contact = ({ siteMetadata }) => {
           </div>
           <dl>
 
+            <dd>Dominik Gmiterko</dd>
+
             <dt>Email</dt>
             <dd><OutboundLink href="mailto:me@deegmiterko.com">me@deegmiterko.com</OutboundLink></dd>
 
