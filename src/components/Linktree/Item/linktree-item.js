@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Bordered from "../../Bordered";

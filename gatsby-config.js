@@ -69,10 +69,11 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "G-M9GYEZ2DVM",
-        enableWebVitalsTracking: true,
+        trackingIds: [
+          "G-M9GYEZ2DVM",
+        ],
       },
     },
     `gatsby-plugin-offline`,
