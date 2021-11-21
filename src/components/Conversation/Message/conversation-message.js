@@ -60,7 +60,13 @@ const Message = ({ data, contentImages }) => {
         <div className="website">
           <a href={data.website.url}>
             <p>
-              <img src={data.website.imageUrl} alt={data.website.title} />
+              {
+                (data.website.imageUrl.startsWith('https://gatsby-image/')) ? (
+                  <GatsbyImage image={contentImages[data.website.imageUrl.substr('https://gatsby-image/'.length)]} alt={data.website.alt} />
+                ) : (
+                  <img src={data.website.imageUrl} alt={data.website.title} />
+                )
+              }
             </p>
             <p className="website-title">{data.website.title}</p>
             <p className="website-url">{data.website.url}</p>

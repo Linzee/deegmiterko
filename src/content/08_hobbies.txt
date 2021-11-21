@@ -1,5 +1,8 @@
+$title Hobbies
 unwind
+
+- photography and self photoshoot
+- drawing
 - explore the world we live in
 Visit back alleys instead of tourist hotspots.
-
-- photoshoot
+- experiencing other nations

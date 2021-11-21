@@ -10,7 +10,6 @@ At first
 I remember building stupidly complex buildings and entire towns out of toys and Lego. For example this bridge out of cards.
 $imageAlt: Me: https://gatsby-image/content/bridge_of_cards.jpg: Me with a bridge of cards
 
-
 # What
 
 It was a time when I learned how to make stuff.
@@ -21,7 +20,7 @@ extremely powerful tool
 I would just think up something awesome (at that time) and attempt to create it.
 This would include art, games, websites, tools, mods and levels for existing games, just about anything.
 
-You can browse some of my "personal projects" on a website from back then:
-$website: Me: https://ienze.me/: Ienze - Coder, Artist, Me: http://ienze.me/static/media/me.bd4d9d7e.png
-
 # How
+
+You can browse some of my "personal projects" on a website from back then:
+$website: Me: https://ienze.me/: Ienze - Coder, Artist, Me: https://gatsby-image/content/ienze_me.jpg
