@@ -7,31 +7,19 @@
   .sequence {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    align-self: flex-start;
     padding-bottom: 1rem;
-    margin-right: 25rem;
-    margin-left: 0;
+    max-width: 50%;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
 
     &.mine {
-      justify-content: flex-end;
-      margin-right: 0;
-      margin-left: 25rem;
+      align-self: flex-end;
+      padding-right: 0;
+      padding-left: 0.5rem;
 
       .sequence-messages {
         align-items: flex-end;
-      }
-    }
-
-    &.title {
-      margin-right: 0;
-
-      .sequence-messages {
-        flex-grow: 1;
-        background: none;
-
-        .message-container {
-          width: 100%;
-        }
       }
     }
 
@@ -50,6 +38,9 @@
   .conversation {
     .sequence {
       margin-right: 5rem;
+      max-width: none;
+      padding-right: 0;
+      padding-left: 0;
 
       &.mine {
         margin-left: 5rem;

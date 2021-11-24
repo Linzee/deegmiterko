@@ -23,7 +23,7 @@ const Conversation = ({ messages, contentImages }) => {
     }
     if (titleSequence) {
       sequences.push(
-        <div key={si} className="sequence title">
+        <div key={si} className="title-sequence">
           <div className="sequence-messages">
             {currentSequence}
           </div>

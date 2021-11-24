@@ -2,7 +2,6 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 import Item from "./Item";
-import { Container } from "../Bordered";
 
 import "./linktree.scss"
 
@@ -13,18 +12,16 @@ const Linktree = ({ categoriesLinks, siteMetadata, profileImg }) => {
         <GatsbyImage image={profileImg} alt={siteMetadata.author} />
         <span>{siteMetadata.title}</span>
       </div>
-      <Container>
-        <div className="container">
-          {categoriesLinks.map((category, i_1) => (
-            <div key={i_1}>
-              <h3>{category.name}</h3>
-              {category.links.map((item, index) => (
-                <Item key={index} link={item.link} title={item.title} icon={item.icon} />
-              ))}
-            </div>
-          ))}
-        </div>
-      </Container>
+      <div className="container">
+        {categoriesLinks.map((category, i_1) => (
+          <div key={i_1}>
+            <h3>{category.name}</h3>
+            {category.links.map((item, index) => (
+              <Item key={index} link={item.link} title={item.title} icon={item.icon} />
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
