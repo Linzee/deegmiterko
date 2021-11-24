@@ -1,10 +1,20 @@
 $title: Era of the "architect"
-And I think I have recently arrived at a next era. But only time will tell.
+This brings me to the last and current era of my life where I think I have recently arrived. But only time will tell.
 I started to do things to scale my actions.
 
+For example
+senior data engineer
+
+- delegating tasks to others.
+For example by using freelancer sites like Fiverr to pass tedious tasks to others.
+  [TODO?] story
+
+- explaining things to others
+..its always better to spend few days teaching others at your team how to do stuff instead of trying to do everything yourself
+
+- tech lead
+  make architecture decisions for the project, create and prioritize tasks
+
 - investing
-
-- team lead
-
-- delegating tasks to others. For example by using freelancer sites like Fiverr to pass tedious tasks to others.
-[TODO] story
+  - profit from my knowledge
+- support projects and causes I believe in but cannot work on them myself
