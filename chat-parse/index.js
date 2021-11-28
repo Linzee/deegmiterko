@@ -26,7 +26,8 @@ const parse = (users, script) => {
         "audio" sep commandAudio |
         "video" sep commandVideo |
         "panorama" sep commandPanorama |
-        "website" sep commandWebsite
+        "website" sep commandWebsite |
+        "anchor" sep commandAnchor
       )
       commandTitle = text
       commandChat = name
@@ -38,6 +39,7 @@ const parse = (users, script) => {
       commandVideo = &name param sep &url param
       commandPanorama = &name param sep &url param
       commandWebsite = &name param sep &url param sep param sep &url param
+      commandAnchor = &name param sep param sep param
       name = "Me" | "You" | "Lenka" | "Jakub"
       text = char+
       param = charParam+
@@ -170,6 +172,13 @@ const parse = (users, script) => {
           title: title.value(),
           imageUrl: imageUrl.value(),
         }
+      }
+    },
+    commandAnchor(_author, author, _s1, anchor, _s2, text) {
+      return {
+        author: author.value(),
+        anchor: anchor.value(),
+        message: text.value(),
       }
     },
     name(_) {

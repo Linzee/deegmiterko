@@ -10,7 +10,7 @@ const Conversation = ({ messages, contentImages }) => {
   if(!messages) {
     return;
   }
-
+  
   let i = 0;
   let si = 0;
   let messageCount = messages.length;

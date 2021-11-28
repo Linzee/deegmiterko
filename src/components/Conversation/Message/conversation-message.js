@@ -1,5 +1,7 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import slugify from 'slugify';
 
 import "./conversation-message.scss";
 
@@ -39,7 +41,7 @@ const Message = ({ data, contentImages }) => {
     <div className="message-container">
       {
         data.title &&
-        <div className="title">
+        <div className="title" id={slugify(data.title)}>
           {data.title}
         </div>
       }
@@ -50,24 +52,29 @@ const Message = ({ data, contentImages }) => {
         </div>
       }
       {
-        data.message &&
-        <div className="message">
-          {data.message}
-        </div>
+        data.message && (
+          data.anchor ? (
+            <div className="message">
+              <AnchorLink to={data.anchor} title={data.message} />
+            </div>
+          ) : (
+            <div className="message">
+              {data.message}
+            </div>
+          )
+        )
       }
       {
         data.website &&
         <div className="website">
           <a href={data.website.url}>
-            <p>
-              {
-                (data.website.imageUrl.startsWith('https://gatsby-image/')) ? (
-                  <GatsbyImage image={contentImages[data.website.imageUrl.substr('https://gatsby-image/'.length)]} alt={data.website.alt} />
-                ) : (
-                  <img src={data.website.imageUrl} alt={data.website.title} />
-                )
-              }
-            </p>
+            {
+              (data.website.imageUrl.startsWith('https://gatsby-image/')) ? (
+                <GatsbyImage image={contentImages[data.website.imageUrl.substr('https://gatsby-image/'.length)]} alt={data.website.title} />
+              ) : (
+                <img src={data.website.imageUrl} alt={data.website.title} />
+              )
+            }
             <p className="website-title">{data.website.title}</p>
             <p className="website-url">{data.website.url}</p>
           </a>
