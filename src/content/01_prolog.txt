@@ -1,7 +1,7 @@
 You: Hi 👋
 Hi!
-It's nice to finally talk to you.
-You: Likewise. I have several questions for you I would love to ask.
+It's nice finally speaking to you.
+You: Likewise. I have several questions for you.
 
 $title: Questions
 

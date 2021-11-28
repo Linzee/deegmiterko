@@ -1,30 +1,18 @@
-$title: Era of the "engineer"
-
-# Why
-
-Then I was offered my [first and second jobs, enrolled to university](https://www.linkedin.com/in/dominik-gmiterko/), and joined some societies.
-So I started working with/for other people and my goals changed.
-
-# What
+$title: The era of the "engineer"
+The next era on my list commenced when I was offered my first and second jobs, enrolled in a university, and joined some societies. I started working with/for other people, so my goals changed significantly.
+---
 Only then did I learn how to get things done.
 You: What's the difference between creating and getting things done?
 A big difference 😃
-When you are just creating things you rarely finish them. You can always tweak or rework projects never truly getting them done.
-You: 😉 yes, I definitely did stuff where I felt it's never good enough to publish.
-Exactly. So in this era of my life I mostly learned to cut corners, not work on things that don't make a difference in the end, and to fail fast.
-You: That's a good thing because a finished task is better that a one that is perfect but unfinished.
-
-# How
-
-For me this was very much a time to learn how to work with others
-You: really?
-
-This was first time I worked in team. So I had to rely on others, share knowledge, and ask for help.
-
-- competitions (for example online team logic/puzzle/programming competition https://interlos.fi.muni.cz/)
-
-- local festivals and conventions
-Its a funny feeling when experience of many people depends on you. A lot of people never experience this and I think that its a shame. They could put their everyday problems into perspective if their mistake affected day of hundreds of people.
-[TODO] story
-
-- and, you know, finishing projects instead of working at them 😅
+When you are just creating, you rarely finish the thing because you can always find something to tweak on a project and never truly complete it.
+You: 😉 Yes, I know the feeling when it's still not good enough to publish and conclude.
+Exactly. So in this era of my life, I learned to cut corners, not work on things that don't make a difference in the end, and to fail fast.
+You: That's a good thing because a finished task is always better than perfect but unfinished.
+---
+You: What projects did you work on during this era?
+Because I worked as a developer, a part of a team, I am unsure whether I can disclose any specific projects. But I had to learn to rely on others, share knowledge, and ask for help. So that was a great experience.
+You: What did you do outside the work?
+Besides the work and my student responsibilities, I spent my time on large team efforts -- competitions, conventions, and festivals, to name a few.
+It's a funny feeling when the satisfaction of many people depends on you. Many people have never experienced this and I think that it's a shame. 😀
+You: Why?
+Working on a large project you realize that things never go according to plan and you have to improvise and put out fires.

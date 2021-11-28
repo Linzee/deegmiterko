@@ -1,6 +1,11 @@
 const Ohm = require('ohm-js');
 const moment = require('moment');
 
+const without_dot = (str) => {
+  // remove trailing dot
+  return str.replace(/\.$/, "");
+}
+
 const parse = (users, script) => {
 
   const scriptGrammar = Ohm.grammar(`
@@ -63,14 +68,14 @@ const parse = (users, script) => {
     message(author, _, text, comment) {
       return {
         author: author.value(),
-        message: text.value(),
+        message: without_dot(text.value()),
         comment: comment ? comment.value()[0] : undefined,
       };
     },
     myMessage(text, comment) {
       return {
         author: 'Me',
-        message: text.value(),
+        message: without_dot(text.value()),
         comment: comment ? comment.value()[0] : undefined,
       };
     },
@@ -106,8 +111,8 @@ const parse = (users, script) => {
     commandReply(original, _s1, _author, author, _s2, text, comment) {
       return {
         author: author.value(),
-        message: text.value(),
-        reply: original.value(),
+        message: without_dot(text.value()),
+        reply: without_dot(original.value()),
         comment: comment ? comment.value()[0] : undefined,
       };
     },

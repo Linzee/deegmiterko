@@ -1,26 +1,18 @@
-$title: Era of the "craftsman"
+$title: The era of the "craftsman"
 The first one encompasses my childhood.
-
-# Why
-
-As I already mentioned there wasn't much to do in my home town. So I had to entertain myself. And I did it be crafting and creating stuff.
+As I already mentioned, there wasn't much to do in my hometown. So I had to entertain myself. Which I did- by crafting and creating stuff.
 You: What did you create?
-At first
- we sister board games, theatre performances
-I remember building stupidly complex buildings and entire towns out of toys and Lego. For example this bridge out of cards.
+I was a kid at that point. So sister and I built towns, made up board games, performed theatre performances,... just about anything.
+I remember building stupidly complex buildings and entire towns out of toys and Lego. For example, this bridge of cards.
 $imageAlt: Me: https://gatsby-image/content/bridge_of_cards.jpg: Me with a bridge of cards
-
-# What
-
-It was a time when I learned how to make stuff.
-
-Then was when I realized I can make Anything 🙌 using computer if I spend enough time on it
-extremely powerful tool
-
-I would just think up something awesome (at that time) and attempt to create it.
-This would include art, games, websites, tools, mods and levels for existing games, just about anything.
-
-# How
-
-You can browse some of my "personal projects" on a website from back then:
+---
+Very soon after getting access to a computer, I realized that you could make anything 🙌 on it if you spent enough time there.
+You: So you are well prepared for the virtual future 😁
+Yes, it is only getting more powerful, and since the emergence of the internet, opportunities only surged.
+---
+Anyway, I would think up something totally awesome (or so I thought at the time) and attempt to create it. Those included art, games, websites, tools, mods and levels for existing games.
+You: That sounds like a lot of stuff.
+Yes, it was. But this was a time when I learned how to work on stuff, fueled by passion.
+Are you able to show me some of those personal projects?
+You can browse them on a website from back then. But many of the projects remain unfinished.
 $website: Me: https://ienze.me/: Ienze - Coder, Artist, Me: https://gatsby-image/content/ienze_me.jpg

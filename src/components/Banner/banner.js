@@ -41,7 +41,7 @@ const Banner = ({ siteMetadata, bannerImg }) => {
                 Instagram
               </FontAwesomeIcon>
             </OutboundLink>
-            <OutboundLink href="https://twitter.com/dee.gmiterko">
+            <OutboundLink href="https://twitter.com/dee_gmiterko">
               <FontAwesomeIcon icon={faTwitter}>
                 Twitter
               </FontAwesomeIcon>
