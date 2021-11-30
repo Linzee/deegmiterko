@@ -1,19 +1,14 @@
 const Ohm = require('ohm-js');
 const moment = require('moment');
 
-const without_dot = (str) => {
-  // remove trailing dot
-  return str.replace(/\.$/, "");
-}
-
 const parse = (users, script) => {
 
   const scriptGrammar = Ohm.grammar(`
     Script {
       doc = (row | nl)*
       row = (command | message | myMedia | pause | myMessage) (nl | end)
-      message = name sep text comment?
-      myMessage = text comment?
+      message = name sep text
+      myMessage = text
       myMedia = url
       pause = "---" | "..."
       command = commandChar (
@@ -32,7 +27,7 @@ const parse = (users, script) => {
       commandTitle = text
       commandChat = name
       commandDate = text
-      commandReply = param sep &name param sep param comment?
+      commandReply = param sep &name param sep param
       commandImage = &name param sep &url param
       commandImageAlt = &name param sep &url param sep param
       commandAudio = &name param sep &url param
@@ -43,13 +38,11 @@ const parse = (users, script) => {
       name = "Me" | "You" | "Lenka" | "Jakub"
       text = char+
       param = charParam+
-      comment = commentChar char+
       url = ("http://" | "https://") char+
-      char = ~nl ~commentChar any
+      char = ~nl any
       charParam = ~sep ~nl any
       sep = ": "
       commandChar = "$"
-      commentChar = "//"
       nl = "\\r"? "\\n"
     }
   `);
@@ -67,18 +60,16 @@ const parse = (users, script) => {
     command(_$, _cmd, _sep, command) {
       return command.value();
     },
-    message(author, _, text, comment) {
+    message(author, _, text) {
       return {
         author: author.value(),
-        message: without_dot(text.value()),
-        comment: comment ? comment.value()[0] : undefined,
+        message: text.value(),
       };
     },
-    myMessage(text, comment) {
+    myMessage(text) {
       return {
         author: 'Me',
-        message: without_dot(text.value()),
-        comment: comment ? comment.value()[0] : undefined,
+        message: text.value(),
       };
     },
     myMedia(url) {
@@ -110,12 +101,11 @@ const parse = (users, script) => {
         title: moment(text.value()).format('LLLL')
       };
     },
-    commandReply(original, _s1, _author, author, _s2, text, comment) {
+    commandReply(original, _s1, _author, author, _s2, text) {
       return {
         author: author.value(),
-        message: without_dot(text.value()),
-        reply: without_dot(original.value()),
-        comment: comment ? comment.value()[0] : undefined,
+        message: text.value(),
+        reply: original.value(),
       };
     },
     commandImage(_author, author, _s1, _url, url) {
@@ -189,9 +179,6 @@ const parse = (users, script) => {
     },
     param(content) {
       return content.sourceString;
-    },
-    comment(_, content) {
-      return content.sourceString.trim();
     },
     url(_p, _) {
       return this.sourceString;
