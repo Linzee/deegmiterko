@@ -1,5 +1,5 @@
 $title: The era of the "engineer"
-The next era on my list commenced when I was offered my first and second jobs, enrolled in a university, and joined some societies. I started working with/for other people, so my goals changed significantly.
+The next era on my list commenced when I was offered my [first and second jobs, enrolled in a university](https://www.linkedin.com/in/dominik-gmiterko), and joined some societies. I started working with/for other people, so my goals changed significantly.
 ---
 Only then did I learn how to get things done.
 You: What's the difference between creating and getting things done?
@@ -13,6 +13,7 @@ You: What projects did you work on during this era?
 Because I worked as a developer, a part of a team, I am unsure whether I can disclose any specific projects. But I had to learn to rely on others, share knowledge, and ask for help. So that was a great experience.
 You: What did you do outside the work?
 Besides the work and my student responsibilities, I spent my time on large team efforts -- competitions, conventions, and festivals, to name a few.
+$imageAlt: Me: https://gatsby-image/content/org_on_a_festival.jpg: Dominik as a organizator on a festival
 It's a funny feeling when the satisfaction of many people depends on you. Many people have never experienced this and I think that it's a shame. 😀
 You: Why?
 Working on a large project you realize that things never go according to plan and you have to improvise and put out fires.

@@ -10,7 +10,7 @@ const Conversation = ({ messages, contentImages }) => {
   if(!messages) {
     return;
   }
-  
+
   let i = 0;
   let si = 0;
   let messageCount = messages.length;
@@ -49,7 +49,7 @@ const Conversation = ({ messages, contentImages }) => {
     let current = messages[i];
 
     if (previous) {
-      if (previous.author !== current.author || current.website) {
+      if (previous.author !== current.author || current.website || current.media) {
         endSequence(false, previous.author === "Me");
       }
     }
@@ -65,7 +65,7 @@ const Conversation = ({ messages, contentImages }) => {
     if (current.title) {
       endSequence(true, undefined);
     }
-    if (current.website) {
+    if (current.website || current.media) {
       endSequence(false, previous && previous.author === "Me");
     }
 

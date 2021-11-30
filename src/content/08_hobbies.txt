@@ -9,4 +9,5 @@ Then I am also fond of telling [stories](https://www.youtube.com/channel/UCdwV05
 You: How are you usually connecting with people?
 I am always open to getting to know new people wherever I walk. You can meet me going to a festival alone and finding new friends within minutes of arriving 😁
 But I also keep up with my long-lasting friendships regularly, for example, by going for a beer.
+$imageAlt: Me: https://gatsby-image/content/dominik_brno.jpg: Dominik Gmiterko with a winter Brno in the background
 You: Hopefully, we will get one day to a point where you invite me for a meetup 😉
