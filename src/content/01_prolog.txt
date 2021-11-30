@@ -6,8 +6,8 @@ You: Likewise.
 
 $title: Questions
 You: I have several questions for you.
-$anchor: You: #Life-story-so-far: 1. Your life story
-$anchor: You: #Goals-and-desires: 2. Goals and desires
-$anchor: You: #Annoying-qualities: 3. Annoying qualities
-$anchor: You: #Hobbies: 4. Hobbies you never want to give up
+You: 1. [Your life story](#Life-story-so-far)
+You: 2. [Goals and desires](#Goals-and-desires)
+You: 3. [Annoying qualities](#Annoying-qualities)
+You: 4. [Hobbies you never want to give up](#Hobbies)
 You: Don't panic. We will go over them one by one 😃

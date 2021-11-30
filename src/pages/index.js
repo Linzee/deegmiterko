@@ -65,7 +65,6 @@ export const pageQuery = graphql`
               messages {
                 author
                 message
-                anchor
                 title
                 media {
                   type

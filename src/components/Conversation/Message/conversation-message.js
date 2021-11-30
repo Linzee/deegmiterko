@@ -1,6 +1,7 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 import slugify from 'slugify';
 
 import "./conversation-message.scss";
@@ -37,6 +38,32 @@ const Message = ({ data, contentImages }) => {
     }
   }
 
+  let message = null;
+  if (data.message) {
+    const match = data.message.match(/^(.*?)\[(.*?)\]\((.*?)\)(.*)$/);
+    if (match) {
+      if(match[3].startsWith("#")) {
+        message = (
+          <div className="message">
+            <>{match[1]}<AnchorLink to={match[3]}>{match[2]}</AnchorLink>{match[4]}</>
+          </div>
+        );
+      } else {
+        message = (
+          <div className="message">
+            <>{match[1]}<OutboundLink href={match[3]}>{match[2]}</OutboundLink>{match[4]}</>
+          </div>
+        );
+      }
+    } else {
+      message = (
+        <div className="message">
+          {data.message}
+        </div>
+      );
+    }
+  }
+
   return (
     <div className="message-container">
       {
@@ -52,17 +79,7 @@ const Message = ({ data, contentImages }) => {
         </div>
       }
       {
-        data.message && (
-          data.anchor ? (
-            <div className="message">
-              <AnchorLink to={data.anchor} title={data.message} />
-            </div>
-          ) : (
-            <div className="message">
-              {data.message}
-            </div>
-          )
-        )
+        message
       }
       {
         data.website &&

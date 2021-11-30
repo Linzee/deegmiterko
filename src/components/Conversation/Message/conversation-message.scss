@@ -5,17 +5,10 @@
     text-align: justify;
 
     a {
-      margin-left: 1rem;
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        background: rgba(56, 23, 74, 0.3);
-        left: 1.2rem;
-        bottom: 2px;
-        right: 0;
-        height: 1px;
+      text-decoration: underline;
+      color: rgb(56,23,74);
+      &:visited {
+        color: rgb(56,23,74);
       }
     }
   }
