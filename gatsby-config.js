@@ -11,7 +11,7 @@ module.exports = {
     description: `Digital nomad exploring the world and creating stuff. Get to know me a and meet me along my way.`,
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
-    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'Artist', 'Coder', 'Me', 'Digital', 'Nomad'],
+    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'work', 'life'],
     tagline: "Coder | Artist | Me",
   },
   plugins: [
