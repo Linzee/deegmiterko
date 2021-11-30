@@ -35,16 +35,14 @@
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .conversation {
     .sequence {
-      margin-right: 5rem;
       max-width: none;
-      padding-right: 0;
-      padding-left: 0;
+      padding-right: 2rem;
 
       &.mine {
-        margin-left: 5rem;
+        padding-left: 2rem;
       }
     }
   }
