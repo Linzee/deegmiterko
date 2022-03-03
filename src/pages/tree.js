@@ -77,12 +77,12 @@ const TreePage = ({ data, pageContext }) => {
           title: 'Patreon',
           icon: faPatreon,
           link: 'https://patreon.com/dee_gmiterko',
-        },
+        }/*,
         {
           title: 'Onlyfans',
           icon: faLock,
           link: 'https://onlyfans.com/dee.gmiterko',
-        }
+        }*/
       ]
     },
     {
