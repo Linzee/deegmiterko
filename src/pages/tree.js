@@ -66,7 +66,7 @@ const TreePage = ({ data, pageContext }) => {
         {
           title: 'Github',
           icon: faGithub,
-          link: 'https://github.com/Linzee',
+          link: 'https://github.com/dee-gmiterko',
         },
       ]
     },
