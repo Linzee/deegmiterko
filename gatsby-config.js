@@ -11,7 +11,7 @@ module.exports = {
     description: `Digital nomad exploring the world and creating stuff. Join me and get to know me along the way.`,
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
-    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'work', 'life'],
+    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'project', 'programming', 'create', 'generative design'],
     tagline: "Coder | Artist | Me",
     announcement: {
       title: "I'm into generative design",
