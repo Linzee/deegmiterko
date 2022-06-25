@@ -1,0 +1,26 @@
+.header-announcement {
+  position: static;
+  top: 0; right: 0; left: 0;
+  background-image: linear-gradient(170deg, #e0c65d 0%, #76438e 47%, #38174a 100%);
+  background-attachment: fixed;
+
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+  }
+}
+
+
+@media (prefers-color-scheme: dark) {
+  body.can-go-dark {
+    .header-announcement {
+      background: white;
+
+      a {
+        color: #38174a;
+      }
+    }
+  }
+}

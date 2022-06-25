@@ -13,6 +13,10 @@ module.exports = {
     siteUrl: `https://deegmiterko.com/`,
     keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'work', 'life'],
     tagline: "Coder | Artist | Me",
+    announcement: {
+      title: "I'm into generative design",
+      link: "https://deegmiterko.com/generative-design",
+    }
   },
   plugins: [
     {

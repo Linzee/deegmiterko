@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import Conversation from "../components/Conversation";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import HeaderAnnouncement from "../components/HeaderAnnouncement";
 
 const IndexPage = ({ data, pageContext }) => {
 
@@ -15,25 +16,27 @@ const IndexPage = ({ data, pageContext }) => {
   });
 
   return (
-    <div className="page-about">
+    <>
       <SEO
         siteMetadata={data.site.siteMetadata}
       />
+      <HeaderAnnouncement siteMetadata={data.site.siteMetadata} />
+      <div className="page-about">
+        <Banner siteMetadata={data.site.siteMetadata} bannerImg={data.bannerImg.childImageSharp.gatsbyImageData} />
 
-      <Banner siteMetadata={data.site.siteMetadata} bannerImg={data.bannerImg.childImageSharp.gatsbyImageData} />
+        <main id="about">
+          {data.content.edges.map((section, i_1) => (
+            section.node.childChatParsed.conversations.map((conversation, i_2) => (
+              <Conversation key={i_1+":"+i_2} messages={conversation.messages} contentImages={contentImages} />
+            ))
+          ))}
+        </main>
 
-      <main id="about">
-        {data.content.edges.map((section, i_1) => (
-          section.node.childChatParsed.conversations.map((conversation, i_2) => (
-            <Conversation key={i_1+":"+i_2} messages={conversation.messages} contentImages={contentImages} />
-          ))
-        ))}
-      </main>
+        <Contact siteMetadata={data.site.siteMetadata} />
 
-      <Contact siteMetadata={data.site.siteMetadata} />
-
-      <Footer siteMetadata={data.site.siteMetadata} />
-    </div>
+        <Footer siteMetadata={data.site.siteMetadata} />
+      </div>
+    </>
   )
 };
 
@@ -49,6 +52,10 @@ export const pageQuery = graphql`
         title
         keywords
         tagline
+        announcement {
+          title
+          link
+        }
       }
     }
     content: allFile(

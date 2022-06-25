@@ -5,6 +5,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faT
 
 import SEO from "../components/SEO";
 import Linktree from "../components/Linktree"
+import HeaderAnnouncement from "../components/HeaderAnnouncement";
 
 import "./main.scss"
 
@@ -103,18 +104,19 @@ const TreePage = ({ data, pageContext }) => {
   ]
 
   return (
-    <div className="page-tree">
+    <>
       <SEO
         title={"Link tree"}
         siteMetadata={data.site.siteMetadata}
         canGoDark={true}
       />
-
-      <main>
-        <Linktree categoriesLinks={categoriesLinks} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
-      </main>
-
-    </div>
+      <HeaderAnnouncement siteMetadata={data.site.siteMetadata} />
+      <div className="page-tree">
+        <main>
+          <Linktree categoriesLinks={categoriesLinks} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
+        </main>
+      </div>
+    </>
   )
 };
 
@@ -129,6 +131,10 @@ export const pageQuery = graphql`
         siteUrl
         title
         keywords
+        announcement {
+          title
+          link
+        }
       }
     }
     profileImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "profile.jpg"}) {
