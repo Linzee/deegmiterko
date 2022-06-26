@@ -1,25 +1,25 @@
 body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  font-family:"Arial";
-  font-style:normal;
   background: #333;
+  padding-bottom: 200px;
 }
 
 .book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Arial";
+  font-style: normal;
   padding: 50px;
 }
 
 .page {
-  width: 1000px;
-  height: 1000px;
+  width: 1200px;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 100px;
-  margin: 50px;
+  margin-bottom: 50px;
   overflow: hidden;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
@@ -156,6 +156,12 @@ img.w-40, video.w-40 {
   width: 33.33%;
   flex-grow: 1;
   margin: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .book {
+    padding: 0;
+  }
 }
 
 @media print {
