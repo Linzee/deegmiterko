@@ -54,16 +54,10 @@ typings/
 # dotenv environment variable files
 .env*
 
-# gatsby files
-.cache/
-public
-
 # Mac files
 .DS_Store
 
 # Yarn
 yarn-error.log
-.pnp/
-.pnp.js
-# Yarn Integrity file
+.yarn
 .yarn-integrity

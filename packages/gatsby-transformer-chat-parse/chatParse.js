@@ -1,9 +1,9 @@
-const Ohm = require('ohm-js');
-const moment = require('moment');
+import { grammar } from "ohm-js";
+import moment from "moment";
 
-const parse = (users, script) => {
+export const chatParse = (users, script) => {
 
-  const scriptGrammar = Ohm.grammar(`
+  const scriptGrammar = grammar(`
     Script {
       doc = (row | nl)*
       row = (command | message | myMedia | pause | myMessage) (nl | end)
@@ -215,5 +215,3 @@ const parse = (users, script) => {
 
   return conversations;
 }
-
-exports.parse = parse;

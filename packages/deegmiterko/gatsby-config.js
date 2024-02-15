@@ -14,8 +14,8 @@ module.exports = {
     keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'project', 'programming', 'create', 'generative design'],
     tagline: "Coder | Artist | Me",
     announcement: {
-      title: "I'm into generative design",
-      link: "https://deegmiterko.com/generative-design",
+      title: '',// "I'm into generative design",
+      link: '',//"https://deegmiterko.com/generative-design",
     }
   },
   plugins: [
@@ -38,7 +38,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-transformer-chat-parse`,
+      resolve: `@deegmiterko/gatsby-transformer-chat-parse`,
       options: {
         users: [
           {

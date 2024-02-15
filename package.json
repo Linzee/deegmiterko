@@ -5,60 +5,26 @@
   "version": "0.1.0",
   "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
   "workspaces": [
-    "gatsby-transformer-chat-parse",
-    "chat-parse"
+    "packages/*"
   ],
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
-    "dotenv": "^10.0.0",
-    "gatsby": "^4.1.0",
-    "gatsby-plugin-anchor-links": "^1.2.1",
-    "gatsby-plugin-facebook-multi-pixels": "^1.1.2",
-    "gatsby-plugin-gatsby-cloud": "^4.1.0",
-    "gatsby-plugin-google-gtag": "^4.1.0",
-    "gatsby-plugin-image": "^2.1.0",
-    "gatsby-plugin-manifest": "^4.1.0",
-    "gatsby-plugin-offline": "^5.1.0",
-    "gatsby-plugin-react-helmet": "^5.1.0",
-    "gatsby-plugin-sass": "^5.1.0",
-    "gatsby-plugin-sharp": "^4.1.0",
-    "gatsby-plugin-sitemap": "^5.1.0",
-    "gatsby-source-filesystem": "^4.1.0",
-    "gatsby-transformer-remark": "^5.1.0",
-    "gatsby-transformer-sharp": "^4.1.0",
-    "moment": "^2.24.0",
-    "postcss": "^8.2.9",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.32.8",
-    "slugify": "^1.6.3"
-  },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^3.2.5"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "format": "prettier --write \"packages/**/*.{js,jsx,json,md}\"",
+    "start": "yarn develop",
+    "develop": "yarn workspace @deegmiterko/deegmiterko develop"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Linzee/deegmiterko"
+    "url": "https://github.com/dee-gmiterko/deegmiterko"
   },
   "bugs": {
-    "url": "https://github.com/Linzee/deegmiterko/issues"
-  }
+    "url": "https://github.com/dee-gmiterko/deegmiterko/issues"
+  },
+  "packageManager": "yarn@4.1.0"
 }

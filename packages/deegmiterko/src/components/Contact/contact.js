@@ -5,7 +5,7 @@ import Bordered from "../Bordered";
 
 import "./contact.scss"
 
-const Contact = ({ siteMetadata }) => {
+const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact">
@@ -33,10 +33,10 @@ const Contact = ({ siteMetadata }) => {
             <dd><OutboundLink href="https://instagram.com/dee.gmiterko">@dee.gmiterko</OutboundLink></dd>
 
             <dt>Discord</dt>
-            <dd><OutboundLink href="https://discord.gg/discord-townhall">Dee#7520</OutboundLink></dd>
+            <dd><OutboundLink href="https://discord.gg/discord-townhall">dee.gmiterko</OutboundLink></dd>
 
-            <dt>Twitter</dt>
-            <dd><OutboundLink href="https://twitter.com/dee_gmiterko">@dee_gmiterko</OutboundLink></dd>
+            <dt>LinkedIn</dt>
+            <dd><OutboundLink href="https://www.linkedin.com/in/dominik-gmiterko/">dominik-gmiterko</OutboundLink></dd>
 
           </dl>
         </div>

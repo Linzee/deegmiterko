@@ -1,13 +1,13 @@
-const _ = require("lodash");
-const parse = require("chat-parse").parse;
+import _ from "lodash";
+import { chatParse } from "./chatParse.js";
 
-async function onCreateNode({
+export const onCreateNode = async ({
   node,
   actions,
   loadNodeContent,
   createNodeId,
   createContentDigest,
-}, pluginOptions) {
+}, pluginOptions) => {
   function transformObject(obj, id, type) {
     const txtNode = {
       ...obj,
@@ -31,7 +31,7 @@ async function onCreateNode({
   }
 
   const content = await loadNodeContent(node);
-  const parsedContent = parse(users, content);
+  const parsedContent = chatParse(users, content);
 
   transformObject(
     {
@@ -41,5 +41,3 @@ async function onCreateNode({
     _.upperFirst(_.camelCase(`Chat Parsed`))
   );
 }
-
-exports.onCreateNode = onCreateNode;

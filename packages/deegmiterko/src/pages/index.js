@@ -60,7 +60,7 @@ export const pageQuery = graphql`
     }
     content: allFile(
       filter: {sourceInstanceName: {eq: "content"}}
-      sort: {fields: name}
+      sort: {name: ASC}
     ) {
       edges {
         node {
@@ -101,7 +101,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    bannerImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "banner.jpg"}) {
+    bannerImg: file(
+      sourceInstanceName: {eq: "images"}
+      relativePath: {eq: "banner.jpg"}
+    ) {
       childImageSharp {
         gatsbyImageData(layout: CONSTRAINED)
       }

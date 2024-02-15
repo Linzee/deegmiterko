@@ -1,0 +1,64 @@
+{
+  "name": "@deegmiterko/deegmiterko",
+  "private": true,
+  "description": "Personal website",
+  "version": "0.1.0",
+  "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "dotenv": "^16.4.4",
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-anchor-links": "^1.2.1",
+    "gatsby-plugin-facebook-multi-pixels": "^1.1.2",
+    "gatsby-plugin-gatsby-cloud": "^5.13.1",
+    "gatsby-plugin-google-gtag": "^5.13.1",
+    "gatsby-plugin-image": "^3.13.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.1",
+    "gatsby-plugin-react-helmet": "^6.13.1",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-plugin-sharp": "^5.13.1",
+    "gatsby-plugin-sitemap": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-sharp": "^5.13.1",
+    "moment": "^2.30.1",
+    "postcss": "^8.4.35",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.70.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Linzee/deegmiterko"
+  },
+  "bugs": {
+    "url": "https://github.com/Linzee/deegmiterko/issues"
+  },
+  "packageManager": "yarn@4.1.0"
+}
