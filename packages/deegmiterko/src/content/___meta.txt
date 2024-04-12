@@ -1,0 +1,108 @@
+
+WILSON STAR
+Symbol: Made by D[ee] Gmiterko
+Slogan: Made by D[ee] Gmiterko
+Surprise: Is this a lecture or sales presentation? Yes -> CTA
+  "Hire me": Us, cooperating.
+  "Join me": I want to help you.
+  "Watch me": Where can I follow you?
+Salient (one great idea): I've always made stuff.
+Story (relatable): by human for humans - frame of giving a presentation
+  - my role,
+  - what is it?
+  - what can you take from it?
+
+uses:
+- contact -> Home->Contacts  [CHECK]
+- quick, jumping overview -> [Next] arrow   [CHECK]
+- detailed, in-depth -> Some [Read more] buttons and on-the-side-slides  [CHECK]
+
+
+M: Okay, hear me out,
+M: projects + short conversatione exceprpts on timeline: 
+A: Okay
+M: Okay, hear me out again,
+M: Tell the story as a "series of sessions" with in-advance made slides. [[[ D-D-D Done ]]]
+  - each session should be prefaced with a day of a week, to signify flow of time
+  - "lecture slides", introductory slide that it moves out of automatically
+A: Okay
+M: Okay, what about a stamp "Made by D[ee] Gmiterko"? [[[ D-D-D Done ]]]
+A: Maybe?
+M: Hey! What if we gave no replies? We can scramble and blur the responses. [While keeping it solveable.. use some stupid font (e.g. minecraft rune)/cypher]
+A: I think that's actually very clever. Giving voice back to the observer.
+
+[intro]
+Coder, Artist, Me
+[2 contacts, ->tree]
+
+- [slides] website dev
+  - $-website links-$
+
+(Artist)
+
+#my role: creative doer
+
+- [slides] artful
+  - hard pastel
+  - hexaflexagon
+  - digital art
+  - jewlery, sewing
+  - more $-deviantart-$
+
+## Tie-in of Art and Tech
+
+#what is it
+
+- [slides] generative design (replace/remove first one?)
+  - (done) $-github links-$
+  - enhance AI gen section, add gen page
+  "Hire me": Us, cooperating -> move, rephrase page
+
+## Games and expetiments
+
+#what can you take from it
+[[[most important section]]]
+
+- [slides] gaming experiments
+  - Minecraft modding
+    - plugins
+  - trainwreck $-POPUP-$
+  - shaders, Open GL forest $-github link-$
+  - $-older -> ienze.me-$
+  "Join me": I want to help you.
+
+## Dee Gmiterko
+
+Then, there is Me.
+
+Goals:
+- get people prepared to my varying presentation
+  - rel "purple har freak" comment
+
+- [slides] me
+  - org
+  - gendr
+  "Watch me": Where can I follow you?
+
+
+## Professional
+
+Oh, yeah, I've also worked in professional capacity.
+But those are more difficult to share as they are often non-public and non-visual.
+
+- [slides] professional
+  - Backend developer (2015-2016) Wame
+  - Frontend developer (2017-2019) InQool
+    - BrnoID, kreativator
+  - Data Engineer (2019-2022)
+  - Freelance web product developer
+    - [subtitle] specializing on Blockchain
+    - BB, Namedicinu
+  "Hire me": Us, cooperating.
+    - $-linkedIn-$
+    - $-purpose led contact-$
+
+## conclusion
+
+Anyway, I am very happy to meet you and get to know you
+

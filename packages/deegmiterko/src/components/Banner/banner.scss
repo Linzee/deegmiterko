@@ -46,11 +46,31 @@
 
         .main {
           bottom: 0;
+          animation: name-variations-reveal-main 0.7s ease-in-out;
+
+          @keyframes name-variations-reveal-main {
+            from {
+              bottom: -1em;
+            }
+            to {
+              bottom: 0;
+            }
+          }
         }
 
         .alternate {
           bottom: 1em;
           color: rgba(0, 0, 0, 0.6);
+          animation: name-variations-reveal-alternate 0.7s ease-in-out;
+
+          @keyframes name-variations-reveal-alternate {
+            from {
+              bottom: 0;
+            }
+            to {
+              bottom: 1em;
+            }
+          }
         }
 
         &:hover {
@@ -61,6 +81,10 @@
           .alternate {
             bottom: 0;
           }
+        }
+
+        .deff {
+          color: rgba(0, 0, 0, 0.8);
         }
       }
     }

@@ -1,0 +1,12 @@
+## Games and expetiments
+
+#what can you take from it
+[[[most important section]]]
+
+- [slides] gaming experiments
+  - Minecraft modding
+    - plugins
+  - trainwreck $-POPUP-$
+  - shaders, Open GL forest $-github link-$
+  - $-older -> ienze.me-$
+  "Join me": I want to help you.

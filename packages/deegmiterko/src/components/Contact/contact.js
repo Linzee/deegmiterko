@@ -32,11 +32,11 @@ const Contact = () => {
             <dt>Instagram</dt>
             <dd><OutboundLink href="https://instagram.com/dee.gmiterko">@dee.gmiterko</OutboundLink></dd>
 
-            <dt>Discord</dt>
-            <dd><OutboundLink href="https://discord.gg/discord-townhall">dee.gmiterko</OutboundLink></dd>
-
             <dt>LinkedIn</dt>
             <dd><OutboundLink href="https://www.linkedin.com/in/dominik-gmiterko/">dominik-gmiterko</OutboundLink></dd>
+
+            <dt>Discord</dt>
+            <dd><OutboundLink href="https://discord.gg/discord-townhall">dee.gmiterko</OutboundLink></dd>
 
           </dl>
         </div>

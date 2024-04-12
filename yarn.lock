@@ -1557,6 +1557,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.5.5":
+  version: 7.24.0
+  resolution: "@babel/runtime@npm:7.24.0"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/3495eed727bf4a4f84c35bb51ab53317ae38f4bbc3b1d0a8303751f9dfa0ce6f5fb2afced72b76c3dd0d8bb2ccb84787559a4dee9886291a36b26f02f0f759b4
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.20.7, @babel/template@npm:^7.22.15, @babel/template@npm:^7.23.9":
   version: 7.23.9
   resolution: "@babel/template@npm:7.23.9"
@@ -1614,6 +1623,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": "npm:^6.5.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.1"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
+    clsx: "npm:^2.1.0"
     dotenv: "npm:^16.4.4"
     gatsby: "npm:^5.13.3"
     gatsby-plugin-anchor-links: "npm:^1.2.1"
@@ -1634,9 +1644,13 @@ __metadata:
     postcss: "npm:^8.4.35"
     prettier: "npm:^3.2.5"
     prop-types: "npm:^15.8.1"
+    pure-react-carousel: "npm:^1.30.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-feather: "npm:^2.0.10"
     react-helmet: "npm:^6.1.0"
+    react-swipeable: "npm:^7.0.1"
+    react-visibility-sensor: "npm:^5.1.1"
     sass: "npm:^1.70.0"
     slugify: "npm:^1.6.6"
   languageName: unknown
@@ -2104,6 +2118,13 @@ __metadata:
     wrap-ansi: "npm:^8.1.0"
     wrap-ansi-cjs: "npm:wrap-ansi@^7.0.0"
   checksum: 10c0/b1bf42535d49f11dc137f18d5e4e63a28c5569de438a221c369483731e9dac9fb797af554e8bf02b6192d1e5eba6e6402cf93900c3d0ac86391d00d04876789e
+  languageName: node
+  linkType: hard
+
+"@jkroso/type@npm:1":
+  version: 1.1.1
+  resolution: "@jkroso/type@npm:1.1.1"
+  checksum: 10c0/6acc1f9449667103b064e6891c5156c1651229abac95f88625c3fcfa83e4ebfc1dbfb85e3e8a5f541ce412d520f0d1c405d3910bce61b9584f676b3cfd7e3609
   languageName: node
   linkType: hard
 
@@ -5156,6 +5177,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "clsx@npm:2.1.0"
+  checksum: 10c0/c09c00ad14f638366ca814097e6cab533dfa1972a358da5b557be487168acbb25b4c1395e89ffa842a8a61ba87a462d2b4885bc9d4f8410b598f3cb339599cdb
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -5861,10 +5889,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deep-freeze@npm:0.0.1":
+  version: 0.0.1
+  resolution: "deep-freeze@npm:0.0.1"
+  checksum: 10c0/b32c878395df6ca0e07d065750e14bc1651ec76e99490bca25e5844f7321676d7045d4eb4123892a0d4f08c38e4b7fa46d6e834782c095723447c0ee2ad0340b
+  languageName: node
+  linkType: hard
+
 "deep-is@npm:^0.1.3":
   version: 0.1.4
   resolution: "deep-is@npm:0.1.4"
   checksum: 10c0/7f0ee496e0dff14a573dc6127f14c95061b448b87b995fc96c017ce0a1e66af1675e73f1d6064407975bc4ea6ab679497a29fff7b5b9c4e99cb10797c1ad0b4c
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "deepmerge@npm:2.2.1"
+  checksum: 10c0/4379288cabd817587cee92a095ea65d18317b45e48010a2e0d87982b5f432239a144f9c8ebd4ab090cc21f0cb47e51ebfe32921f329b3b3084a2711d5d63e450
   languageName: node
   linkType: hard
 
@@ -6337,6 +6379,15 @@ __metadata:
   version: 0.9.1
   resolution: "eol@npm:0.9.1"
   checksum: 10c0/5a6654ca1961529429f4eab4473e6d9351969f25baa30de7232e862c6c5f9037fc0ff044a526fe9cdd6ae65bb1b0db7775bf1d4f342f485c10c34b1444bfb7ab
+  languageName: node
+  linkType: hard
+
+"equals@npm:^1.0.5":
+  version: 1.1.0
+  resolution: "equals@npm:1.1.0"
+  dependencies:
+    "@jkroso/type": "npm:1"
+  checksum: 10c0/479a9ba81122e1545eb3d2939fb6774cdc2a834b52da9e49fec063269543bf55eb76fd721b8b03fc500569f1798eab034177fac97d285b0c951c206a8bbc2d23
   languageName: node
   linkType: hard
 
@@ -12558,7 +12609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -12634,6 +12685,22 @@ __metadata:
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
   checksum: 10c0/14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
+  languageName: node
+  linkType: hard
+
+"pure-react-carousel@npm:^1.30.1":
+  version: 1.30.1
+  resolution: "pure-react-carousel@npm:1.30.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.5.5"
+    deep-freeze: "npm:0.0.1"
+    deepmerge: "npm:^2.2.1"
+    equals: "npm:^1.0.5"
+    prop-types: "npm:^15.6.2"
+  peerDependencies:
+    react: 15.x || 16.x || 17.x || 18.x
+    react-dom: 15.x || 16.x || 17.x || 18.x
+  checksum: 10c0/a6d6647266842f77e12263f1ecd5e9e72da3874f24e351799b1655272b3b4503b347588212a1f2ba1c9f323a785370d1c8cc34c04270871dd508477053236e99
   languageName: node
   linkType: hard
 
@@ -12812,6 +12879,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-feather@npm:^2.0.10":
+  version: 2.0.10
+  resolution: "react-feather@npm:2.0.10"
+  dependencies:
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ">=16.8.6"
+  checksum: 10c0/bcc312ab39a710d8fa6fb611fde2affb38cf183fa5215d46c78577d88950ecb9181b59e4b57d7683f543d25725a39deb0c2ad9a9f29cab1a44bf4cbca46e6b8e
+  languageName: node
+  linkType: hard
+
 "react-helmet@npm:^6.1.0":
   version: 6.1.0
   resolution: "react-helmet@npm:6.1.0"
@@ -12860,6 +12938,27 @@ __metadata:
   peerDependencies:
     react: ^16.3.0 || ^17.0.0 || ^18.0.0
   checksum: 10c0/5d934cae438f701ce646f566750ae6a445e99185ce1a026108f9db728147f7962a22ecf8db79ff26089953a3799b3607766904f4f10194ce42bcd5a1aa0215e8
+  languageName: node
+  linkType: hard
+
+"react-swipeable@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "react-swipeable@npm:7.0.1"
+  peerDependencies:
+    react: ^16.8.3 || ^17 || ^18
+  checksum: 10c0/ebd34ac4cad0053db2a43a5113a1b1f2ecbe2badbf4b3aae14cf7292cf836991378637dc7b7da6cf5217215b92559b43dd43775ba3fea95e7e451dc76d029893
+  languageName: node
+  linkType: hard
+
+"react-visibility-sensor@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "react-visibility-sensor@npm:5.1.1"
+  dependencies:
+    prop-types: "npm:^15.7.2"
+  peerDependencies:
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: 10c0/e40ed6ba5b02fa526de3f80debd21ee4b852ce668f90041391a95863b9cc1a4b36647cd4169f3473eefe0e26fc5edae383511c98d4b2540c4499fa5f0f5700b5
   languageName: node
   linkType: hard
 

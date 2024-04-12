@@ -1,0 +1,28 @@
+primary: commercial skills
+negative: !not! ill-timed skills (outdated, (not yet relevant))
+wave: job market discrepancy
+- airflow, the quintessential development tool?
+- it's a tool, 
+
+
+Yeah, I've also worked in professional capacity.
+But those are more difficult to share as they are often non-public and non-visual.
+All the stuff you can find out about me easily, neat.
+You: twist No job I've ever had used all of my skills.
+
+
+
+
+Have you ever had the "Airflow" experience?
+
+It's a tool I've used in a back of several projects as well as in work. And I need to single it out because it's a very powerful tool, and you have to be very grateful for it. But every time you need to touch it, it's because something has gone wrong.
+
+[Failed tasks img]
+
+This sight can be extremely discouraging :sweat_smile: But without a robust task scheduler, it would be infinitely harder to manage error states and recreating all affected data.
+
+
+
+
+
+Anyway, I am very happy to meet you and get to know you

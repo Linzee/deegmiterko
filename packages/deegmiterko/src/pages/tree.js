@@ -1,13 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { faUser, faAddressCard, faLock, faShip } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube, faSteam } from '@fortawesome/free-brands-svg-icons';
+import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube, faSteam, faDeviantart } from '@fortawesome/free-brands-svg-icons';
 
 import SEO from "../components/SEO";
 import Linktree from "../components/Linktree"
 import HeaderAnnouncement from "../components/HeaderAnnouncement";
-
-import "./main.scss"
 
 const TreePage = ({ data, pageContext }) => {
   const categoriesLinks = [
@@ -69,6 +67,11 @@ const TreePage = ({ data, pageContext }) => {
           icon: faGithub,
           link: 'https://github.com/dee-gmiterko',
         },
+        {
+          title: 'DeviantArt',
+          icon: faDeviantart,
+          link: 'https://www.deviantart.com/inik0',
+        },
       ]
     },
     {
@@ -94,11 +97,11 @@ const TreePage = ({ data, pageContext }) => {
           icon: faSteam,
           link: 'https://steamcommunity.com/profiles/76561198065797528',
         },
-        {
-          title: 'OpenSea',
-          icon: faShip,
-          link: 'https://opensea.io/dee_gmiterko',
-        }
+        // {
+        //   title: 'OpenSea',
+        //   icon: faShip,
+        //   link: 'https://opensea.io/dee_gmiterko',
+        // }
       ]
     }
   ]

@@ -2,14 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
+import useApp from '../../hooks/useApp';
+
 import siteImage from '../../images/og-banner.jpg';
 
 const SEO = ({ title, siteMetadata, canGoDark }) => {
-
   const siteName = siteMetadata.title;
   const siteDescription = siteMetadata.description;
   const keywords = siteMetadata.keywords;
-
+  
+  const {bookPageSize, bookPageScale} = useApp();
+  
   return (
     <Helmet
       title={title ? `${title} | ${siteName}` : siteName}
@@ -56,6 +59,7 @@ const SEO = ({ title, siteMetadata, canGoDark }) => {
         }
       ]}
     >
+      <html style={`--book-page-size: ${bookPageSize}px; --book-page-scale: ${bookPageScale}`} />
       <body lang="en" className={canGoDark ? "can-go-dark" : undefined} />
     </Helmet>
   );

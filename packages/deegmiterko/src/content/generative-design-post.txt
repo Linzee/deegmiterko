@@ -1,0 +1,9 @@
+Write a dialogue discussing how interaction of simple components in generative design creates complex behavior
+
+primary: simple components create complex behavior
+negative: !not! (dull) top down design
+wave: life worth exploring
+
+You: Isn't it fascinating how simple components can create such complex behavior in generative design?
+Me: Absolutely! It's not a dull top-down design, but rather a bottom-up approach that allows for a myriad of possibilities.
+You: It's like a wave, constantly changing and evolving. It makes life worth exploring.

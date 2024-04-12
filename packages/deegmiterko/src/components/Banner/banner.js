@@ -3,21 +3,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import { GatsbyImage } from "gatsby-plugin-image";
 
 import "./banner.scss";
 
-const Banner = ({ siteMetadata, bannerImg }) => {
+const Banner = ({ siteMetadata }) => {
   return (
     <header className="banner">
       <div className="profile">
-        <GatsbyImage image={bannerImg} alt={siteMetadata.author} />
+        {/*
+        <StaticImage src="../../images/banner.jpg" alt={siteMetadata.author} layout="constrained" />
+        */}
       </div>
       <div className="basic-info">
 
         <h1 alt={siteMetadata.title}>
           <span className="name-variations">
-            <span className="main">Dee</span>
+            <span className="main">D<span className="deff">ee</span></span>
             <span className="alternate">Dominik</span>
           </span>
           <span> Gmiterko</span>
