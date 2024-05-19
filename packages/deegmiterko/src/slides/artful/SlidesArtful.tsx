@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Book from "../../components/Book/Book";
 import ReferencesPage from "../../components/ReferencesPage/ReferencesPage";
 import TitlePage from "../../components/TitlePage/TitlePage";
+import Page from "../../components/Page/Page";
 
 const SlidesArtful: FunctionComponent = () => {
   const imgHardPastelHeight = 290;
@@ -11,19 +12,15 @@ const SlidesArtful: FunctionComponent = () => {
   return (
     <Book id="artful" title="Artful">
 
-      <TitlePage title={<>Art, <h2>it's media</h2></>} lecture={1} />
+      <TitlePage title="Art," subtitle="it's media" titleClassName="bigger" lecture={1} />
 
-      <div className="page">
-        <h3 id="i-will-write-a-generative-design-script">
-          Art and it's media
-        </h3>
+      <Page title="Art and it's media">
         <p>
           You don't ask why art is created, do you? It's a part of human nature to express oneself.
         </p>
-      </div>
+      </Page>
 
-      <div className="page">
-        <h3 id="artful-physical">Physical</h3>
+      <Page title="Physical">
         <p>An artificial intelligence is quite successfully used to solve specific problems like:</p>
         <ul>
           <li>generating a collection of similar objects (e.g anime characters) given a set of examples</li>
@@ -57,17 +54,16 @@ const SlidesArtful: FunctionComponent = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Page>
       
-      <div className="page">
-        <h3 id="hard-pastel">Traditional</h3>
+      <Page title="Traditional">
         <p>
           When asked about the topic most people would think of good old paper or a canvas. It seems like a unseparrable part of art.
           Over the time I have used many physical techniques. But covering colored paper by layering impressions of hard pastels still stands up to me.
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016-2023)</h4>
+            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016 – present)</h4>
           </div>
           <p>
 
@@ -76,9 +72,9 @@ const SlidesArtful: FunctionComponent = () => {
             <StaticImage src="./media/hard-pastel/title.jpg" layout="fullWidth" alt="Hard pastel: Scene" className="w-80" />
           </div>
         </div>
-      </div>
+      </Page>
 
-      <div className="page example-page">
+      <Page title="Hard pastel" subtitle="2016 – present" className="example-page">
         <div className="example-bar">
           <div className="images-flow">
             <StaticImage src="./media/hard-pastel/mushroom-forest.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Mushroom forest" />
@@ -86,21 +82,20 @@ const SlidesArtful: FunctionComponent = () => {
             <StaticImage src="./media/hard-pastel/percy-tower.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Percy's tower" />
             <StaticImage src="./media/hard-pastel/game-garden.png" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Game garden concept" />
             <StaticImage src="./media/hard-pastel/masks.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Masks of us" />
-            <a href="https://www.deviantart.com/inik0">
+            <a href="https://www.deviantart.com/dee-gmiterko">
               <StaticImage src="./media/hard-pastel/deviantart.png" layout="fixed" height={imgHardPastelHeight} alt="DevinatArt" />
             </a>
           </div>
         </div>
-      </div>
+      </Page>
 
-      <div className="page">
-        <h3 id="hard-pastel">Digital</h3>
+      <Page title="Digital">
         <p>
           Another step 
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016-2023)</h4>
+            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016 – 2023)</h4>
           </div>
           <p>
 
@@ -109,10 +104,9 @@ const SlidesArtful: FunctionComponent = () => {
             <StaticImage src="./media/digital.jpg" layout="fullWidth" alt="Digital drawing" className="w-80" />
           </div>
         </div>
-      </div>
+      </Page>
 
-      <div className="page">
-        <h3 id="artificial-intelligence">Artificial intelligence</h3>
+      <Page title="Artificial intelligence">
         <p>A very current technique used to solve many problems across the board is artificial intelligence. And of course, it can be applied also to generative art.</p>
         <p>An artificial intelligence is quite successfully used to solve specific problems like:</p>
         <ul>
@@ -128,7 +122,7 @@ const SlidesArtful: FunctionComponent = () => {
           <p>For example here I used a neural network to color in a picture for me given a silhouette and a style to match.</p>
           <p><StaticImage src="./media/artificial-intelligence.png" layout="fullWidth" alt="First tests with AI image generation" /></p>
         </div>
-      </div>
+      </Page>
 
       <ReferencesPage references={["deviantart", "instagram"]} />
 

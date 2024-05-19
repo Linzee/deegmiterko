@@ -16,7 +16,7 @@ const Banner = ({ siteMetadata }) => {
       </div>
       <div className="basic-info">
 
-        <h1 alt={siteMetadata.title}>
+        <h1 alt={siteMetadata.title} aria-label={siteMetadata.title}>
           <span className="name-variations">
             <span className="main">D<span className="deff">ee</span></span>
             <span className="alternate">Dominik</span>

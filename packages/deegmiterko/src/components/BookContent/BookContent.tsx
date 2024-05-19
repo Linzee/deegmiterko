@@ -34,6 +34,7 @@ const BookContent: FunctionComponent<{
   });
 
   useEffect(() => {
+    console.log(book.pages[current], book.pages)
     if(book.pages[current]) {
       const hash = `#${book.pages[current].pageId}`;
       history.pushState({}, `Dee Gmiterko - ${title}`, hash);

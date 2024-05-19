@@ -104,7 +104,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </h4>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Bukkit plugins (2010-2013)</h4>
+            <h4 id="fern-profile-picture-2022">Bukkit plugins (2010 – 2013)</h4>
           </div>
           <p>
             I've made many plugins for Minecraft servers in that time. Includin few public ones that gained decent popularity. But that was over a decade ago, so they fell into obscurity and are not maintained for a long time.
@@ -118,7 +118,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </h4>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Modding (2012-2013)</h4>
+            <h4 id="fern-profile-picture-2022">Modding (2012 – 2013)</h4>
           </div>
           <p>
             
@@ -153,7 +153,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </p>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">London map (2011-2013)</h4>
+            <h4 id="fern-profile-picture-2022">London map (2011 – 2013)</h4>
           </div>
           <p>
             TODO
@@ -196,7 +196,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
           <table>
             <thead>
               <tr>
-                <td className="subtitle">Avg</td>
+                <th className="subtitle">Avg</th>
                 <th>
                   <span>Random</span><span>٭</span>
                 </th>

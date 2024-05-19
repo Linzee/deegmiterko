@@ -4,13 +4,15 @@ import Page from "../Page/Page";
 
 const TitlePage: FunctionComponent<{
   title: string,
+  titleNode?: ReactNode,
   subtitle?: string,
   lecture: number,
-}> = ({ title, subtitle, lecture }) => {
+  titleClassName?: string,
+}> = ({ title, titleNode, subtitle, lecture, titleClassName }) => {
   const day = moment().startOf('week').add(lecture-1, 'day');
 
   return (
-    <Page title={title} subtitle={subtitle} level={1}>
+    <Page title={title} titleNode={titleNode} subtitle={subtitle} titleClassName={titleClassName} level={1}>
       <p>
         {lecture}th lecture, {day.format('ddd MMMM Do')}
       </p>

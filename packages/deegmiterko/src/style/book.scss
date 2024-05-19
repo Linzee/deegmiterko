@@ -67,15 +67,33 @@ body {
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.1);
   
-    h1, h2, h3, h4 {
+    h2, h3, h4, h5 {
       margin-bottom: 2rem;
       display: block;
       width: 100%;
       font-family: "Comfortaa";
+
+      .subtitle {
+        line-height: unset;
+      }
     }
     
-    h1 {
-      font-size: 100px;
+    h2 {
+      font-size: 130px;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2.5pt;
+      -webkit-text-stroke-color: black;
+
+      .subtitle {
+        font-size: 36%;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2.5pt;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 0.6);
+      }
+
+      &.bigger {
+        font-size: 220px;
+      }
     }
     
     .subheading {
@@ -92,7 +110,7 @@ body {
       font-size: 42px;
     }
     
-    h2 {
+    h3.bigger {
       font-size: 70px;
       letter-spacing: 3px;
       margin-bottom: 6rem;
@@ -103,6 +121,10 @@ body {
       letter-spacing: 2px;
     }
     
+    h4 {
+      font-size: 30px;
+    }
+
     h4 {
       font-size: 30px;
     }
@@ -167,6 +189,12 @@ body {
 
       &:hover {
         background-position-x: -200px;
+      }
+
+      .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
       }
     }
     

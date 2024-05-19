@@ -3,6 +3,7 @@ import Book from "../../components/Book/Book";
 import { StaticImage } from "gatsby-plugin-image";
 import ReferencesPage from "../../components/ReferencesPage/ReferencesPage";
 import TitlePage from "../../components/TitlePage/TitlePage";
+import Page from "../../components/Page/Page";
 
 const SlidesMe: FunctionComponent = () => {
 
@@ -11,40 +12,76 @@ const SlidesMe: FunctionComponent = () => {
 
       <TitlePage title="Me" subtitle="Coder | Artist | Me" lecture={5} />
       
-      <div className="page">
-        <h3 id="i-will-write-a-generative-design-script">
-          Top 5 places to find me
-        </h3>
+      <Page title="Top 6 places to find me">
         <div className="example">
-          <div className="example-title">
-            <h4>1. Nature is cool</h4>
-          </div>
-          <div>
-            <StaticImage src="./media/nature.jpg" alt="Me in nature" />
-            <StaticImage src="./media/working-in-forest.jpg" alt="Working in forest" />
+          <div className="two-columns">
+            <div>
+              <div className="example-title">
+                <h4>1. Nature is cool</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/nature.jpg" alt="Me in nature" />
+              </div>
+            </div>
+            <div>
+              <div className="example-title">
+                <h4>2. Working from forest</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/working-in-forest.jpg" alt="Working in forest" />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </Page>
 
-      <div className="page">
+      <Page title="It's cooler with people">
         <div className="example">
-          <div className="example-title">
-            <h4>2. It's cooler with people</h4>
+          <div className="two-columns">
+            <div>
+              <div className="example-title">
+                <h4>3. Board games</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/board-games.jpg" alt="Me playing board games" />
+              </div>
+            </div>
+            <div>
+              <div className="example-title">
+                <h4>2. Festival</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/festival.jpg" alt="Visiting festival" />
+              </div>
+            </div>
           </div>
-          <StaticImage src="./media/nature.jpg" alt="Me in nature" />
         </div>
-      </div>
+      </Page>
 
-      <div className="page">
+      <Page title="It's cooler with people">
         <div className="example">
-          <div className="example-title">
-            <h4>3. It's cooler with people</h4>
+          <div className="two-columns">
+            <div>
+              <div className="example-title">
+                <h4>3. Board games</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/board-games.jpg" alt="Me playing board games" />
+              </div>
+            </div>
+            <div>
+              <div className="example-title">
+                <h4>2. Festival</h4>
+              </div>
+              <div>
+                <StaticImage src="./media/festival.jpg" alt="Visiting festival" />
+              </div>
+            </div>
           </div>
-          <StaticImage src="./media/nature.jpg" alt="Me in nature" />
         </div>
-      </div>
+      </Page>
 
-      <ReferencesPage references={["instagram", "linkedin"]} />
+      <ReferencesPage references={["instagram", "contact"]} />
 
     </Book>
   )

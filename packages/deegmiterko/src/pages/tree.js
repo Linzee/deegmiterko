@@ -70,7 +70,7 @@ const TreePage = ({ data, pageContext }) => {
         {
           title: 'DeviantArt',
           icon: faDeviantart,
-          link: 'https://www.deviantart.com/inik0',
+          link: 'https://www.deviantart.com/dee-gmiterko',
         },
       ]
     },

@@ -26,7 +26,7 @@ const SlidesGenerativeDesign: FunctionComponent = () => {
 
       <TitlePage title="Generative Design Concepts" lecture={2} />
 
-      <Page title="Purpose of the Generative Design" titleLevel={2}>
+      <Page title="Purpose of the Generative Design" level={2}>
         <p>Procedural design often tackles a combination of all three mentioned purposes. For example: A live visualization that takes in current weather conditions and use it to control simulation of clouds in the background.</p>
         <div className="grow"></div>
         <h3 id="art">Art</h3>

@@ -1,11 +1,12 @@
 import React, { FunctionComponent } from "react";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkSquare } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkSquare, faContactBook } from '@fortawesome/free-solid-svg-icons';
 import { faDeviantart, faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const ReferencesPage: FunctionComponent<{
-  references?: Array<"github" | "linkedin" | "deviantart" | "ienze.me" | "instagram">
+  references?: Array<"github" | "linkedin" | "deviantart" | "ienze.me" | "instagram" | "contact">
 }> = ({
   references=["github", "linkedin"],
 }) => {
@@ -19,9 +20,9 @@ const ReferencesPage: FunctionComponent<{
       <dt><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</dt>
       <dd>@dee.gmiterko</dd>
     </OutboundLink>,
-    deviantart: <OutboundLink href="https://www.deviantart.com/inik0">
+    deviantart: <OutboundLink href="https://www.deviantart.com/dee-gmiterko">
       <dt><FontAwesomeIcon icon={faDeviantart} /> DeviantArt</dt>
-      <dd>inik0</dd>
+      <dd>dee-gmiterko</dd>
     </OutboundLink>,
     "ienze.me": <OutboundLink href="https://ienze.me">
       <dt><FontAwesomeIcon icon={faExternalLinkSquare} /> ienze.me</dt>
@@ -31,6 +32,10 @@ const ReferencesPage: FunctionComponent<{
       <dt><FontAwesomeIcon icon={faInstagram} /> Instagram</dt>
       <dd>@dee.gmiterko</dd>
     </OutboundLink>,
+    contact: <AnchorLink to="/#contact">
+      <dt><FontAwesomeIcon icon={faContactBook} /> Contact</dt>
+      <dd>Get in touch</dd>
+    </AnchorLink>,
   }
 
   return (
