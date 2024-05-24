@@ -17,6 +17,56 @@ uses:
 - quick, jumping overview -> [Next] arrow   [CHECK]
 - detailed, in-depth -> Some [Read more] buttons and on-the-side-slides  [CHECK]
 
+Chapter stories:
+
+I've always been an artist, one way or another.
+
+| Artist // Art, (it's media)
+|   "new media adds new ways to express oneself"
+|   Physical > "paper" > digital > virtual / audiovisual > infinite-space
+
+..
+
+| Tie-in of art and tech // Generative Design
+|   "A bottom up, additive design"
+
+..continuation, once you put them together you can create something new, convey a message you couldn't before
+
+| Puhshing the limits // Games and Experiments
+|   "Puhshing the limits"
+|   Games were always pushing the boundaries of what is possible. All in the persuit of telling a story, or creating an unforgetable experience.
+
+Only once we find that something works, we can start to build on it.
+
+$scramble you: I think that's actually very clever.
+
+Which is where my professional experience comes in.
+
+you: Where have you worked?
+
+| Professional // Professional (AKA "real job")
+|   "Given, I also had to work in a professional capacity"
+|   Working with others may provide it's own challenges, but it's essential to scale the things you can do well beyond what you could do alone.
+
+Given, those are much more difficult to share beyond listing it, as they are often non-public and non-visual.
+
+you: Yes, I do get that.
+
+I still hope you gained some insight into what I did and what could be in my capabilities.
+
+| Dee Gmiterko // Me (Coder | Artist | Me)
+|   "I exist outside of work, too"
+|   Top 5 places where to find me
+|   -- alternate --
+|   4 slides, 3 photos each, 
+
+Then, there is *Me*.
+
+you: Nice to meet *You*.
+
+/// 4-th wall break - address reader directly
+
+================================================================================
 
 M: Okay, hear me out,
 M: projects + short conversatione exceprpts on timeline: 

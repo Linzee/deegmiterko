@@ -16,6 +16,8 @@ const BookContent: FunctionComponent<{
   const {book} = useBook();
   
   const [swipingDir, setSwipingDir] = useState<number>(0);
+  const [bookVisible, setBookVisible] = useState<boolean>(false);
+  const [firstNudge, setFirstNudge] = useState<boolean>(true);
   const swipeableHandlers = useSwipeable({
     trackTouch: true,
     trackMouse: true,
@@ -41,16 +43,40 @@ const BookContent: FunctionComponent<{
     }
   }, [current]);
 
+  useEffect(() => {
+    let timeout: NodeJS.Timeout|undefined;
+    console.log(bookVisible, current, swipingDir)
+    if(bookVisible && current == 0) {
+      if(swipingDir == 0) {
+        timeout = setTimeout(() => {
+          setSwipingDir(1);
+          setFirstNudge(false);
+        }, firstNudge ? 1000 : 5000);
+      } else {
+        timeout = setTimeout(() => {
+          setSwipingDir(0);
+        }, 600);
+      }
+    }
+    return () => {
+      if(timeout) clearTimeout(timeout);
+    }
+  }, [bookVisible, current, swipingDir, firstNudge])
+
   return (
     <VisibilitySensor
       partialVisibility={true}
-      minTopValue={bookPageSize/2}
-      intervalDelay={2000}
-      scrollCheck={true}
-      scrollDelay={100}
-      onChange={(isVisible) => {
-        if(isVisible && current == 0) setCurrent(1);
+      offset={{
+        top: bookPageSize*0.45,
+        right: bookPageSize*0.45,
+        bottom: bookPageSize*0.45,
+        left: bookPageSize*0.45,
       }}
+      intervalCheck={true}
+      intervalDelay={1000}
+      scrollCheck={true}
+      scrollDelay={500}
+      onChange={setBookVisible}
     >
       <div className="book">
         <div

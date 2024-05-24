@@ -10,9 +10,10 @@ const SlidesMe: FunctionComponent = () => {
   return (
     <Book id="me" title="Me">
 
-      <TitlePage title="Me" subtitle="Coder | Artist | Me" lecture={5} />
+      <TitlePage title="Me" subtitle="Coder | Artist | Me" titleClassName="bigger" lecture={5} />
       
       <Page title="Top 6 places to find me">
+        <div className="grow"></div>
         <div className="example">
           <div className="two-columns">
             <div>
@@ -36,6 +37,7 @@ const SlidesMe: FunctionComponent = () => {
       </Page>
 
       <Page title="It's cooler with people">
+        <div className="grow"></div>
         <div className="example">
           <div className="two-columns">
             <div>
@@ -48,7 +50,7 @@ const SlidesMe: FunctionComponent = () => {
             </div>
             <div>
               <div className="example-title">
-                <h4>2. Festival</h4>
+                <h4>4. Festival</h4>
               </div>
               <div>
                 <StaticImage src="./media/festival.jpg" alt="Visiting festival" />
@@ -58,12 +60,13 @@ const SlidesMe: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="It's cooler with people">
+      <Page title="Given limits">
+        <div className="grow"></div>
         <div className="example">
           <div className="two-columns">
             <div>
               <div className="example-title">
-                <h4>3. Board games</h4>
+                <h4>5. Puzzle race</h4>
               </div>
               <div>
                 <StaticImage src="./media/board-games.jpg" alt="Me playing board games" />
@@ -71,7 +74,7 @@ const SlidesMe: FunctionComponent = () => {
             </div>
             <div>
               <div className="example-title">
-                <h4>2. Festival</h4>
+                <h4>6. Festival</h4>
               </div>
               <div>
                 <StaticImage src="./media/festival.jpg" alt="Visiting festival" />
@@ -80,9 +83,9 @@ const SlidesMe: FunctionComponent = () => {
           </div>
         </div>
       </Page>
-
+      
       <ReferencesPage references={["instagram", "contact"]} />
-
+      
     </Book>
   )
 }
@@ -92,9 +95,13 @@ export default SlidesMe;
 /*
 
 $ Story $
-- Top 5 places where to find me
-
-- readable to the ones in the known
+- Top places where to find me
+  - 4 slides, one for each of us
+  - K: nature, work from forest
+  - L: people, festivals
+  - T: boardgames, puzzles
+  - G: cosplay
+- (maybe readable to the ones in the known)
 
 Then, there is Me.
 

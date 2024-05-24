@@ -85,7 +85,7 @@ body {
       -webkit-text-stroke-color: black;
 
       .subtitle {
-        font-size: 36%;
+        font-size: 50%;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2.5pt;
         -webkit-text-stroke-color: rgba(0, 0, 0, 0.6);
@@ -93,6 +93,10 @@ body {
 
       &.bigger {
         font-size: 220px;
+
+        .subtitle {
+          font-size: 36%;
+        }
       }
     }
     
@@ -106,10 +110,6 @@ body {
       padding-top: 6px; /* HACK fix print */
     }
 
-    > .text-right > .subheading {
-      font-size: 42px;
-    }
-    
     h3.bigger {
       font-size: 70px;
       letter-spacing: 3px;
@@ -190,12 +190,12 @@ body {
       &:hover {
         background-position-x: -200px;
       }
+    }
 
-      .two-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-      }
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
     
     .example {
@@ -391,6 +391,24 @@ body {
         margin: 0;
         margin-left: 16px;
         transition: all 200ms ease-in-out;
+      }
+    }
+
+    &.page-title {
+      > p {
+        font-size: 36px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 35px;
+        margin-top: 200px;
+
+        .subheading {
+          font-size: 45px;
+        }
       }
     }
   }

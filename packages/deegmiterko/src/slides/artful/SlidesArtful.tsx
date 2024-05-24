@@ -30,7 +30,7 @@ const SlidesArtful: FunctionComponent = () => {
         <div className="grow"></div>
         <div className="example">
           <div className="example-title">
-            <h4 id="vest-2024">Vest (2024)</h4>
+            <h4>Vest (2024)</h4>
           </div>
           <p>
             A contemporary victorian vest. The concept design was inspired by the victorian era but with a modern twist and techniques.
@@ -63,7 +63,7 @@ const SlidesArtful: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016 – present)</h4>
+            <h4>Hard pastel drawings (2016 – present)</h4>
           </div>
           <p>
 
@@ -74,7 +74,7 @@ const SlidesArtful: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="Hard pastel" subtitle="2016 – present" className="example-page">
+      <Page title="Hard pastel" subtitle="2014 – present" className="example-page">
         <div className="example-bar">
           <div className="images-flow">
             <StaticImage src="./media/hard-pastel/mushroom-forest.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Mushroom forest" />
@@ -89,19 +89,33 @@ const SlidesArtful: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="Digital">
+      <Page title="Digital & virtual">
         <p>
-          Another step 
+          Another step in the evolution of art started with the digital era. As it brings new possibilities for creation and most importantly delivery.
+        </p>
+        <div className="example-bar">
+          <div className="example-title">
+            <h4>Hard pastel drawings (2014 – present)</h4>
+          </div>
+          <div>
+            <p>
+
+            </p>
+            <StaticImage src="./media/digital.jpg" layout="fullWidth" alt="Digital drawing" className="w-80" />
+          </div>
+        </div>
+        <p>
+
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="artful-hard-pastel-drawings-2016">Hard pastel drawings (2016 – 2023)</h4>
+            <h4>Hexaflexagon (2017)</h4>
           </div>
-          <p>
-
-          </p>
-          <div className="text-center">
-            <StaticImage src="./media/digital.jpg" layout="fullWidth" alt="Digital drawing" className="w-80" />
+          <div>
+            <StaticImage src="./media/asset-drawing.png" layout="fullWidth" alt="Asset drawing" className="w-80" />
+            <p>
+              A set of image generators constructing.. 
+            </p>
           </div>
         </div>
       </Page>
@@ -117,7 +131,7 @@ const SlidesArtful: FunctionComponent = () => {
         <div className="grow"></div>
         <div className="example">
           <div className="example-title">
-            <h4 id="style-transfer-2017">Style transfer (2017)</h4>
+            <h4>Style transfer (2017)</h4>
           </div>
           <p>For example here I used a neural network to color in a picture for me given a silhouette and a style to match.</p>
           <p><StaticImage src="./media/artificial-intelligence.png" layout="fullWidth" alt="First tests with AI image generation" /></p>

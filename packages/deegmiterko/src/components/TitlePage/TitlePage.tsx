@@ -8,19 +8,22 @@ const TitlePage: FunctionComponent<{
   subtitle?: string,
   lecture: number,
   titleClassName?: string,
-}> = ({ title, titleNode, subtitle, lecture, titleClassName }) => {
+  children?: ReactNode|ReactNode[],
+}> = ({ title, titleNode, subtitle, lecture, titleClassName, children }) => {
   const day = moment().startOf('week').add(lecture-1, 'day');
 
   return (
-    <Page title={title} titleNode={titleNode} subtitle={subtitle} titleClassName={titleClassName} level={1}>
-      <p>
-        {lecture}th lecture, {day.format('ddd MMMM Do')}
-      </p>
-      <p className="text-right">
+    <Page title={title} titleNode={titleNode} subtitle={subtitle} className="page-title" titleClassName={titleClassName} level={1}>
+      <div className="grow"></div>
+      {children}
+      <div className="footer">
+        <span>
+          {lecture}th lecture, {day.format('ddd MMMM Do')}
+        </span>
         <span className="subheading">
           Dee Gmiterko
         </span>
-      </p>
+      </div>
     </Page>
   );
 }

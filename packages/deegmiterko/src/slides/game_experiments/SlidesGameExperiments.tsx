@@ -16,15 +16,11 @@ const SlidesGameExperiments: FunctionComponent = () => {
   return (
     <Book id="game-experiments" title="Games and Experiments">
 
-      <TitlePage title="Games and Experiments" lecture={3} />
-
-      <Page title="Pushing the limits" level={2}>
+      <TitlePage title="Games and Experiments" lecture={3}>
         <p>
           Games were always pushing the boundaries of what is possible. All in the persuit of telling a story, or creating an unforgetable experience.
         </p>
-        <p>This article lists different use-cases and concepts of generative/procedural design. It also includes a few adjacent topics that are commonly used simultaneously. Each section also contains an example of my work in this category, so that you can better imagine what is possible.</p>
-
-      </Page>
+      </TitlePage>
 
       <Page title="Game of Life">
         <p>
@@ -36,7 +32,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         <div className="grow"></div>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">GOL-hash (2016)</h4>
+            <h4>GOL-hash (2016)</h4>
             <a className="btn-source" href="https://github.com/dee-gmiterko/gol-hash">&lt;/&gt; Browse source code</a>
           </div>
           <p>
@@ -61,7 +57,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Open GL foreset (2017)</h4>
+            <h4>Open GL foreset (2017)</h4>
             <a className="btn-source" href="https://github.com/dee-gmiterko/opengl-forest">&lt;/&gt; Browse source code</a>
           </div>
           <p>
@@ -80,7 +76,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         <div className="grow"></div>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Trainwreck (2017, 2022)</h4>
+            <h4>Trainwreck (2017, 2022)</h4>
             <a className="btn-source" href="https://github.com/dee-gmiterko/trainwreck">&lt;/&gt; Browse source code</a>
           </div>
           <p>
@@ -104,7 +100,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </h4>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Bukkit plugins (2010 – 2013)</h4>
+            <h4>Bukkit plugins (2010 – 2013)</h4>
           </div>
           <p>
             I've made many plugins for Minecraft servers in that time. Includin few public ones that gained decent popularity. But that was over a decade ago, so they fell into obscurity and are not maintained for a long time.
@@ -118,7 +114,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </h4>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Modding (2012 – 2013)</h4>
+            <h4>Modding (2012 – 2013)</h4>
           </div>
           <p>
             
@@ -132,7 +128,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Card collecting game (2023)</h4>
+            <h4>Card collecting game (2023)</h4>
           </div>
           <p>
             During my freelancing period I've worked on a blockchain based card collecting game. My area of focus was integration of distributed systems, creating WebGl port, websocket based networking, and backend. But I've also fixed several visual issues and replaced card asset loading with a more efficient method more fit for web play giving me insight into inner workings of the game itself.
@@ -153,7 +149,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </p>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">London map (2011 – 2013)</h4>
+            <h4>London map (2011 – 2013)</h4>
           </div>
           <p>
             TODO
@@ -170,7 +166,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Tile builder (2017)</h4>
+            <h4>Tile builder (2017)</h4>
           </div>
           <p>
             This tool takes a color mask and a height map, then proceeds to create a 3D model which is rendered into a 2D sprite. Then an AI styled texture enhancement gets applied on top of it to create a final tile asset with normal, specular, and diffuse maps.
@@ -181,13 +177,14 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="Gameplay simulation">
+      <Page title="Supporting tech" level={2}>
         <p>
           
         </p>
+        <h3>Player simulation</h3>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Game strategy simulations (2015)</h4>
+            <h4>Game strategy simulations (2015)</h4>
             <a href="https://github.com/dee-gmiterko/py-2048">&lt;/&gt; Browse source code</a>
           </div>
           <p>
@@ -232,19 +229,33 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="Player simulation" level={2}>
+      <Page title="Networking">
         <p>
-          TODO
+          
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="fern-profile-picture-2022">Game strategy simulations (2015)</h4>
-            <a href="https://github.com/dee-gmiterko/py-2048">&lt;/&gt; Browse source code</a>
+            <h4>Game strategy simulations (2015)</h4>
           </div>
           <p>
             
           </p>
         </div>
+      </Page>
+
+      <Page title="Pushing the limits" level={2}>
+        <p>
+          Were always there at the beginning of exploring a new technology, ignoring games and how people play could be a huge mistake.
+        </p>
+
+        <table>
+          Simulation x, 
+          Game networking - 1988, 
+        </table>
+        
+        <p>
+          I would be up for joining in the ride..
+        </p>
       </Page>
 
       <ReferencesPage references={["ienze.me", "github"]} />

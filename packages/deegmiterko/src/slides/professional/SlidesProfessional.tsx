@@ -10,7 +10,11 @@ const SlidesProfessional: FunctionComponent = () => {
   return (
     <Book id="professional" title="Professional">
 
-      <TitlePage title="Professional" subtitle="“real job”" lecture={4} />
+      <TitlePage title="Professional" subtitle="AKA “real job”" lecture={4}>
+        <p>
+          Working with others may provide it's own challenges, but it's essential to scale the things you can do well beyond what you could do alone.
+        </p>
+      </TitlePage>
 
       <Page title="Website development">
         <p>
@@ -18,7 +22,7 @@ const SlidesProfessional: FunctionComponent = () => {
         </p>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="professional-backend-developer">Backend developer @ <a className="subheading" href="https://wame.sk/">Wame</a> (2015 – 2016)</h4>
+            <h4>Backend developer @ <a className="subheading" href="https://wame.sk/">Wame</a> (2015 – 2016)</h4>
           </div>
           <TagList tags={["Web", "Backend", "PHP", "Nette", "E-commerce", "HTML", "E-mail camapigns"]} />
           <p>
@@ -30,7 +34,7 @@ const SlidesProfessional: FunctionComponent = () => {
         </p>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="professional-frontend-developer">Frontend developer @ <a className="subheading" href="https://inqool.cz/">InQool</a> (2017 – 2019)</h4>
+            <h4>Frontend developer @ <a className="subheading" href="https://inqool.cz/">InQool</a> (2017 – 2019)</h4>
           </div>
           <TagList tags={["Frontend", "Web", "Javascript", "CSS", "PrestaShop", "E-commerce", "React"]} />
           <p>
@@ -46,7 +50,7 @@ const SlidesProfessional: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="professional-data-engineed">Data Engineer @ <a className="subheading" href="https://kiwi.com/">Kiwi.com</a> (2019 – 2022)</h4>
+            <h4>Data Engineer @ <a className="subheading" href="https://kiwi.com/">Kiwi.com</a> (2019 – 2022)</h4>
           </div>
           <TagList tags={["Data processing", "Python", "Pipeline building", "Airflow", "PubSub", "PostgreSQL", "DataOps", "BigQuery", "Data Quality", "Internal product"]} />
           <p>
@@ -61,7 +65,7 @@ const SlidesProfessional: FunctionComponent = () => {
         </p>
         <div className="example">
           <div className="example-title">
-            <h4 id="professional-freelance">Fullstack @ <span className="subheading">Blockchain game development</span> (2022 – 2024)</h4>
+            <h4>Fullstack @ <span className="subheading">Blockchain game development</span> (2022 – 2024)</h4>
           </div>
           <TagList tags={["Frontend", "Backend", "Project management", "Game dev", "Blockchain", "UI design", "Services integration", "Ops", "Unity"]} />
           <p>
@@ -114,7 +118,7 @@ const SlidesProfessional: FunctionComponent = () => {
         <h4 className="subtitle">Masaryk University</h4>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="professional-education-data-processing">
+            <h4>
               <a href="https://is.muni.cz/obory/8143?lang=en">Computer Systems and Data Processing</a> (2015 – 2018)
             </h4>
           </div>
@@ -135,7 +139,7 @@ const SlidesProfessional: FunctionComponent = () => {
         <p></p>
         <div className="example-bar">
           <div className="example-title">
-            <h4 id="professional-education-data-processing">
+            <h4>
               <a href="https://is.muni.cz/program/22961/artificial%20intelligence%20and%20data%20processing">Artificial intelligence and data processing</a> (2018 – 2020)
             </h4>
           </div>
