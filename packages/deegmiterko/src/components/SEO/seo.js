@@ -38,22 +38,6 @@ const SEO = ({ title, siteMetadata, canGoDark }) => {
           content: siteImage
         },
         {
-          name: `twitter:card`,
-          content: `summary`
-        },
-        {
-          name: `twitter:title`,
-          content: (title ? `${title} | ${siteName}` : siteName)
-        },
-        {
-          name: `twitter:description`,
-          content: siteDescription
-        },
-        {
-          property: `twitter:image`,
-          content: siteImage
-        },
-        {
           name: `keywords`,
           content: keywords.join(`, `)
         }

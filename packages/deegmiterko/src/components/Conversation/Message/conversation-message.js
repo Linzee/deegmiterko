@@ -4,8 +4,6 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import slugify from 'slugify';
 
-import "./conversation-message.scss";
-
 const Message = ({ data, contentImages }) => {
 
   let media = null;

@@ -19,6 +19,11 @@
       margin-bottom: 1rem;
       border-radius: 50%;
     }
+
+    h2 {
+      font-family: "Comfortaa", sans-serif;
+      font-size: 1.25rem;
+    }
   }
 
   .container {
@@ -38,13 +43,18 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 1rem;
+        padding-right: 2rem;
         flex-grow: 1;
 
-        color: rgb(56,23,74);
+        background-color: rgba(118,67,142,1);
+        background-image: linear-gradient(170deg, rgba(224,198,93,1) 0%, rgba(118,67,142,1) 47%, rgba(56,23,74,1) 100%);
+        background-attachment: fixed;
+        color: white;
+        transition: background-color 0.3s ease-in-out;
+        border-radius: 30px;
+
         font-size: 1.3rem;
 
-        background-color: rgba(56,23,74,0.0);
-        transition: background-color 0.3s ease-in-out;
 
         span {
           display: block;

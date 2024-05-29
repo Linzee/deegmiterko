@@ -7,7 +7,7 @@ if (process.env.ENVIRONMENT !== "production") {
 
 module.exports = {
   siteMetadata: {
-    title: `Dee Gmiterko - Artist, Coder, Me`,
+    title: `Dee Gmiterko – Artist, Coder, Me`,
     description: `Digital nomad exploring the world and creating stuff. Join me and get to know me along the way.`,
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,

@@ -1,54 +1,49 @@
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0 3rem 0;
+.contact {
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-rows: max-content max-content max-content;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1500px;
+  h2 {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
+  .contact-list {
+    grid-area: 2 / 1 / 3 / 2;
 
-    .contact-row {
-      display: flex;
-      flex-direction: row-reverse;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    dl {
+      display: grid;
+      grid-template-columns: max-content auto;
 
-      dl {
-        display: grid;
-        grid-template-columns: max-content auto;
-
-        dt {
-          grid-column-start: 1;
-          padding: 1rem 1rem 1rem 0;
-          text-align: right;
-        }
-
-        dd {
-          grid-column-start: 2;
-          padding: 1rem 0 1rem 1rem;
-          font-style: italic;
-        }
+      dt {
+        grid-column-start: 1;
+        padding: 1rem 1rem 1rem 0;
+        text-align: right;
       }
 
-      .last-words {
+      dd {
+        grid-column-start: 2;
+        padding: 1rem 0 1rem 1rem;
+        font-style: italic;
+      }
+    }
+  }
+
+  .last-words {
+    grid-area: 2 / 2 / 3 / 3;
+    padding: 0;
+    
+    .sequence {
+      .sequence-messages {
+        width: 100%;
         .message-container {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          padding: 0.5rem;
-
-          .message {
-            padding: 0.5rem;
-          }
-
           i {
             font-style: italic;
           }
@@ -59,15 +54,15 @@
 }
 
 @media only screen and (max-width: 1200px) {
-  .contact-container {
-    .contact {
-      .contact-row {
-        flex-direction: column;
-
-        .last-words {
-          align-self: flex-end;
-        }
-      }
+  .contact {
+    .last-words {
+      grid-area: 2 / 1 / 3 / 3;
+    }
+    .contact-list {
+      grid-area: 3 / 1 / 4 / 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 
@@ -42,9 +42,9 @@ const Banner = ({ siteMetadata }) => {
                 Instagram
               </FontAwesomeIcon>
             </OutboundLink>
-            <OutboundLink href="https://twitter.com/dee_gmiterko">
-              <FontAwesomeIcon icon={faTwitter}>
-                Twitter
+            <OutboundLink href="https://github.com/dee-gmiterko">
+              <FontAwesomeIcon icon={faGithub}>
+                Github
               </FontAwesomeIcon>
             </OutboundLink>
             <AnchorLink to={`/tree`}>

@@ -10,7 +10,7 @@ const Linktree = ({ categoriesLinks, siteMetadata, profileImg }) => {
     <div className="linktree">
       <div className="profile">
         <GatsbyImage image={profileImg} alt={siteMetadata.author} />
-        <span>{siteMetadata.title}</span>
+        <h2>{siteMetadata.title}</h2>
       </div>
       <div className="container">
         {categoriesLinks.map((category, i_1) => (

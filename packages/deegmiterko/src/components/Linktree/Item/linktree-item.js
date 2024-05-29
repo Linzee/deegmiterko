@@ -4,17 +4,13 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Bordered from "../../Bordered";
-
 function LinktreeItem({ link, title, icon }) {
 
   const content = (
-    <Bordered>
-      <div className="item">
-        <span>{title}</span>
-        <FontAwesomeIcon icon={icon} />
-      </div>
-    </Bordered>
+    <div className="item">
+      <span>{title}</span>
+      <FontAwesomeIcon icon={icon} />
+    </div>
   );
 
   if (link.startsWith("http")) {

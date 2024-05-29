@@ -1,11 +1,10 @@
 import React from "react";
 
-import Bordered from "../Bordered";
 import Message from "./Message";
-
-import "./conversation.scss";
+import useApp from "../../hooks/useApp";
 
 const Conversation = ({ messages, contentImages }) => {
+  const { bookPageSize } = useApp();
 
   if(!messages) {
     return;
@@ -32,11 +31,9 @@ const Conversation = ({ messages, contentImages }) => {
     } else {
       sequences.push(
         <div key={si} className={mine ? "sequence mine" : "sequence"}>
-          <Bordered>
-            <div className="sequence-messages">
-              {currentSequence}
-            </div>
-          </Bordered>
+          <div className="sequence-messages">
+            {currentSequence}
+          </div>
         </div>
       );
     }
@@ -75,7 +72,7 @@ const Conversation = ({ messages, contentImages }) => {
   endSequence(false, messages[messageCount-1].author === "Me");
 
   return (
-    <div className="conversation">
+    <div className="conversation" style={{maxWidth: bookPageSize}}>
       {sequences}
     </div>
   );
