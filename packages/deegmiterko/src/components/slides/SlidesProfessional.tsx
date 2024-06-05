@@ -60,13 +60,17 @@ const SlidesProfessional: FunctionComponent = () => {
           <p>
             I was mostly responsible for creating and maintaining data pipelines, building data warehouse, assisting with analysis and visualization, ensuring data quality.
           </p>
-          <div className="example-title"> {/* TODO remove once not relevant */}
-            <h4>Airflow</h4>
+          <div>
+            <h4 className="mb-0">Airflow</h4>
+            <p className="subheading">The quintessential tool for managing data workflows.</p>
           </div>
-          <p className="subheading">The quintessential tool for managing data workflows.</p>
           <p>
-            As a link between server platform underneat and the data processing scripts on top, it's a great tool for managing data workflows. I would say even the most evolved and adaptible one.
+            As a link between server platform underneat and the data processing scripts on top, it's a great tool for managing data workflows. At this time I've been using it a lot in order to:
           </p>
+          <ul>
+            <li>Reliably prepare and distribute monthly reports</li>
+            <li></li>
+          </ul>
         </div>
       </Page>
 

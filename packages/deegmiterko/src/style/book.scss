@@ -185,6 +185,10 @@ body {
       margin: 0 auto;
       display: block;
     }
+
+    .w-100 {
+      width: 100%;
+    }
     
     .w-80 {
       max-width: 80%;
@@ -538,6 +542,10 @@ body {
   .order-#{$i} {
     order: $i;
   }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 
 @keyframes images-scroll {

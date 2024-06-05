@@ -14,7 +14,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "alea": "^1.0.1",
     "clsx": "^2.1.0",
-    "dotenv": "^16.4.4",
+    "dotenv": "^16.4.5",
     "gatsby": "^5.13.3",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-facebook-multi-pixels": "^1.1.2",
