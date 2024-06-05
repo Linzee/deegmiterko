@@ -1615,6 +1615,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@choojs/findup@npm:^0.2.0":
+  version: 0.2.1
+  resolution: "@choojs/findup@npm:0.2.1"
+  dependencies:
+    commander: "npm:^2.15.1"
+  bin:
+    findup: bin/findup.js
+  checksum: 10c0/0aa58fde413a4cbfd7c67551df1338b638594c46dfa96aa1d79065b88f944a4465d95f3540f4e864130c532182a20cbdef3c2817d20f51253c94096fe57e970f
+  languageName: node
+  linkType: hard
+
 "@deegmiterko/deegmiterko@workspace:packages/deegmiterko":
   version: 0.0.0-use.local
   resolution: "@deegmiterko/deegmiterko@workspace:packages/deegmiterko"
@@ -1623,6 +1634,7 @@ __metadata:
     "@fortawesome/free-brands-svg-icons": "npm:^6.5.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.1"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
+    alea: "npm:^1.0.1"
     clsx: "npm:^2.1.0"
     dotenv: "npm:^16.4.4"
     gatsby: "npm:^5.13.3"
@@ -1646,9 +1658,11 @@ __metadata:
     prop-types: "npm:^15.8.1"
     pure-react-carousel: "npm:^1.30.1"
     react: "npm:^18.2.0"
+    react-depth-map: "https://github.com/story-tools-studio/react-depth-map-component.git"
     react-dom: "npm:^18.2.0"
     react-feather: "npm:^2.0.10"
     react-helmet: "npm:^6.1.0"
+    react-string-replace: "npm:^1.1.1"
     react-swipeable: "npm:^7.0.1"
     react-visibility-sensor: "npm:^5.1.1"
     sass: "npm:^1.70.0"
@@ -3875,6 +3889,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"alea@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "alea@npm:1.0.1"
+  checksum: 10c0/ac06edd2cef0d839192aff16fc75ba71326e6408bdc50fad44d5ac709a6f63572564a77af8a6006db2de2335882395887a8a8d365192209e4361cff4a88055c7
+  languageName: node
+  linkType: hard
+
 "anser@npm:^2.1.1":
   version: 2.1.1
   resolution: "anser@npm:2.1.1"
@@ -5273,7 +5294,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.20.0":
+"commander@npm:^2.15.1, commander@npm:^2.20.0":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: 10c0/74c781a5248c2402a0a3e966a0a2bba3c054aad144f5c023364be83265e796b20565aa9feff624132ff629aa64e16999fa40a743c10c12f7c61e96a794b99288
@@ -8506,6 +8527,152 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glsl-inject-defines@npm:^1.0.1":
+  version: 1.0.3
+  resolution: "glsl-inject-defines@npm:1.0.3"
+  dependencies:
+    glsl-token-inject-block: "npm:^1.0.0"
+    glsl-token-string: "npm:^1.0.1"
+    glsl-tokenizer: "npm:^2.0.2"
+  checksum: 10c0/a91217705737773ec33123627c679992b085ca810c3b02943834801d8cbbaa892c4a8ae6d44047685fdd0d6c871accca2c64e68c998c10e236c27ea1d5af8fb3
+  languageName: node
+  linkType: hard
+
+"glsl-resolve@npm:0.0.1":
+  version: 0.0.1
+  resolution: "glsl-resolve@npm:0.0.1"
+  dependencies:
+    resolve: "npm:^0.6.1"
+    xtend: "npm:^2.1.2"
+  checksum: 10c0/2ae3220dc55af84bd21e4014c4cb0118381221d13419750fd0651e08c1a69d5b0c14c7b3c4362594ab8dcd3a0ae103d206c465b67304e2774ad7e5a7ef382655
+  languageName: node
+  linkType: hard
+
+"glsl-token-assignments@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "glsl-token-assignments@npm:2.0.2"
+  checksum: 10c0/da50a255b2c8ced68154a6451e1bb4b9c898399e7751c2084a8f942fd96596701b2281976dec974187c27b5b17ec18affe5fd74ecc4a2e119b427fa07593a4e9
+  languageName: node
+  linkType: hard
+
+"glsl-token-defines@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "glsl-token-defines@npm:1.0.0"
+  dependencies:
+    glsl-tokenizer: "npm:^2.0.0"
+  checksum: 10c0/a1282c01186ea93a6a398c0af74f8857e82ead6e2d7201353edb88a6e7fd5852a575cc49a5d0e7cf116ca346c32569bb64419a8697cf9be878f5d070ca07bd60
+  languageName: node
+  linkType: hard
+
+"glsl-token-depth@npm:^1.1.0, glsl-token-depth@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "glsl-token-depth@npm:1.1.2"
+  checksum: 10c0/e9a476fee487080c2247bb5edde34ee15d027dfe66802ec1cb501d5a0a99964faaa06f2643e575089acd931a917735d3d10045743f0c3e5f1c482de94cb9bd6c
+  languageName: node
+  linkType: hard
+
+"glsl-token-descope@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "glsl-token-descope@npm:1.0.2"
+  dependencies:
+    glsl-token-assignments: "npm:^2.0.0"
+    glsl-token-depth: "npm:^1.1.0"
+    glsl-token-properties: "npm:^1.0.0"
+    glsl-token-scope: "npm:^1.1.0"
+  checksum: 10c0/7018b13194d5cec87d97c3ce0dd64c554fd9d6b547854bc1789dad407c079b5d53445649d930b18c9a1eb8704666c37821ccc796b865fc751ff66c7e5cf04413
+  languageName: node
+  linkType: hard
+
+"glsl-token-inject-block@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "glsl-token-inject-block@npm:1.1.0"
+  checksum: 10c0/d5ed326f2b8e016997e201316bca7f02bf38cc75e5b6a965819e0819d67aadd1b5c5f236acacabb125e2c3383b5a9f096ad9aed3fb469bbc5014bc7990797641
+  languageName: node
+  linkType: hard
+
+"glsl-token-properties@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "glsl-token-properties@npm:1.0.1"
+  checksum: 10c0/fa63c248648861bb1fde5d49cb000f930c8a3864c02cdc2f7d62ff669a4fdb1458f3ea4fceac993a94440d8a4883395698d225e8d7b18c01a42bf95c997667d4
+  languageName: node
+  linkType: hard
+
+"glsl-token-scope@npm:^1.1.0, glsl-token-scope@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "glsl-token-scope@npm:1.1.2"
+  checksum: 10c0/5b5dd2cb78d63ec7c52d3134aabcdf3a0d0e7b1f3d42f6a45169485ff3b31ecba0ec374ceb59a6ebb16e0d5e3b24b2e247faa7bda4e7c56faea02c44110e0ef4
+  languageName: node
+  linkType: hard
+
+"glsl-token-string@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "glsl-token-string@npm:1.0.1"
+  checksum: 10c0/01ff4fbfa02956d5b10e96f98ab1066937993b2ff9a2c24d23bf72fd417b59d9849cd856815c84d6170d3715bd064c4fbd1cff540a0e315c1fa9b20f2f3306e6
+  languageName: node
+  linkType: hard
+
+"glsl-token-whitespace-trim@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "glsl-token-whitespace-trim@npm:1.0.0"
+  checksum: 10c0/319dd8ff0db0c0109914711845e9fd3eda403ad53c9d499ea5a83167b277390186669242b2d1ca791efa7334ffc7fac58fe2d5172859cd79e51e12df909e5416
+  languageName: node
+  linkType: hard
+
+"glsl-tokenizer@npm:^2.0.0, glsl-tokenizer@npm:^2.0.2":
+  version: 2.1.5
+  resolution: "glsl-tokenizer@npm:2.1.5"
+  dependencies:
+    through2: "npm:^0.6.3"
+  checksum: 10c0/5bcc4491afb0b09032702af83f0afa8acadfa0f5c94a7a0d7c3498396cc35722e1915c976c8efef80a1a9ef0976ecb8ce4e044a34b16d7d537ae4c80f346ad19
+  languageName: node
+  linkType: hard
+
+"glslify-bundle@npm:^5.0.0":
+  version: 5.1.1
+  resolution: "glslify-bundle@npm:5.1.1"
+  dependencies:
+    glsl-inject-defines: "npm:^1.0.1"
+    glsl-token-defines: "npm:^1.0.0"
+    glsl-token-depth: "npm:^1.1.1"
+    glsl-token-descope: "npm:^1.0.2"
+    glsl-token-scope: "npm:^1.1.1"
+    glsl-token-string: "npm:^1.0.1"
+    glsl-token-whitespace-trim: "npm:^1.0.0"
+    glsl-tokenizer: "npm:^2.0.2"
+    murmurhash-js: "npm:^1.0.0"
+    shallow-copy: "npm:0.0.1"
+  checksum: 10c0/a3e79b5cd1f7aec444d29b855612ed6884a23b28bdc1656e180cdbc04ab0aad5e5f77a1c776bed335d4e9a0c781fd39295f045fa6c34e358fe7ccbe3606e8d8d
+  languageName: node
+  linkType: hard
+
+"glslify-deps@npm:^1.3.0":
+  version: 1.3.2
+  resolution: "glslify-deps@npm:1.3.2"
+  dependencies:
+    "@choojs/findup": "npm:^0.2.0"
+    events: "npm:^3.2.0"
+    glsl-resolve: "npm:0.0.1"
+    glsl-tokenizer: "npm:^2.0.0"
+    graceful-fs: "npm:^4.1.2"
+    inherits: "npm:^2.0.1"
+    map-limit: "npm:0.0.1"
+    resolve: "npm:^1.0.0"
+  checksum: 10c0/d89d9ca0bcccb1eb0c2f31d21a0fad9592df5faa30fa63416064cfc4776a3ea38c9e0da2425d2ac5a5a5625012baac95a0bd056e3a525bbf1d149894c140b00f
+  languageName: node
+  linkType: hard
+
+"glslify-loader@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "glslify-loader@npm:2.0.0"
+  dependencies:
+    glslify-bundle: "npm:^5.0.0"
+    glslify-deps: "npm:^1.3.0"
+    loader-utils: "npm:^1.1.0"
+    resolve: "npm:^1.3.3"
+  checksum: 10c0/873ab45e37524e98ce279837c96f212d866e79a8d55f3a581292a07fd1603ec178cb8714c40a1b0c2ec5859b7464ec1cb978d2adf364dedd68d1cb8a5ec5e46a
+  languageName: node
+  linkType: hard
+
 "gopd@npm:^1.0.1":
   version: 1.0.1
   resolution: "gopd@npm:1.0.1"
@@ -9089,7 +9256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.0, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.3":
+"inherits@npm:2, inherits@npm:2.0.4, inherits@npm:^2.0.0, inherits@npm:^2.0.1, inherits@npm:^2.0.3, inherits@npm:^2.0.4, inherits@npm:~2.0.1, inherits@npm:~2.0.3":
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 10c0/4e531f648b29039fb7426fb94075e6545faa1eb9fe83c29f0b6d9e7263aceb4289d2d4557db0d428188eeb449cc7c5e77b0a0b2c4e248ff2a65933a0dee49ef2
@@ -9723,6 +9890,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"isarray@npm:0.0.1":
+  version: 0.0.1
+  resolution: "isarray@npm:0.0.1"
+  checksum: 10c0/ed1e62da617f71fe348907c71743b5ed550448b455f8d269f89a7c7ddb8ae6e962de3dab6a74a237b06f5eb7f6ece7a45ada8ce96d87fe972926530f91ae3311
+  languageName: node
+  linkType: hard
+
 "isarray@npm:^2.0.5":
   version: 2.0.5
   resolution: "isarray@npm:2.0.5"
@@ -10146,7 +10320,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^1.2.3":
+"loader-utils@npm:^1.1.0, loader-utils@npm:^1.2.3":
   version: 1.4.2
   resolution: "loader-utils@npm:1.4.2"
   dependencies:
@@ -10492,6 +10666,15 @@ __metadata:
   version: 0.2.2
   resolution: "map-cache@npm:0.2.2"
   checksum: 10c0/05e3eb005c1b80b9f949ca007687640e8c5d0fc88dc45c3c3ab4902a3bec79d66a58f3e3b04d6985d90cd267c629c7b46c977e9c34433e8c11ecfcbb9f0fa290
+  languageName: node
+  linkType: hard
+
+"map-limit@npm:0.0.1":
+  version: 0.0.1
+  resolution: "map-limit@npm:0.0.1"
+  dependencies:
+    once: "npm:~1.3.0"
+  checksum: 10c0/b83e5c24b07596f65ce3a09592932ae1b9c91658587d339e9700121bae79c212d91fe60dde7f2ef976309522dae50b04858b8c06f30b770303900fdbee37239c
   languageName: node
   linkType: hard
 
@@ -11158,6 +11341,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"murmurhash-js@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "murmurhash-js@npm:1.0.0"
+  checksum: 10c0/f8569e16db0ba6f953bf88286e97cf737f1efe97b224e537c9308566ab963a067c7eca5b636fb473d6413c4cc3b79690b78ff7ab0f290e75db91c6fde0df92b4
+  languageName: node
+  linkType: hard
+
 "mute-stream@npm:0.0.8, mute-stream@npm:~0.0.4":
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
@@ -11595,6 +11785,15 @@ __metadata:
   dependencies:
     wrappy: "npm:1"
   checksum: 10c0/5d48aca287dfefabd756621c5dfce5c91a549a93e9fdb7b8246bc4c4790aa2ec17b34a260530474635147aeb631a2dcc8b32c613df0675f96041cbb8244517d0
+  languageName: node
+  linkType: hard
+
+"once@npm:~1.3.0":
+  version: 1.3.3
+  resolution: "once@npm:1.3.3"
+  dependencies:
+    wrappy: "npm:1"
+  checksum: 10c0/bb9c0fa8f6420b89fea4e0fc80aac175f025358cd1374a8e7afb92672f58473684f45a784e18f147d07cf87e629cc277f63f35c48fdfdced662edd18779c5876
   languageName: node
   linkType: hard
 
@@ -12795,7 +12994,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"raw-loader@npm:^4.0.2":
+"raw-loader@npm:^4.0.1, raw-loader@npm:^4.0.2":
   version: 4.0.2
   resolution: "raw-loader@npm:4.0.2"
   dependencies:
@@ -12818,6 +13017,18 @@ __metadata:
   bin:
     rc: ./cli.js
   checksum: 10c0/24a07653150f0d9ac7168e52943cc3cb4b7a22c0e43c7dff3219977c2fdca5a2760a304a029c20811a0e79d351f57d46c9bde216193a0f73978496afc2b85b15
+  languageName: node
+  linkType: hard
+
+"react-depth-map@https://github.com/story-tools-studio/react-depth-map-component.git":
+  version: 1.3.59
+  resolution: "react-depth-map@https://github.com/story-tools-studio/react-depth-map-component.git#commit=73cc1d82467d304841df5a8f9f617665fdad24a9"
+  dependencies:
+    glslify-loader: "npm:^2.0.0"
+    raw-loader: "npm:^4.0.1"
+  peerDependencies:
+    react: ^16.9.0
+  checksum: 10c0/c59bbf4934aa032656762aa646143408add9892b1398952b45c5004211f7ef476423dd090af698372f0c28e2d0a6243894cd8aaa72bc46ac7be38efd7747aee3
   languageName: node
   linkType: hard
 
@@ -12941,6 +13152,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-string-replace@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "react-string-replace@npm:1.1.1"
+  checksum: 10c0/5a4a4fd9c3758b4680da113adf411342116238b4dc68fa4c4e9b04c046cb757d4f00d6ba441301fa3afb44c847dacc17a2707865698ff1fc78a369182458e894
+  languageName: node
+  linkType: hard
+
 "react-swipeable@npm:^7.0.1":
   version: 7.0.1
   resolution: "react-swipeable@npm:7.0.1"
@@ -12977,6 +13195,18 @@ __metadata:
   dependencies:
     mute-stream: "npm:~0.0.4"
   checksum: 10c0/443533f05d5bb11b36ef1c6d625aae4e2ced8967e93cf546f35aa77b4eb6bd157f4256619e446bae43467f8f6619c7bc5c76983348dffaf36afedf4224f46216
+  languageName: node
+  linkType: hard
+
+"readable-stream@npm:>=1.0.33-1 <1.1.0-0":
+  version: 1.0.34
+  resolution: "readable-stream@npm:1.0.34"
+  dependencies:
+    core-util-is: "npm:~1.0.0"
+    inherits: "npm:~2.0.1"
+    isarray: "npm:0.0.1"
+    string_decoder: "npm:~0.10.x"
+  checksum: 10c0/02272551396ed8930ddee1a088bdf0379f0f7cc47ac49ed8804e998076cb7daec9fbd2b1fd9c0490ec72e56e8bb3651abeb8080492b8e0a9c3f2158330908ed6
   languageName: node
   linkType: hard
 
@@ -13360,7 +13590,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.22.4":
+"resolve@npm:^0.6.1":
+  version: 0.6.3
+  resolution: "resolve@npm:0.6.3"
+  checksum: 10c0/57f63aab332a668a1a424747b58851b7dddcfbd9b7a425a6050887858174943e499d1d11e3c10e676e8b0ede15ee6fc3ce919195c12d68082729db93a1517b6d
+  languageName: node
+  linkType: hard
+
+"resolve@npm:^1.0.0, resolve@npm:^1.10.0, resolve@npm:^1.14.2, resolve@npm:^1.19.0, resolve@npm:^1.22.4, resolve@npm:^1.3.3":
   version: 1.22.8
   resolution: "resolve@npm:1.22.8"
   dependencies:
@@ -13386,7 +13623,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.10.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.14.2#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.19.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.4#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^0.6.1#optional!builtin<compat/resolve>":
+  version: 0.6.3
+  resolution: "resolve@patch:resolve@npm%3A0.6.3#optional!builtin<compat/resolve>::version=0.6.3&hash=3bafbf"
+  checksum: 10c0/a46adc49c7d6828028244cf4d6b9e09d8334f8f175195685c96f5f415986e1587d8a83757ebc4e706be7b8b95911046e0ddc83e9be539050add1806564eff841
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@npm%3A^1.0.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.10.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.14.2#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.19.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.4#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.3.3#optional!builtin<compat/resolve>":
   version: 1.22.8
   resolution: "resolve@patch:resolve@npm%3A1.22.8#optional!builtin<compat/resolve>::version=1.22.8&hash=c3c19d"
   dependencies:
@@ -13842,6 +14086,13 @@ __metadata:
   version: 1.2.2
   resolution: "shallow-compare@npm:1.2.2"
   checksum: 10c0/6e79e8351e388a16beb6ca796bcfbe7dc9d007b5d4e85cd63da7bc93a418523c2fed8905f61dda3d278be20ce2781f181337823db900e7bf1f1acd0ae0cfec92
+  languageName: node
+  linkType: hard
+
+"shallow-copy@npm:0.0.1":
+  version: 0.0.1
+  resolution: "shallow-copy@npm:0.0.1"
+  checksum: 10c0/ab1c762e36fa3a02cec228e111f227be0b46457a82f123c5ef13f3bc970be16b74dbfd0f1b6ffb450a66db856832800c86713ffc1ec5733d61f59f23fe114769
   languageName: node
   linkType: hard
 
@@ -14345,6 +14596,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"string_decoder@npm:~0.10.x":
+  version: 0.10.31
+  resolution: "string_decoder@npm:0.10.31"
+  checksum: 10c0/1c628d78f974aa7539c496029f48e7019acc32487fc695464f9d6bdfec98edd7d933a06b3216bc2016918f6e75074c611d84430a53cb0e43071597d6c1ac5e25
+  languageName: node
+  linkType: hard
+
 "string_decoder@npm:~1.1.1":
   version: 1.1.1
   resolution: "string_decoder@npm:1.1.1"
@@ -14742,6 +15000,16 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: 10c0/02805740c12851ea5982686810702e2f14369a5f4c5c40a836821e3eefc65ffeec3131ba324692a37608294b0fd8c1e55a2dd571ffed4909822787668ddbee5c
+  languageName: node
+  linkType: hard
+
+"through2@npm:^0.6.3":
+  version: 0.6.5
+  resolution: "through2@npm:0.6.5"
+  dependencies:
+    readable-stream: "npm:>=1.0.33-1 <1.1.0-0"
+    xtend: "npm:>=4.0.0 <4.1.0-0"
+  checksum: 10c0/3294325d73b120ffbb8cd00e28a649a99e194cef2638bf782b6c2eb0c163b388f7b7bb908003949f58f9f6b8f771defd24b6e4df051eb410fd87931521963b98
   languageName: node
   linkType: hard
 
@@ -15950,10 +16218,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xtend@npm:^4.0.0":
+"xtend@npm:>=4.0.0 <4.1.0-0, xtend@npm:^4.0.0":
   version: 4.0.2
   resolution: "xtend@npm:4.0.2"
   checksum: 10c0/366ae4783eec6100f8a02dff02ac907bf29f9a00b82ac0264b4d8b832ead18306797e283cf19de776538babfdcb2101375ec5646b59f08c52128ac4ab812ed0e
+  languageName: node
+  linkType: hard
+
+"xtend@npm:^2.1.2":
+  version: 2.2.0
+  resolution: "xtend@npm:2.2.0"
+  checksum: 10c0/396c724b8ea54c7346d7ca304116dc9aa0327b4cee4782c0a42707e6022d9a6b1c1d61b056357b1ee24102d6a366a90a313cc38e79bf70452d4d205b64a1575f
   languageName: node
   linkType: hard
 

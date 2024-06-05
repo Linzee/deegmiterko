@@ -3,13 +3,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
+import ImageDepthMap from 'react-depth-map';
 
 import "./banner.scss";
+
+import imgBanner from "../../images/banner.jpg";
+import depthBanner from "../../images/banner-depth.jpg";
 
 const Banner = ({ siteMetadata }) => {
   return (
     <header className="banner">
       <div className="profile">
+        <ImageDepthMap
+          originalImg={imgBanner}
+          depthImg={depthBanner}
+          verticalThreshold={20}
+          horizontalThreshold={20}
+          reverseMotion={true}
+          respondTo="scrollOnY"
+          useGravity={true}
+        />
         {/*
         <StaticImage src="../../images/banner.jpg" alt={siteMetadata.author} layout="constrained" />
         */}

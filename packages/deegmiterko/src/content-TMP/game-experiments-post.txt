@@ -1,0 +1,5 @@
+primary: pushing on the boundaries
+negative: !not! replicating the working solution over and over
+You: wave: evolution, selection and die off
+
+..continuation, once you put them together you can create something new, convey a message you couldn't before

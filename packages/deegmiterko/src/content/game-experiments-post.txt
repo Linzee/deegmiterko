@@ -1,4 +1,0 @@
-primary: pushing on the boundaries
-negative: !not! replicating the working solution over and over
-wave: evolution, selection and die off
-- 

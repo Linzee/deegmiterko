@@ -36,7 +36,6 @@ const BookContent: FunctionComponent<{
   });
 
   useEffect(() => {
-    console.log(book.pages[current], book.pages)
     if(book.pages[current]) {
       const hash = `#${book.pages[current].pageId}`;
       history.pushState({}, `Dee Gmiterko - ${title}`, hash);
@@ -45,7 +44,6 @@ const BookContent: FunctionComponent<{
 
   useEffect(() => {
     let timeout: NodeJS.Timeout|undefined;
-    console.log(bookVisible, current, swipingDir)
     if(bookVisible && current == 0) {
       if(swipingDir == 0) {
         timeout = setTimeout(() => {

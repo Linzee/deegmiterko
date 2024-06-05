@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { faUser, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGithub, faInstagram, faLinkedin, faPatreon, faTiktok, faTwitter, faYoutube, faSteam, faDeviantart } from '@fortawesome/free-brands-svg-icons';
 
-import SEO from "../components/SEO";
+import Seo from "../components/Seo";
 import Linktree from "../components/Linktree"
 import HeaderAnnouncement from "../components/HeaderAnnouncement";
 
@@ -108,11 +108,6 @@ const TreePage = ({ data, pageContext }) => {
 
   return (
     <>
-      <SEO
-        title={"Link tree"}
-        siteMetadata={data.site.siteMetadata}
-        canGoDark={true}
-      />
       <HeaderAnnouncement siteMetadata={data.site.siteMetadata} />
       <div className="page-tree">
         <main>
@@ -124,6 +119,14 @@ const TreePage = ({ data, pageContext }) => {
 };
 
 export default TreePage;
+
+export const Head = ({ data: {site} }) => (
+  <Seo 
+    title={"Link tree"}
+    siteMetadata={site.siteMetadata}
+    canGoDark={true}
+  />
+)
 
 export const pageQuery = graphql`
   query TreeQuery {

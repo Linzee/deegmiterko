@@ -1,18 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PageProps, graphql } from "gatsby";
+import { useLocation } from "@reach/router";
 
-import SEO from "../components/SEO";
+import Seo from "../components/Seo";
 import Banner from "../components/Banner";
 import Conversation from "../components/Conversation";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import HeaderAnnouncement from "../components/HeaderAnnouncement";
+import useApp from "../hooks/useApp";
+import LightboxImage from "../components/LightboxImage";
 
-import SlidesArtful from "../slides/artful/SlidesArtful";
-import SlidesGenerativeDesign from "../slides/generative_design/SlidesGenerativeDesign";
-import SlidesGameExperiments from "../slides/game_experiments/SlidesGameExperiments";
-import SlidesProfessional from "../slides/professional/SlidesProfessional";
-import SlidesMe from "../slides/me/SlidesMe";
+import SlidesArtful from "../components/slides/SlidesArtful";
+import SlidesGenerativeDesign from "../components/slides/SlidesGenerativeDesign";
+import SlidesGameExperiments from "../components/slides/SlidesGameExperiments";
+import SlidesProfessional from "../components/slides/SlidesProfessional";
+import SlidesMe from "../components/slides/SlidesMe";
 
 type IndexData = {
   site: {
@@ -35,57 +38,74 @@ type IndexData = {
   },
 }
 
-const IndexPage = ({ data }: PageProps<IndexData>) => {
-
-  const content = {};
-  data.content.edges.forEach(({node: {name, childChatParsed: {conversations}}}) => {
-    content[name] = conversations[0].messages;
+const IndexPage = ({ data: { content, site } }: PageProps<IndexData>) => {
+  const location = useLocation();
+  const { books } = useApp();
+  
+  const contentMap = {};
+  content.edges.forEach(({node: {name, childChatParsed: {conversations}}}) => {
+    contentMap[name] = conversations[0].messages;
   });
+
+  useEffect(() => {
+    if(location.hash) {
+      const pageId = location.hash.substring(1);
+      for (const book of Object.values(books)) {
+        const pageIndex = book.pages.findIndex(({ pageId: p }) => p == pageId);
+        if(pageIndex >= 0) {
+          book.openToPage(pageIndex);
+          break;
+        }
+      }
+    }
+  }, [location.hash]);
   
   return (
     <>
-      <SEO
-        siteMetadata={data.site.siteMetadata}
-      />
-      <HeaderAnnouncement siteMetadata={data.site.siteMetadata} />
+      <HeaderAnnouncement siteMetadata={site.siteMetadata} />
+      
       <div className="page-about">
-        <Banner siteMetadata={data.site.siteMetadata} />
+        <Banner siteMetadata={site.siteMetadata} />
 
         <main id="about">
-          <h2>Artist</h2>
-          <Conversation messages={content["artful-pre"]} />
+          <Conversation messages={contentMap["introduction"]} />
+          
           <SlidesArtful />
-          <Conversation messages={content["artful-post"]} />
           
-          <h2>Tie-in of art and tech</h2>
-          <Conversation messages={content["generative-design-pre"]} />
+          <Conversation messages={contentMap["artful"]} />
+
           <SlidesGenerativeDesign />
-          <Conversation messages={content["generative-design-post"]} />
           
-          <h2>Game developer</h2>
-          <Conversation messages={content["game-experiments-pre"]} />
+          <Conversation messages={contentMap["generative-design"]} />
+          
           <SlidesGameExperiments />
-          <Conversation messages={content["game-experiments-post"]} />
           
-          <h2>Professional</h2>
-          <Conversation messages={content["professional-pre"]} />
+          <Conversation messages={contentMap["game-experiments"]} />
+          
           <SlidesProfessional />
-          <Conversation messages={content["professional-post"]} />
           
-          <h2>Dee Gmiterko</h2>
+          <Conversation messages={contentMap["professional"]} />
+          
           <SlidesMe />
-          <Conversation messages={content["me"]} />
+
+          <Conversation messages={contentMap["me"]} />
         </main>
 
-        <Contact siteMetadata={data.site.siteMetadata} />
+        <Contact siteMetadata={site.siteMetadata} />
 
-        <Footer siteMetadata={data.site.siteMetadata} />
+        <Footer siteMetadata={site.siteMetadata} />
       </div>
+
+      <LightboxImage />
     </>
   )
 };
 
 export default IndexPage;
+
+export const Head = ({ data: {site} }) => (
+  <Seo siteMetadata={site.siteMetadata} />
+);
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -105,7 +125,6 @@ export const pageQuery = graphql`
     }
     content: allFile(
       filter: {sourceInstanceName: {eq: "content"}}
-      sort: {name: ASC}
     ) {
       edges {
         node {
@@ -117,17 +136,6 @@ export const pageQuery = graphql`
               messages {
                 author
                 message
-                title
-                media {
-                  type
-                  url
-                  alt
-                }
-                website {
-                  url
-                  title
-                  imageUrl
-                }
               }
             }
           }

@@ -9,7 +9,7 @@ import "./src/style/index.scss";
 import React from "react";
 import { AppProvider } from "./src/contexts/appContext";
 
-export const wrapPageElement = ({ element }) => {
+export const wrapRootElement = ({ element }) => {
   return (
     <AppProvider>
       {element}

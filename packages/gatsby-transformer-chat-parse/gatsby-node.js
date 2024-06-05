@@ -1,4 +1,3 @@
-import _ from "lodash";
 import { chatParse } from "./chatParse.js";
 
 export const onCreateNode = async ({
@@ -38,6 +37,43 @@ export const onCreateNode = async ({
       conversations: parsedContent
     },
     createNodeId(`${node.id} >>> chatParsed`),
-    _.upperFirst(_.camelCase(`Chat Parsed`))
+    "ChatParsed",
   );
+}
+
+export const createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  const typeDefs = `
+    type ChatParsed implements Node {
+      conversations: [Conversation]
+    }
+
+    type Conversation {
+      user: String
+      messages: [Message]
+    }
+
+    type Message {
+      order: Int
+      author: String
+      pfp: String
+      message: String
+      title: String
+      website: MessageWebsite
+      media: MessageMedia
+    }
+
+    type MessageWebsite {
+      url: String
+      title: String
+      imageUrl: String
+    }
+
+    type MessageMedia {
+      type: String
+      url: String
+      alt: String
+    }
+  `;
+  createTypes(typeDefs);
 }

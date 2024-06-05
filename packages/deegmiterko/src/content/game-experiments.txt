@@ -1,0 +1,7 @@
+Only once we find that something works, we can start to build on it.
+You: <I think that's actually very clever.>
+
+$title: Professional experience
+
+Which is where my professional experience comes in.
+You: Where have you worked?

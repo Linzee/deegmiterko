@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
+        name: `contentImages`,
+        path: path.join(__dirname, `src`, `images/content`),
       },
     },
     {
@@ -35,7 +35,21 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          backgroundColor: `white`,
+          blurredOptions: {
+            width: 100,
+            toFormat: 'webp',
+          },
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
     {
       resolve: `@deegmiterko/gatsby-transformer-chat-parse`,

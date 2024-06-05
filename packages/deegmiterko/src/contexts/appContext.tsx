@@ -1,19 +1,24 @@
 import React, { createContext, useContext, FunctionComponent, ReactNode, useState, useLayoutEffect, useRef, useEffect } from "react";
-import { useLocation } from "@reach/router";
 import { BookStore } from "./bookContext";
+import { IGatsbyImageData } from "gatsby-plugin-image";
 
 export type AppType = {
   bookPageSize: number,
   bookPageScale: number,
   registerBook: (id: string, book: BookStore) => void,
+  books: Record<string, BookStore>,
+  setLightboxImage: (image: IGatsbyImageData) => void,
+  lightboxImage: IGatsbyImageData|undefined,
+  lightboxOpen: boolean,
 }
 
 const AppContext = createContext<AppType|undefined>(undefined);
 
 export const AppProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
   const [size, setSize] = useState<[number, number]>([0, 0]);
-  const location = useLocation();
   const books = useRef<Record<string, BookStore>>({});
+  const [lightboxImage, setLightboxImage] = useState<IGatsbyImageData>();
+  const [lightboxOpen, setLightboxOpen] = useState(false);
   
   useLayoutEffect(() => {
     function updateSize() {
@@ -23,19 +28,6 @@ export const AppProvider: FunctionComponent<{ children: ReactNode }> = ({ childr
     updateSize();
     return () => window.removeEventListener("resize", updateSize);
   }, []);
-
-  useEffect(() => {
-    if(location.hash) {
-      const pageId = location.hash.substring(1);
-      for (const book of Object.values(books.current)) {
-        const pageIndex = book.pages.findIndex(({ pageId: p }) => p == pageId);
-        if(pageIndex >= 0) {
-          book.openToPage(pageIndex);
-          break;
-        }
-      }
-    }
-  }, [location.hash]);
 
   const registerBook = (id: string, book: BookStore) => {
     books.current[id] = book;
@@ -51,6 +43,13 @@ export const AppProvider: FunctionComponent<{ children: ReactNode }> = ({ childr
         bookPageSize,
         bookPageScale,
         registerBook,
+        books: books.current,
+        setLightboxImage: (image) => {
+          if(image) setLightboxImage(image);
+          setLightboxOpen(!!image);
+        },
+        lightboxImage,
+        lightboxOpen,
       }}
     >
       {children}
