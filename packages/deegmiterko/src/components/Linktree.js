@@ -1,15 +1,14 @@
 import React from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
-import Item from "./Item";
+import Item from "./LinktreeItem";
 
-import "./linktree.scss"
 
-const Linktree = ({ categoriesLinks, siteMetadata, profileImg }) => {
+const Linktree = ({ categoriesLinks, siteMetadata }) => {
   return (
     <div className="linktree">
       <div className="profile">
-        <GatsbyImage image={profileImg} alt={siteMetadata.author} />
+        <StaticImage src="../images/profile.jpg" layout="constrained" alt={siteMetadata.author} />
         <h2>{siteMetadata.title}</h2>
       </div>
       <div className="container">

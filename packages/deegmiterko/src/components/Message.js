@@ -2,10 +2,10 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import reactStringReplace from 'react-string-replace';
 import slugify from 'slugify';
-import Scramble from '../Scramble';
+import Scramble from './Scramble';
 
 const messageNodes = (text) => {
-  text = reactStringReplace(text, /\<(.*?)\>/g, (match, i) => {
+  text = reactStringReplace(text, /<(.*?)>/g, (match, i) => {
     return (
       <Scramble key={i} text={match} />
     );
@@ -30,7 +30,7 @@ const Message = ({ data, contentImages }) => {
         );
       } else {
         media = (
-          <img src={data.media.url} />
+          <img src={data.media.url} alt="" />
         );
       }
     } else if (data.media.type === 'audio') {

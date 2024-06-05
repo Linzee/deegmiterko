@@ -3,8 +3,8 @@ import { ChevronsRight, ChevronsLeft } from "react-feather";
 import VisibilitySensor from "react-visibility-sensor";
 import { useSwipeable } from "react-swipeable";
 
-import useApp from "../../hooks/useApp";
-import useBook from "../../hooks/useBook";
+import useApp from "../hooks/useApp";
+import useBook from "../hooks/useBook";
 
 const BookContent: FunctionComponent<{
   title: string,

@@ -5,10 +5,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import ImageDepthMap from 'react-depth-map';
 
-import "./banner.scss";
-
-import imgBanner from "../../images/banner.jpg";
-import depthBanner from "../../images/banner-depth.jpg";
+import imgBanner from "../images/banner.jpg";
+import depthBanner from "../images/banner-depth.jpg";
 
 const Banner = ({ siteMetadata }) => {
   return (

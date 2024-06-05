@@ -1,6 +1,6 @@
 import React from "react";
 import { FunctionComponent } from "react";
-import { stringToUniqueIndex } from "../../helpers/utils";
+import { stringToUniqueIndex } from "../helpers/utils";
 
 const splitScrambleParts = (text: string) => {
   const i = 1 + stringToUniqueIndex(text, 8);

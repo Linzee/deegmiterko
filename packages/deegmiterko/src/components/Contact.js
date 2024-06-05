@@ -1,9 +1,7 @@
 import React from "react";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 
-import useApp from "../../hooks/useApp";
-
-import "./contact.scss"
+import useApp from "../hooks/useApp";
 
 const Contact = () => {
   const { bookPageSize } = useApp();

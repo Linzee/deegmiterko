@@ -14,5 +14,5 @@ export const wrapRootElement = ({ element }) => {
     <AppProvider>
       {element}
     </AppProvider>
-  );
-};
+  )
+}

@@ -16,18 +16,10 @@ import SlidesGenerativeDesign from "../components/slides/SlidesGenerativeDesign"
 import SlidesGameExperiments from "../components/slides/SlidesGameExperiments";
 import SlidesProfessional from "../components/slides/SlidesProfessional";
 import SlidesMe from "../components/slides/SlidesMe";
+import { SiteData } from "../types";
 
 type IndexData = {
-  site: {
-    siteMetadata: {
-      author: string,
-      description: string,
-      siteUrl: string,
-      title: string,
-      keywords: string,
-      tagline: string,
-    },
-  },
+  site: SiteData,
   content: {
     edges: {
       node: {

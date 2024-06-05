@@ -68,6 +68,7 @@ const SlidesProfessional: FunctionComponent = () => {
             As a link between server platform underneat and the data processing scripts on top, it's a great tool for managing data workflows. At this time I've been using it a lot in order to:
           </p>
           <ul>
+            <li></li>
             <li>Reliably prepare and distribute monthly reports</li>
             <li></li>
           </ul>
@@ -131,7 +132,7 @@ const SlidesProfessional: FunctionComponent = () => {
 
       <Page title="Education">
         <h4 className="subtitle">Masaryk University</h4>
-        <div className="example-bar">
+        <div className="example">
           <div className="example-title">
             <h4>
               <a href="https://is.muni.cz/obory/8143?lang=en">Computer Systems and Data Processing</a> (2015 – 2018)
@@ -150,9 +151,6 @@ const SlidesProfessional: FunctionComponent = () => {
               <a className="btn-source" href="https://is.muni.cz/th/l5dzj/gmiterko-similarity.pdf">§ Read full text</a>
             </p>
           </div>
-        </div>
-        <p></p>
-        <div className="example-bar">
           <div className="example-title">
             <h4>
               <a href="https://is.muni.cz/program/22961/artificial%20intelligence%20and%20data%20processing">Artificial intelligence and data processing</a> (2018 – 2020)

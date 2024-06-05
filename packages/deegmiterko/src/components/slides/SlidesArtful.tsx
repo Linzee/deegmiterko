@@ -107,7 +107,7 @@ const SlidesArtful: FunctionComponent = () => {
             <p>
 
             </p>
-            <StaticImage src="./media/digital.jpg" layout="fullWidth" alt="Digital drawing" className="w-80" />
+            <LightboxButton path="digital.jpg" alt="Digital drawing" buttonClassName="w-80" />
           </div>
         </div>
         <p>
@@ -117,11 +117,11 @@ const SlidesArtful: FunctionComponent = () => {
           <div className="example-title">
             <h4>Hexaflexagon (2017)</h4>
           </div>
-          <div>
-            <StaticImage src="./media/asset-drawing.png" layout="fullWidth" alt="Asset drawing" className="w-80" />
-            <p>
-              A set of image generators constructing.. 
-            </p>
+          <p>
+            A set of image generators constructing patterns that can be folded into a "hexaflexagon"
+          </p>
+          <div className="text-center">
+            {/* <LightboxButton path="asset-drawing.png" alt="Asset drawing" buttonClassName="w-80" /> */}
           </div>
         </div>
       </Page>

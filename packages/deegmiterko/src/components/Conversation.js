@@ -1,7 +1,7 @@
 import React from "react";
 
 import Message from "./Message";
-import useApp from "../../hooks/useApp";
+import useApp from "../hooks/useApp";
 
 const Conversation = ({ messages, contentImages }) => {
   const { bookPageSize } = useApp();

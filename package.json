@@ -2,13 +2,13 @@
   "name": "deegmiterko",
   "private": true,
   "description": "Personal website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.3.1"
   },
   "keywords": [
     "gatsby"

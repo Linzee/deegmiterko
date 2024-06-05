@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactNode, useState } from "react";
 
 import { BookProvider } from "../contexts/bookContext";
-import BookContent from "./BookContent/BookContent";
+import BookContent from "./BookContent";
 
 const Book: FunctionComponent<{
   children: Array<ReactNode>,

@@ -1,3 +1,12 @@
-declare module "*.png"
-declare module "*.jpg"
-declare module "*.webm"
+export type SiteMetadata = {
+  author: string,
+  description: string,
+  siteUrl: string,
+  title: string,
+  keywords: string[],
+  tagline: string,
+}
+
+export type SiteData = {
+  siteMetadata: SiteMetadata,
+}

@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "description": "Gatsby transformer to convert simple chat format to objects",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Dominik Gmiterko <d.gmiterko@gmail.com>",
   "dependencies": {
     "lodash": "^4.17.21",

@@ -4,4 +4,13 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+import React from "react";
+import { AppProvider } from "./src/contexts/appContext";
+
+export const wrapRootElement = ({ element }) => {
+  return (
+    <AppProvider>
+      {element}
+    </AppProvider>
+  )
+}

@@ -7,7 +7,7 @@ import Seo from "../components/Seo";
 import Linktree from "../components/Linktree"
 import HeaderAnnouncement from "../components/HeaderAnnouncement";
 
-const TreePage = ({ data, pageContext }) => {
+const TreePage = ({ data: { site } }) => {
   const categoriesLinks = [
     {
       name: "Website",
@@ -108,10 +108,10 @@ const TreePage = ({ data, pageContext }) => {
 
   return (
     <>
-      <HeaderAnnouncement siteMetadata={data.site.siteMetadata} />
+      <HeaderAnnouncement siteMetadata={site.siteMetadata} />
       <div className="page-tree">
         <main>
-          <Linktree categoriesLinks={categoriesLinks} siteMetadata={data.site.siteMetadata} profileImg={data.profileImg.childImageSharp.gatsbyImageData} />
+          <Linktree categoriesLinks={categoriesLinks} siteMetadata={site.siteMetadata} />
         </main>
       </div>
     </>
@@ -141,11 +141,6 @@ export const pageQuery = graphql`
           title
           link
         }
-      }
-    }
-    profileImg: file(sourceInstanceName: {eq: "images"}, relativePath: {eq: "profile.jpg"}) {
-      childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED)
       }
     }
   }
