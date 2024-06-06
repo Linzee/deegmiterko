@@ -81,43 +81,45 @@ const SlidesProfessional: FunctionComponent = () => {
 
       <Page title="Freelance development">
         <p>
-          Working in a freelance capacity, not being bound by constraints of a single company, I've had the opportunity to work on a variety of projects. But it also means I had to wear many hats each day. I have done everything from gathering requirements, designing, developing, testing, deploying, maintaining, supporting, to accounting. Wearing all the hats is not always easy, but it's definitely a great way to learn your limits.
-          ( For me it's <span className="d-inline-block"><TagList tags={["Accounting", "Marketing & Sales"]} /></span>)
+          Working in a freelance capacity, not being bound by constraints of a single company, I've had the opportunity to work
+          on a variety of projects. But it also means I had to wear many hats each day. I have done everything from gathering
+          requirements, designing, developing, testing, deploying, and maintaining. Doing it it all is not always easy, but it
+          definitely teaches you your limits. ( For me it's <span className="d-inline-block"><TagList tags={["Accounting", "Marketing & Sales"]} /></span> )
         </p>
         <div className="grow" />
-        <div className="example-bar">
+        <div className="example">
           <div className="example-title">
             <h4>Fullstack @ <span className="subheading">Blockchain game development</span> (2022 – 2023)</h4>
           </div>
           <TagList tags={["Frontend", "Backend", "Project management", "Game dev", "Blockchain", "UI design", "Services integration", "Ops", "Unity"]} />
           <p>
-            My 
+            I started my freelancing by developing small blockchain based products, later getting into bigger game projects.
           </p>
           <ul className="two-columns">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Smart contracts (Solidity)</li>
+            <li>NFT collections</li>
+            <li>Ethereum, Immutable X, Avalanche</li>
+            <li>Blockchain-based gaming</li>
           </ul>
-        </div>
-        <p> </p>
-        <div className="example">
+          <div className="grow" />
           <div className="example-title">
             <h4>
               Fullstack @ <span className="subheading">Tailored system development</span> (2023 – 2024)
             </h4>
           </div>
           <TagList tags={["Static websites", "Application", "Typescript", "Video streaming", "Adaptive learning", "User analytics", "Firebase", "Google Cloud Platform", "CDN", "UI design", "Ops", "Templating", "Processes automation"]} />
-          <p>
-            TODO
-          </p>
-          <div className="text-right">
-            <a className="btn-source" href="#system-na-medicinu">Project details&nbsp;&nbsp;&nbsp;▷</a>
+          <div className="col-8-4">
+            <p className="mb-0">
+              Afterwards I moved onto more traditional projects. Working on tailored systems for clients, there is one project in particular I would like to highlight.
+            </p>
+            <div className="text-right align-self-end">
+              <a className="btn-source" href="#freelance-development-na-medicinu">Project details&nbsp;&nbsp;&nbsp;▷</a>
+            </div> 
           </div>
         </div>
       </Page>
 
-      <Page title="Freelance development" subtitle="Na medicínu">
+      <Page title="Freelance development" subtitle="Na medicínu" titleClassName="mb-0">
         <p>
           One project in particular I would like to highlight is a set of services that I developed for study course <a href="https://namedicinu.cz">Na medicínu</a>.
         </p>
@@ -126,38 +128,44 @@ const SlidesProfessional: FunctionComponent = () => {
             <h4>Na medicínu (2024)</h4>
           </div>
           <p>
-            Study course for students preparing for entrance exams to medical schools.
+            Study course for students preparing for entrance exams to medical schools. It consists of several parts:
           </p>
           <div className="col-8-4">
-            <div>
-              <div>
-                <h5>Public websites</h5>
-                <ul>
-                  <li>Bring new people in</li>
+            <ul className="deep">
+              <li>
+                <p className="mb-1">Public websites</p>
+                <ul className="two-columns">
+                  <li>Static ecommerece website</li>
+                  <li>To bring new people in</li>
                 </ul>
-              </div>
-              <div>
-                <h5>Internal system for students and lectors</h5>
-                <ul>
-                  <li>Helping students to learn by providing lecture video recordings</li>
-                  <li>and an adaptive environment for flashcard learning</li>
-                  <li>While also empowering lectors to know what are strengths and weaknesses of their students</li>
+              </li>
+              <li>
+                <p className="mb-1">Internal system for students and lectors</p>
+                <ul className="two-columns">
+                  <li>Helping students learn</li>
+                  <li>Empowering lectors</li>
+                  <li>Video streaming platform</li>
+                  <li>Analysis of progress</li>
+                  <li>Adaptive learning quizzes</li>
                 </ul>
-              </div>
-              <div>
-                <h5>Admin backend</h5>
-                <ul>
-                  <li>Seamlessly handle lecture recording upload and processing.</li>
-                  <li>And control over users, their access and management for quizzes and website content.</li>
+              </li>
+              <li>
+                <p className="mb-1">Admin backend</p>
+                <ul className="two-columns">
+                  <li>User access control</li>
+                  <li>Roles and permissions</li>
+                  <li>Content management</li>
+                  <li>Website content editor</li>
                 </ul>
-              </div>
-              <div>
-                <h5>Analytics, data export for invoicing, email generator</h5>
+              </li>
+              <li>
+                <p className="mb-1">Processes automation and email generator</p>
                 <ul>
-                  <li>Measurable insights for usage of the system</li>
+                  <li>Registration workflow</li>
+                  <li>Tools for exporting data for accounting</li>
                 </ul>
-              </div>
-            </div>
+              </li>
+            </ul>
             <div>
               <p>
                 <LightboxButton path="namedicinu-1.jpg" alt="Na medicínu - Public website" buttonClassName="screenshot-border" />
@@ -261,6 +269,8 @@ All the stuff you can find out about me easily, neat.
 - Kiwi [Data Engineer]
 - Freelance development [-]
   - BB: blockchain game product engineering
+
+    
   - Namedicinu: 
 
 [3.] Education
