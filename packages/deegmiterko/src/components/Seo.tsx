@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Helmet from "react-helmet";
 
-import useApp from '../hooks/useApp';
-
 import siteImage from '../images/og-banner.jpg';
 import { SiteMetadata } from "../types";
 
@@ -14,8 +12,6 @@ const Seo: FunctionComponent<{
   const siteName = siteMetadata.title;
   const siteDescription = siteMetadata.description;
   const keywords = siteMetadata.keywords;
-  
-  const {bookPageSize, bookPageScale} = useApp();
   
   return (
     <Helmet
@@ -47,7 +43,7 @@ const Seo: FunctionComponent<{
         }
       ]}
     >
-      <html style={{"--book-page-size": `${bookPageSize}px`, "--book-page-scale": `${bookPageScale}`}} />
+      <html />
       <body lang="en" className={canGoDark ? "can-go-dark" : undefined} />
     </Helmet>
   );

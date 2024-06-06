@@ -77,6 +77,9 @@ const SlidesArtful: FunctionComponent = () => {
           <div className="text-center">
             <LightboxButton path="hard-pastel/title.jpg" alt="Hard pastel: Scene" buttonClassName="w-80" />
           </div>
+          <div className="text-right">
+            <a className="btn-source" href="#hard-pastel-2014-present">More drawings&nbsp;&nbsp;&nbsp;▷</a>
+          </div>
         </div>
       </Page>
 

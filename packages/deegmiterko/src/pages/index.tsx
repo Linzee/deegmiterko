@@ -32,7 +32,7 @@ type IndexData = {
 
 const IndexPage = ({ data: { content, site } }: PageProps<IndexData>) => {
   const location = useLocation();
-  const { books } = useApp();
+  const { books, bookPageSize, bookPageScale } = useApp();
   
   const contentMap = {};
   content.edges.forEach(({node: {name, childChatParsed: {conversations}}}) => {
@@ -56,7 +56,7 @@ const IndexPage = ({ data: { content, site } }: PageProps<IndexData>) => {
     <>
       <HeaderAnnouncement siteMetadata={site.siteMetadata} />
       
-      <div className="page-about">
+      <div className="page-about" style={{"--book-page-size": `${bookPageSize}px`, "--book-page-scale": `${bookPageScale}`}}>
         <Banner siteMetadata={site.siteMetadata} />
 
         <main id="about">

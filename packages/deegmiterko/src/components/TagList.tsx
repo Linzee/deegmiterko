@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { stringToUniqueIndex } from "../helpers/utils";
+import clsx from "clsx";
 
 const tagColors = [
   "#f94144",
@@ -16,14 +17,17 @@ const tagColors = [
 
 const TagList: FunctionComponent<{
   tags: Array<string>,
-}> = ({tags}) => {
+  className?: string,
+}> = ({
+  tags, className
+}) => {
   
   const tagColor = (tag: string) => {
     return tagColors[stringToUniqueIndex(tag, tagColors.length)];
   }
 
   return (
-    <div className="tag-list">
+    <div className={clsx("tag-list", className)}>
       {tags.map(tag => (
         <span key={tag} className="tag" style={{backgroundColor: tagColor(tag)}}>
           {tag}
