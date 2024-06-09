@@ -19,30 +19,34 @@ import vidParametrizationC from "../../images/content/parametrization-c.mp4";
 import imgSimulation from "../../images/content/simulation.png";
 import vidSimulation from "../../images/content/simulation.mp4";
 import LightboxButton from "../LightboxButton";
+import Scramble from "../Scramble";
 
 const SlidesGenerativeDesign: FunctionComponent = () => {
 
   return (
     <Book id="generative-design" title="Generative Design">
 
-      <TitlePage title="Generative Design Concepts" lecture={2} />
+      <TitlePage title="Generative Design" lecture={2}>
+        <p>
+          The process of creating media with the help of scripts and purpose built programs.
+        </p>
+      </TitlePage>
 
-      <Page title="Purpose of the Generative Design" level={2}>
-        <p>Procedural design often tackles a combination of all three mentioned purposes. For example: A live visualization that takes in current weather conditions and use it to control simulation of clouds in the background.</p>
+      <Page title="Purposes of Generative Design" level={2}>
         <div className="grow"></div>
-        <h3 id="art">Art</h3>
-        <p>First and foremost, it’s most commonly presented as art. So its purpose is to express emotions, tell stories.</p>
+        <h3>Just art</h3>
+        <p>First and foremost, it’s most commonly presented just as a form of art. It can be used to create visually appealing images, animations, or even music.</p>
         <div className="example-bar">
           <LightboxButton path="purpose-art.png" alt="Abstract generated flower" />
         </div>
       </Page>
 
-      <Page title="Visualize">
+      <Page title="To visualize">
         <p>However, generative art can be utilized also for other means. For example to visually represent the significance of data to the viewer. As visual content is processed much faster and easier than text or a spreadsheet full of data it’s advantageous to let a computer generate visual representations for them.</p>
         <div className="example-bar">
           <LightboxButton path="purpose-visualize.png" buttonClassName="w-80" alt="Visualization comparison" />
         </div>
-        <h3 id="simulate">Simulate</h3>
+        <h3>Or simulate</h3>
         <p>Another related field is simulation and modeling. Its aim is to copy physical properties and visually understand complex systems by building their approximations - models.</p>
         <div className="example-bar">
           <LightboxButton path="purpose-simulate.png" buttonClassName="w-80" alt="Simulation comparison" />
@@ -50,7 +54,7 @@ const SlidesGenerativeDesign: FunctionComponent = () => {
       </Page>
 
       <Page title="Media used by Generative Design" level={2}>
-        <h3 id="image-and-video">Image and video</h3>
+        <h3>Image and video</h3>
         <p>The most commonly used media in generative design are without a doubt images and video.</p>
         <div className="grow"></div>
         <div className="example">
@@ -95,7 +99,7 @@ const SlidesGenerativeDesign: FunctionComponent = () => {
       </Page>
 
       <Page title="Generative Design concepts" level={2}>
-        <h3 id="parameterization">Parameterization</h3>
+        <h3>Parameterization</h3>
         <p>I htink that the most important concept of generative design is parameterization. Script can use input parameters (for example width of the image, numbef or fish) and using them calculate location, shape, color, and movement of objects on the screen. You should be then able to tweak parameters to produce many differnet art pieces.</p>
         <div className="grow"></div>
         <div className="example">
@@ -201,11 +205,14 @@ const SlidesGenerativeDesign: FunctionComponent = () => {
         </p>
         <div className="example-bar">
           <div className="example-title">
-            <h4>Puzzle puzzle (<em title="To be defined"> TBD </em>)</h4>
-            <a className="btn-source" href="https://github.com/dee-gmiterko/puzzle-puzzle/">&lt;/&gt; Browse source code</a>
+            <h4>Puzzles (<em title="To be defined"> TBD </em>)</h4>
+            <span className="btn-source disabled">&lt;/&gt; Browse source code</span>
           </div>
           <p>
-            TODO
+            <Scramble text="A very secret description of an ongoing project that you read very successfully." />
+          </p>
+          <p className="text-center">
+            <LightboxButton path="puzzles.jpg" alt="Generative design concept mixing" buttonClassName="w-50 opacity-50" />
           </p>
         </div>
         <p className="text-center">...</p>

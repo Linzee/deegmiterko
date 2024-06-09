@@ -18,6 +18,10 @@ a {
   padding: 2rem;
 }
 
+.page-about {
+  overflow-x: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   body.can-go-dark {
     background: rgb(56,23,74);

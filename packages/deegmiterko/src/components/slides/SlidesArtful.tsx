@@ -6,10 +6,10 @@ import ReferencesPage from "../ReferencesPage";
 import TitlePage from "../TitlePage";
 import Page from "../Page";
 import LightboxButton from "../LightboxButton";
+import MasonryPage from "../MasonryPage";
 
 const SlidesArtful: FunctionComponent = () => {
-  const imgHardPastelHeight = 290;
-
+  
   return (
     <Book id="artful" title="Artful">
 
@@ -71,36 +71,62 @@ const SlidesArtful: FunctionComponent = () => {
           <div className="example-title">
             <h4>Hard pastel drawings (2016 – present)</h4>
           </div>
-          <p>
-            Over the years I've made many drawings using hard pastels...
-          </p>
+          
           <div className="text-center">
-            <LightboxButton path="hard-pastel/title.jpg" alt="Hard pastel: Scene" buttonClassName="w-80" />
+            <LightboxButton path="hard-pastel/title.jpg" alt="Hard pastel: Scene" buttonClassName="w-70" />
           </div>
           <div className="text-right">
-            <a className="btn-source" href="#hard-pastel-2014-present">More drawings&nbsp;&nbsp;&nbsp;▷</a>
+            <a className="btn-source" href="/#hard-pastel-2014-present">More drawings&nbsp;&nbsp;&nbsp;▷</a>
           </div>
         </div>
       </Page>
 
-      <Page title="Hard pastel" subtitle="2014 – present" className="example-page">
-        <div className="example-bar">
-          <div className="images-flow">
-            <StaticImage src="../../images/content/hard-pastel/mushroom-forest.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Mushroom forest" />
-            <StaticImage src="../../images/content/hard-pastel/choices.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Choices" />
-            <StaticImage src="../../images/content/hard-pastel/percy-tower.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Percy's tower" />
-            <StaticImage src="../../images/content/hard-pastel/game-garden.png" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Game garden concept" />
-            <StaticImage src="../../images/content/hard-pastel/masks.jpg" layout="fixed" height={imgHardPastelHeight} alt="Hard pastel: Masks of us" />
-            <a href="https://www.deviantart.com/dee-gmiterko">
-              <StaticImage src="../../images/content/hard-pastel/deviantart.png" layout="fixed" height={imgHardPastelHeight} alt="DevinatArt" />
-            </a>
-          </div>
-        </div>
-      </Page>
+      <MasonryPage title="Hard pastel" subtitle="2014 – present" rows={3}>
+        {[
+          {
+            type: "node",
+            aspectRatio: 1.5,
+            node: (
+              <div className="masonry-text" id="hard-pastel-2014-present">
+                <h3>
+                  Hard pastel drawings
+                  <p className="subtitle">2016 – present</p>
+                </h3>
+                <p>
+            Over the years I've made many drawings using hard pastels...
+          </p>
+              </div>
+            )
+          },
+          { type: "image", path: "hard-pastel/titan.jpg", alt: "Hard pastel: Titan" },
+          { type: "image", path: "hard-pastel/percy-tower.jpg", alt: "Hard pastel: Percy's tower" },
+          { type: "image", path: "hard-pastel/mushroom-forest.jpg", alt: "Hard pastel: Mushroom forest" },
+          { type: "image", path: "hard-pastel/game-garden.png", alt: "Hard pastel: Game garden concept" },
+          { type: "image", path: "hard-pastel/masks.jpg", alt: "Hard pastel: Masks of us" },
+          { type: "image", path: "hard-pastel/choices.jpg", alt: "Hard pastel: Choices" },
+          {
+            type: "node",
+            aspectRatio: 0.8,
+            node: (
+              <div className="masonry-text">
+                <p className="text-center">
+                  More at
+                </p>
+                <a href="https://www.deviantart.com/dee-gmiterko">
+                  <StaticImage src="../../images/content/hard-pastel/deviantart.png" layout="fixed" alt="DevinatArt" backgroundColor="transparent" placeholder="tracedSVG" />
+                </a>
+              </div>
+            )
+          },
+        ]}
+      </MasonryPage>
 
-      <Page title="Digital & virtual">
+      <Page title="Digital">
         <p>
           Another step in the evolution of art started with the digital era. As it brings new possibilities for creation and most importantly delivery.
+        </p>
+        <p>
+          The name itself is very commonly used interchangeably with an input method - a stylus and a tablet. As it's by far the best way to draw digitally. But it's not the only way.
         </p>
         <div className="example-bar">
           <div className="example-title">
@@ -108,7 +134,7 @@ const SlidesArtful: FunctionComponent = () => {
           </div>
           <div>
             <p>
-
+              I used digital drawing mostly for editing and creating assets for game development.
             </p>
             <LightboxButton path="digital.jpg" alt="Digital drawing" buttonClassName="w-80" />
           </div>
@@ -116,61 +142,44 @@ const SlidesArtful: FunctionComponent = () => {
         <p>
 
         </p>
-        <div className="example">
-          <div className="example-title">
-            <h4>Hexaflexagon (2017)</h4>
-          </div>
-          <p>
-            A set of image generators constructing patterns that can be folded into a "hexaflexagon"
-          </p>
-          <div className="text-center">
-            {/* <LightboxButton path="asset-drawing.png" alt="Asset drawing" buttonClassName="w-80" /> */}
-          </div>
-        </div>
       </Page>
 
-      {/*
-      <Page title="Audiovisual">
+      <Page title="Virtual (3D)" className="position-relative">
         <p>
-          The digital era brought us not only new ways to create art but also new ways to experience it. The audiovisual art is a great example of that.
+          Another huge expansion to capabilities of an artist was the introduction of 3D modeling. Most distinctly it allowed for a new way of creating audiovisual media with much less work needed.
         </p>
         <div className="example">
           <div className="example-title">
-            <h4>Game development (2018)</h4>
+            <h4>Girl papercraft (2014)</h4>
           </div>
+          <p>
+            My 3D modelling skills are not extensive at all, but I have made a few functional pieces. For example this low poly model was intended to be unrolled into a papercraft template.
+          </p>
           <div>
-            <StaticImage src="./media/asset-drawing.png" layout="fullWidth" alt="Asset drawing" className="w-80" />
-            <p>
-              A set of image generators constructing.. 
-            </p>
+            <a href="/files/girl-papercraft.pdf" className="btn-source">Download template</a>
           </div>
+          <div className="grow" />
         </div>
+        <StaticImage src="../../images/content/girl-render.png" layout="fixed" width={1200} height={1200} alt="Girl papercarft 3D render" className="page-overlay" backgroundColor="transparent" placeholder="blurred" />
       </Page>
-      */}
-
-      {/*
-
-      TODO prepare images and text
 
       <Page title="Visual space">
         <p>
-          Now, imagine that you are not constructing a single piece of art but a whole space containing many possible images. All part of a single concept.
-        </p>
-        <p>
-          Instead of growing the reach of audience, we grow the size and variety of the art itself.
+          Now, imagine that you are not constructing a single piece of art but a whole space containing many possible images. All part of a single concept - "sample space". While still being able to control how it looks and behaves.
         </p>
         <div className="grow"></div>
         <div className="example">
           <div className="example-title">
             <h4>Flower space (2024)</h4>
           </div>
-          <p>For example here I constructed and trained a neural network that can be used to sample many many images of imaginary plants.</p>
           <p>
-            <StaticImage src="./media/flower-space.png" layout="fullWidth" alt="Flower space" />
+            For example here I constructed and trained a neural network that when sampled returns images of imaginary plants.
+          </p>
+          <p>
+            <LightboxButton path="flower-space.jpg" alt="Flower space" />
           </p>
         </div>
       </Page>
-      */}
 
       <ReferencesPage references={["deviantart", "instagram"]} />
 

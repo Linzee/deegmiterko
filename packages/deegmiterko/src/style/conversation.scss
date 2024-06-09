@@ -64,30 +64,30 @@
     }
   }
 
-  .scramble {
-    span {
-      filter: blur(3px);
-      display: inline-block;
-    }
-
-    .scramble-part-1 {
-      transform: translate(5px, 0);
-    }
-
-    .scramble-part-2 {
-      transform: translate(-1px, 3px);
-    }
-
-    .scramble-part-3 {
-      transform: translate(1px, -4px);
-    }
-
-    .scramble-part-4 {
-      transform: translate(-2px, -2px);
-    }
-  }
-
   em {
     font-style: italic;
+  }
+}
+
+.scramble {
+  span {
+    filter: blur(4px);
+    display: inline-block;
+  }
+
+  .scramble-part-1 {
+    transform: translate(5px, 0);
+  }
+
+  .scramble-part-2 {
+    transform: translate(-1px, 3px);
+  }
+
+  .scramble-part-3 {
+    transform: translate(1px, -4px);
+  }
+
+  .scramble-part-4 {
+    transform: translate(-2px, -2px);
   }
 }
