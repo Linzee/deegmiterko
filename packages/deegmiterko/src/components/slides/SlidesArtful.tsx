@@ -123,20 +123,23 @@ const SlidesArtful: FunctionComponent = () => {
 
       <Page title="Digital">
         <p>
-          Another step in the evolution of art started with the digital era. As it brings new possibilities for creation and most importantly delivery.
+          Another step in the evolution of art started with the digital era. As it brings new possibilities for
+          creation and most importantly delivery. The name itself very often also refers to an input method - a
+          stylus and a tablet. Which is by far the best way to work with digital art.
         </p>
-        <p>
-          The name itself is very commonly used interchangeably with an input method - a stylus and a tablet. As it's by far the best way to draw digitally. But it's not the only way.
+        <p className="text-center">
+          <LightboxButton path="digital.jpg" alt="Digital drawing" buttonClassName="w-80" />
         </p>
-        <div className="example-bar">
+        <div className="grow" />
+        <p></p>
+        <div className="example">
           <div className="example-title">
-            <h4>Hard pastel drawings (2014 – present)</h4>
+            <h4>Computer graphics</h4>
           </div>
           <div>
             <p>
-              I used digital drawing mostly for editing and creating assets for game development.
+              I use computer graphics and digital drawing mostly for utilitarian purposes. For example creating assets for websites, games, diagrams for explanations and presentations. As my communication style is very visual I find it a very useful tool.
             </p>
-            <LightboxButton path="digital.jpg" alt="Digital drawing" buttonClassName="w-80" />
           </div>
         </div>
         <p>

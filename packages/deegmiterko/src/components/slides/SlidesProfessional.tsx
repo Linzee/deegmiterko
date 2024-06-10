@@ -133,14 +133,14 @@ const SlidesProfessional: FunctionComponent = () => {
           <div className="col-8-4">
             <ul className="deep">
               <li>
-                <p className="mb-1">Public websites</p>
+                <p className="mb-1">♣️ Public websites</p>
                 <ul className="two-columns">
                   <li>Static ecommerece website</li>
                   <li>To bring new people in</li>
                 </ul>
               </li>
               <li>
-                <p className="mb-1">Internal system for students and lectors</p>
+                <p className="mb-1">♥️ Internal system for students and lectors</p>
                 <ul className="two-columns">
                   <li>Helping students learn</li>
                   <li>Empowering lectors</li>
@@ -150,7 +150,7 @@ const SlidesProfessional: FunctionComponent = () => {
                 </ul>
               </li>
               <li>
-                <p className="mb-1">Admin backend</p>
+                <p className="mb-1">♠️ Admin backend</p>
                 <ul className="two-columns">
                   <li>User access control</li>
                   <li>Roles and permissions</li>
@@ -159,14 +159,14 @@ const SlidesProfessional: FunctionComponent = () => {
                 </ul>
               </li>
               <li>
-                <p className="mb-1">Processes automation and email generator</p>
+                <p className="mb-1">♦️ Processes automation and email generator</p>
                 <ul>
                   <li>Registration workflow</li>
                   <li>Tools for exporting data for accounting</li>
                 </ul>
               </li>
             </ul>
-            <div>
+            <div className="d-flex flex-column justify-space-around">
               <p>
                 <LightboxButton path="namedicinu-1.jpg" alt="Na medicínu - Public website" buttonClassName="screenshot-border" />
               </p>

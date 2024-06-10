@@ -40,7 +40,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
             Based on The Game of Life, I've created a simple visual-hash function that turns any string or file into it's unique representation. It can either output an image respresenting the data or a compress it into string.
           </p>
           <p>
-            I don't recommend using it tho, as I haven't validated that it's uniformity or it's fitness for any secure use.
+            <em className="smaller">Disclaimer: I don't recommend using it tho, as I haven't validated that it's uniformity or it's fitness for any secure use.</em>
           </p>
           <p>
             <LightboxButton path="gol-hash.jpg" alt="Game of Life based hash function" />
@@ -48,21 +48,18 @@ const SlidesGameExperiments: FunctionComponent = () => {
         </div>
       </Page>
 
-      <Page title="Engine or not to engine" level={2}>
+      <Page title="Engine or not to engine?" level={2} titleClassName="mb-2">
         <p>
           The age old question that seems to be brough out every time a new person enters the game development community.
         </p>
         <div className="grow"></div>
-        <p>
-          Writing 3d graphics from scratch is very difficult, but powerful.
-        </p>
         <div className="example">
           <div className="example-title">
             <h4>Open GL foreset (2017)</h4>
             <a className="btn-source" href="https://github.com/dee-gmiterko/opengl-forest">&lt;/&gt; Browse source code</a>
           </div>
           <p>
-
+            A low level implementation of a 3D scene using Open GL you can walk around in. It implements baisc model loading, lighting, reflections, and animations.
           </p>
           <p>
             <video poster={imgOpenGlForest} src={vidOpenGlForest} loop={true} autoPlay={true} muted={true} />
@@ -81,7 +78,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
             <a className="btn-source" href="https://github.com/dee-gmiterko/trainwreck">&lt;/&gt; Browse source code</a>
           </div>
           <p>
-            A simple game that I've created using <a href="https://pixijs.com/">PixiJS</a> library on top of WebGL. It's a simple endless runner game where you switch tracks to avoid obstacles.
+            A simple game that I've created using <a href="https://pixijs.com/">PixiJS</a> library on top of WebGL, featuring an endless runner where you are in contorl of switching train tracks to avoid obstacles.
           </p>
           <p>
             <video poster={imgTrainwreck} src={vidTrainwreck} loop={true} autoPlay={true} muted={true} />
@@ -104,36 +101,40 @@ const SlidesGameExperiments: FunctionComponent = () => {
             <h4>Bukkit plugins (2010 – 2013)</h4>
           </div>
           <p>
-            I've made many plugins for Minecraft servers in that time. Includin few public ones that gained decent popularity. But that was over a decade ago, so they fell into obscurity and are not maintained for a long time.
+            I've made many plugins for Minecraft servers in that time. Includin few public ones that gained decent popularity. But as that was over a decade ago, they are no longer maintained and fell into obscurity. For example:
           </p>
           <ul>
-            <li>TODO</li>
+            <li>Adding "radiation" and protection</li>
+            <li>"Residences" that can be bough, sold, and rented</li>
+            <li>Building "scarecrows" scaring away mobs</li>
           </ul>
         </div>
         <h4>
           Client side mods and resoruce packs
         </h4>
-        <div className="example-bar">
+        <div className="example-bar-w-image">
           <div className="example-title">
             <h4>Modding (2012 – 2013)</h4>
           </div>
           <p>
-            
+            For example I made this tiny mod that adds a cute bulldozer to the game - flattening the terrain in front of you as you drive it around.
           </p>
+          <LightboxButton path="minecraft-bulldozer.png" alt="Minecraft mod: bulldozer" />
         </div>
       </Page>
 
       <Page title="Game engine">
         <p>
-          On the other end of the spectrum, you have game engines that are purpose built and can speed up your development process a great deal. Unity is a an example of a game engine that allows you to quickly create 3D and 2D games without having to write a lot of rendering, and entity management code. Even providing you with assets to streamline the most common use cases.
+          On the other end of the spectrum, you have game engines that are purpose built and can significantly speed up your development. Unity is a an example of a game engine that allows you to quickly create 3D and 2D games.
         </p>
+        <div className="grow" />
         <div className="example">
           <div className="example-title">
             <h4>Card collecting game (2023)</h4>
             <a className="btn-source" href="https://badbunnies.xyz/">Game website</a>
           </div>
           <p>
-            During my freelancing period I've worked on a blockchain based card collecting game. My area of focus was integration of distributed systems, creating WebGl port, websocket based networking, and backend. But I've also fixed several visual issues and replaced card asset loading with a more efficient method more fit for web play giving me insight into inner workings of the game itself.
+            During my freelancing period I've worked on a blockchain based card collecting game. My area of focus was integration of distributed systems, creating WebGl port, websocket based networking, and backend. But I've also fixed several visual issues and replaced card asset loading with a more efficient method.
           </p>
           <p className="text-center">
             <LightboxButton path="bad-bunnies.jpg" buttonClassName="w-80" alt="Unity card collecting game" />
@@ -146,22 +147,23 @@ const SlidesGameExperiments: FunctionComponent = () => {
         <p>
           Hand in hand with game development goes level design. It's what actually makes an experience out of game mechanics. And once again, it's very often been pushed to the limits of what is possible on the given platform.
         </p>
+        <div className="grow" />
         <div className="example">
           <div className="example-title">
             <h4>London map (2011 – 2013)</h4>
           </div>
           <p>
-            TODO
+            A very common practice is to pack as much as possible into a limited space, trying to hide it's borders in naturally looking surroundings.
           </p>
-          <p>
-            <LightboxButton path="london-map.png" alt="Minecraft London map" />
+          <p className="text-center">
+            <LightboxButton path="london-map.png" alt="Minecraft London map" buttonClassName="w-80" />
           </p>
         </div>
       </Page>
 
       <Page title="Asset pipeline">
         <p>
-          Without any assets to look at, your game would be a very boring place. But creating them is extremely time consuming process. So there always was a need for tools that would speed it up.
+          Without any assets to look at, your game world would be a very boring place. But creating them is extremely time consuming process. So there always was this drive to automate it as much as possible.
         </p>
         <div className="grow" />
         <div className="example">
@@ -169,7 +171,7 @@ const SlidesGameExperiments: FunctionComponent = () => {
             <h4>Tile builder (2017)</h4>
           </div>
           <p>
-            This tool takes a color mask and a height map, then proceeds to create a 3D model which is rendered into a 2D sprite. Then an AI styled texture enhancement gets applied on top of it to create a final tile asset with normal, specular, and diffuse maps.
+            This tool takes two inputs: a color mask and a height map. Then proceeds to build a 3D model which is used to render a base image. As the next step it uses a machine learning to enhance the texture guessing some additional details.
           </p>
           <p>
             <LightboxButton path="tile-builder.png" alt="Tile builder pipeline" />
@@ -178,83 +180,54 @@ const SlidesGameExperiments: FunctionComponent = () => {
       </Page>
 
       <Page title="Supporting tech" level={2}>
+        <h3>Networking</h3>
         <p>
-          
+          In games it's not just about sending data in between players, but also about making sure it's done in a timely manner and actions are authorized properly.
         </p>
-        <h3>Player simulation</h3>
+        <div className="grow" />
         <div className="example">
           <div className="example-title">
-            <h4>Game strategy simulations (2015)</h4>
-            <a href="https://github.com/dee-gmiterko/py-2048">&lt;/&gt; Browse source code</a>
+            <h4>"Collaborative JSON" networking (2017)</h4>
+            <a className="btn-source" href="https://github.com/dee-gmiterko/samos">&lt;/&gt; Browse source code</a>
           </div>
           <p>
-            
+            However, when it comes to silly little games even a simple client authoritative solution will do. So I tried to do as little as possible to make a working multiplayer real-time browser game. I used a <a className="subheading" href="https://www.npmjs.com/package/diffsync">"collaborative JSON editor"</a> library to synchronize game state between players (and server bots).
           </p>
-          <table>
-            <thead>
-              <tr>
-                <td className="subtitle">Avg</td>
-                <th>
-                  <span>Random</span><span>٭</span>
-                </th>
-                <th>
-                  <span>Simple</span><span>٭٭</span>
-                </th>
-                <th>
-                  <span>Predictive</span><span>٭٭٭</span>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Moves</th>
-                <td>281</td>
-                <td>869</td>
-                <td>5286</td>
-              </tr>
-              <tr>
-                <th>Score</th>
-                <td>4108</td>
-                <td>18451</td>
-                <td>154112</td>
-              </tr>
-              <tr>
-                <th>Largest tile</th>
-                <td>512</td>
-                <td>2048</td>
-                <td>8192</td>
-              </tr>
-            </tbody>
-          </table>
+          <LightboxButton path="json-networking.png" alt="Shared JSON networking" />
         </div>
       </Page>
 
-      <Page title="Networking">
+      <Page title="Emulation">
         <p>
-          
+          Another area where game development reached level of complexity preceeding or not at all present in other fields is emulation and platform porting.
         </p>
         <div className="example">
           <div className="example-title">
-            <h4>Game strategy simulations (2015)</h4>
+            <h4>Fish Fillets <span className="subheading">online</span> (2018)</h4>
+            <a className="btn-source" href="https://github.com/dee-gmiterko/fillets-online">&lt;/&gt; Browse source code</a>
           </div>
           <p>
-            
+            I made a web port of this popular puzzle game, making it agian a bit more accessible for the current age. Transpiling it's source code using a tool called <a href="https://emscripten.org/">Emscripten</a> and fixing issues that arose in the process. Most notably replacing some of libraries with versions that are compatible with running in browser.
+          </p>
+          <p className="text-center">
+            <LightboxButton path="fillets-online.png" alt="Fish Fillets online" buttonClassName="w-50" />
+          </p>
+          <p className="text-center">
+            <a className="btn-source" href="https://ienze.me/fillets-online">Play now</a>
           </p>
         </div>
       </Page>
 
       <Page title="Pushing the limits" level={2}>
         <p>
-          Were always there at the beginning of exploring a new technology, ignoring games and how people play could be a huge mistake.
+          No matter whether it comes to packing the most into limited space on cartridge, pioneering new 3D rendering tricks, or virtual reality. Games were always pushing the boundaries of what is possible. Often times long before the advances come to other fields.
         </p>
-
-        <table>
-          Simulation x, 
-          Game networking - 1988, 
-        </table>
-        
         <p>
-          I would be up for joining in the ride..
+          I would keep my eyes open for any new developments in gaming as it's often a good indicator of what's to come. Even when it's microtransactions.
+        </p>
+        <div className="grow" />
+        <p>
+          See you there.
         </p>
       </Page>
 
@@ -265,56 +238,3 @@ const SlidesGameExperiments: FunctionComponent = () => {
 }
 
 export default SlidesGameExperiments;
-
-
-/* 
-
-"Puhshing the limits"
-$ Story $
-Games were always pushing the boundaries of what is possible. All in the persuit of telling a story, or creating an unforgetable experience.
-
-- [slides] gaming experiments
-  - efil
-    - simple principle, turned on it's head
-  - [Engine or not] 
-      "Engine or not to engine" - (The game-dev discussion)
-      The age old question that seems to be brough out every time a new person enters the game development community.
-  - shaders, Open GL forest $-github link-$ - writing 3d graphics from scratch is difficult, but powerful
-  - trainwreck $-POPUP-$ - limited capabilities, e.g. WebGL
-  - Minecraft modding, plugins - the power of community
-  - level design - packing the most into limited space (memory, disk, asset creaation, etc.)
-  - "Unity" - card collecting game - integration of disjointed systems allowing new experiences
-  - block-renderer - Asset pipeline (drawing individual items is hard, so I made a tool to help me) - 
-  - py-2048 - Game strategy simulation (evaluating player AIs) - allows to experience a resemblance of a competitive environment
-  - ~~~ - multiplayer - the power of networking on network ~~~
-  - #what can you take from it [[[most important page]]]
-    - 
-  - "Join me": I want to help you.
-
-
-...
-
-
-
-"Engineless"
-- trainwreck (2019??)
-- openGL scene and shaders
-
-"Modding"
-- minecraft
-
-"Unity"
-- card collecting game
-  - blockchain based - the only mention
-
-Experiments
-gol-hash 
-- based on The Game of Life - famously known 0-player game
-py-2048
-- Game strategy simulation
-
-
-$ Conclusion $
-- the power of games is not even close to being fully explored, and I would be up for joining in the ride
-
-*/

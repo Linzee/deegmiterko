@@ -102,6 +102,11 @@ body {
 
     em {
       font-style: italic;
+
+      &.smaller {
+        font-size: 23px;
+        line-height: 1.5rem;
+      }
     }
 
     table {
@@ -142,7 +147,7 @@ body {
     h3.bigger {
       font-size: 70px;
       letter-spacing: 3px;
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
     
     h3 {
@@ -636,12 +641,28 @@ body {
   margin-bottom: 8px !important;
 }
 
+.mb-2 {
+  margin-bottom: 23px !important;
+}
+
 .d-inline-block {
   display: inline-block;
 }
 
+.d-flex {
+  display: flex;
+}
+
 .align-self-end {
   align-self: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-space-around {
+  justify-content: space-around;
 }
 
 .opacity-50 {

@@ -1,4 +1,4 @@
-Only once we find that something works, we can start to build on it.
+Only once we find that something works, we can start to build on top of it.
 You: <I think that's actually very clever.>
 
 $title: Professional experience
