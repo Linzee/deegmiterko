@@ -95,6 +95,9 @@ const SlidesGenerativeDesign: FunctionComponent = () => {
           <p>
             <LightboxButton path="output-game-world.png" alt="Simple flat planets covered in trees" />
           </p>
+          <p className="text-center">
+            <a className="btn-source" href="http://ienze.me/py-2050/">Try it out for yourself</a>
+          </p>
         </div>
       </Page>
 

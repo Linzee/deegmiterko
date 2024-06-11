@@ -11,7 +11,7 @@ const NotFoundPage = ({ data: { site } }) => (
   <>
     <main className="not-found">
       <div className="profile">
-        <StaticImage layout="constrained" src="../images/not-found.jpg" alt={"Not found by "+site.siteMetadata.author} />
+        <StaticImage layout="constrained" src="../images/banner.jpg" alt={"Not found by "+site.siteMetadata.author} />
       </div>
       <div className="basic-info">
 

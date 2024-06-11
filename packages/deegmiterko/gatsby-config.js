@@ -8,10 +8,10 @@ if (process.env.ENVIRONMENT !== "production") {
 module.exports = {
   siteMetadata: {
     title: `Dee Gmiterko – Artist, Coder, Me`,
-    description: `Digital nomad exploring the world and creating stuff. Join me and get to know me along the way.`,
+    description: `Exploring the world and creating stuff. I'm just a fey who loves to code, create art, and share my experiences with the world.`,
     author: `Dominik Gmiterko`,
     siteUrl: `https://deegmiterko.com/`,
-    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'digital nomad', 'goals', 'project', 'programming', 'create', 'generative design'],
+    keywords: ['Dominik Gmiterko', 'Dominik', 'Gmiterko', 'artist', 'coder', 'me', 'project', 'programming', 'creative', 'generative design', 'game development', 'resume', 'website development'],
     tagline: "Coder | Artist | Me",
     announcement: {
       title: '',// "I'm into generative design",
