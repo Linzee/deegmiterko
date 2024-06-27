@@ -1,5 +1,0 @@
-$title: Anyway...
-You: Sorry, but I have to go now.
-You: Thank you for your time and bye.
-See you around.
-I just want to say one last thing.

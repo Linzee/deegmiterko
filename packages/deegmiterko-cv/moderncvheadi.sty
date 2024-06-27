@@ -111,7 +111,9 @@
     \begin{minipage}[b]{\makecvheadnamewidth}%
       \if@left\raggedright\fi%
       \if@right\raggedleft\fi%
-      \namestyle{\@firstname\ \@lastname}%
+      \namestyle{\@firstname\ \newline \@lastname}%
+      % \\[0.6em]\textcolor{color2}{She \titlestyle{|} Her}%
+      % \newline%
       \ifthenelse{\equal{\@title}{}}{}{\\[1.25em]\titlestyle{\@title}}%
     \end{minipage}}%
   % rendering

@@ -1,5 +1,0 @@
-primary: media changes, intent persists
-negative: !not! inherently commercial
-wave: unity over ideas
-- It's same for me in the rest of my life
-- techniques, methods adapt
