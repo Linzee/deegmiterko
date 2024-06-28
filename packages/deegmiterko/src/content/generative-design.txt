@@ -1,8 +1,12 @@
-primary: simple components create complex behavior
-negative: !not! (dull) top down design
-wave: life worth exploring
-
-You: Isn't it fascinating how simple components can create such complex behavior in generative design?
+You: Isn't it fascinating how simple components can create such complex behavior, right?
 Me: Absolutely!
-Me: It's not a dull top-down design, but rather a bottom-up approach that allows for a myriad of possibilities.
-You: It's like a wave, constantly changing and evolving. It makes life worth exploring.
+Me: And opposed to the traditional top-down design, generative design builds up from the bottom, creating virtually unbouded possibilities.
+You: The biggest issue then is keeping it varied and interesting
+You: <And for it to have a point>
+
+$title: Experiments and games
+
+Me: Now we are missing two key components:
+Me: To come up with completely new things
+You: And having a reason to use them...
+Me: ...which is most likely going to be to tell a story.

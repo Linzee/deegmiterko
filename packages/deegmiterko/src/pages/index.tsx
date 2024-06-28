@@ -128,6 +128,7 @@ export const pageQuery = graphql`
               messages {
                 author
                 message
+                title
               }
             }
           }
