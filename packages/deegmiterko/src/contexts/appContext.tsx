@@ -15,7 +15,9 @@ export type AppType = {
 const AppContext = createContext<AppType|undefined>(undefined);
 
 export const AppProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
-  const [size, setSize] = useState<[number, number]>([0, 0]);
+  const [size, setSize] = useState<[number, number]>([
+    window.innerWidth, window.innerHeight
+  ]);
   const books = useRef<Record<string, BookStore>>({});
   const [lightboxImage, setLightboxImage] = useState<IGatsbyImageData>();
   const [lightboxOpen, setLightboxOpen] = useState(false);

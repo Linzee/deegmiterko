@@ -18,6 +18,14 @@ export type BookType = {
 
 const BookContext = createContext<BookType|undefined>(undefined);
 
+const parentByClass = (element: HTMLElement, className: string): HTMLElement => {
+  let parent = element.parentElement;
+  while(parent && !parent.classList.contains(className)) {
+    parent = parent.parentElement;
+  }
+  return parent;
+}
+
 export const BookProvider: FunctionComponent<{
   id: string, setCurrent: (i: number) => void, children: ReactNode
 }> = ({ id, setCurrent, children }) => {
@@ -26,7 +34,11 @@ export const BookProvider: FunctionComponent<{
 
   bookStore.current.openToPage = (i: number) => {
     setCurrent(i);
-    bookStore.current.pages[i].element.parentElement.parentElement.scrollIntoView({ behavior: "smooth" });
+    const book = parentByClass(bookStore.current.pages[i].element, "book");
+    window.scrollTo({
+      left: 0,
+      top: book.offsetTop,
+    });
   };
 
   registerBook(id, bookStore.current);

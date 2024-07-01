@@ -60,7 +60,6 @@ const MasonryPage: FunctionComponent<MasonryPageType> = ({ rows, title, subtitle
         child
       ) : null
     ));
-    console.log(childrenNodes)
     const totalLength = rows * 1200;
     const totalRatio = childrenNodes.reduce((acc, c) => acc + c.aspectRatio, 0);
     let row = 0;

@@ -41,14 +41,16 @@ const IndexPage = ({ data: { content, site } }: PageProps<IndexData>) => {
 
   useEffect(() => {
     if(location.hash) {
-      const pageId = location.hash.substring(1);
-      for (const book of Object.values(books)) {
-        const pageIndex = book.pages.findIndex(({ pageId: p }) => p == pageId);
-        if(pageIndex >= 0) {
-          book.openToPage(pageIndex);
-          break;
+      setTimeout(() => {
+        const pageId = location.hash.substring(1);
+        for (const book of Object.values(books)) {
+          const pageIndex = book.pages.findIndex(({ pageId: p }) => p == pageId);
+          if(pageIndex >= 0) {
+            book.openToPage(pageIndex);
+            break;
+          }
         }
-      }
+      }, 25);
     }
   }, [location.hash]);
   
